@@ -1,488 +1,377 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
-
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
-
-<title>Lion Parcel Raya Barat Cicalengka Bandung</title>
+<title>LION PARCEL RAYA BARAT CICALENGKA BANDUNG</title>
 
 <style>
-
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f3f3f3;
-    color: #222;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f2f2f2;
+  color: #222;
 }
 
 .container {
-    width: 100%;
-    max-width: 1000px;
-    margin: auto;
-    padding: 15px;
+  max-width: 1000px;
+  margin: auto;
+  padding: 14px;
 }
 
-
 /* =========================
-   HEADER
+   FOTO SAMPUL BESAR
 ========================= */
 
-.header {
-    background: white;
-    text-align: center;
-    padding: 25px 15px;
-    border-radius: 20px;
-    margin-bottom: 15px;
+.cover {
+  width: 100%;
+  background: white;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.10);
+  margin-bottom: 14px;
 }
 
-.header img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 50%;
+.cover img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
-
-.header h1 {
-    margin: 12px 0 5px;
-    font-size: 30px;
-}
-
-.header h2 {
-    margin: 5px 0;
-    color: #e5a900;
-    font-size: 24px;
-}
-
-.header p {
-    font-size: 17px;
-}
-
 
 /* =========================
-   GRID 2 x 3
+   SLOGAN
+========================= */
+
+.slogan {
+  background: white;
+  border-radius: 20px;
+  padding: 16px 10px;
+  margin-bottom: 14px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.slogan h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.slogan h2 {
+  margin: 8px 0;
+  color: #d8a900;
+  font-size: 25px;
+}
+
+.slogan p {
+  margin: 8px 0 0;
+  font-size: 20px;
+}
+
+/* =========================
+   GRID 2 KOLOM
 ========================= */
 
 .grid {
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    gap: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
 }
-
 
 /* =========================
    KOTAK
 ========================= */
 
 .box {
-    background: white;
-
-    padding: 20px;
-
-    border-radius: 20px;
-
-    text-align: center;
-
-    box-shadow:
-        0 3px 10px rgba(0,0,0,0.08);
-
-    min-height: 190px;
-
-    display: flex;
-
-    flex-direction: column;
-
-    justify-content: center;
+  background: white;
+  border-radius: 22px;
+  padding: 18px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.10);
+  min-height: 250px;
 }
 
 .box h2 {
-    margin: 5px 0 10px;
-
-    font-size: 21px;
+  margin: 0 0 20px;
+  font-size: 25px;
 }
 
 .box p {
-    font-size: 15px;
-
-    line-height: 1.5;
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 10px 0 20px;
 }
-
 
 /* =========================
    TOMBOL
 ========================= */
 
 .btn {
-    display: block;
-
-    width: 100%;
-
-    padding: 12px;
-
-    margin-top: 10px;
-
-    border-radius: 30px;
-
-    text-decoration: none;
-
-    color: white;
-
-    font-weight: bold;
-
-    font-size: 15px;
-}
-
-
-/* WARNA */
-
-.wa {
-    background: #20c968;
-}
-
-.tracking {
-    background: #ed3030;
+  display: block;
+  width: 100%;
+  padding: 14px 8px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 18px;
 }
 
 .maps {
-    background: #4285f4;
+  background: #4285f4;
 }
 
-.pickup {
-    background: #ffb914;
-
-    color: #222;
+.wa {
+  background: #20c76a;
 }
 
+.tracking {
+  background: #ed1c24;
+}
 
 /* =========================
    FOTO BAWAH
 ========================= */
 
 .photo-box {
-    padding: 0;
-
-    overflow: hidden;
-
-    min-height: 190px;
+  padding: 14px;
+  min-height: auto;
 }
 
 .photo-box img {
-    width: 100%;
-
-    height: 100%;
-
-    min-height: 190px;
-
-    object-fit: cover;
-
-    display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 18px;
+  display: block;
 }
 
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  text-align: center;
+  font-size: 16px;
+  padding: 25px 10px 15px;
+}
 
 /* =========================
-   HP
+   TAMPILAN HP
 ========================= */
 
 @media (max-width: 600px) {
 
-    .container {
-        padding: 8px;
-    }
+  .container {
+    padding: 10px;
+  }
 
-    .grid {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
 
-        grid-template-columns:
-        1fr 1fr;
+  .slogan {
+    padding: 14px 8px;
+  }
 
-        gap: 8px;
-    }
+  .slogan h1 {
+    font-size: 22px;
+  }
 
-    .box {
+  .slogan h2 {
+    font-size: 20px;
+  }
 
-        padding: 10px;
+  .slogan p {
+    font-size: 17px;
+  }
 
-        min-height: 170px;
+  .box {
+    padding: 14px 10px;
+    border-radius: 20px;
+    min-height: 250px;
+  }
 
-        border-radius: 18px;
-    }
+  .box h2 {
+    font-size: 21px;
+    margin-bottom: 18px;
+  }
 
-    .box h2 {
+  .box p {
+    font-size: 17px;
+    line-height: 1.55;
+  }
 
-        font-size: 16px;
-    }
+  .btn {
+    font-size: 15px;
+    padding: 13px 5px;
+  }
 
-    .box p {
+  .photo-box img {
+    height: 280px;
+  }
 
-        font-size: 13px;
-    }
-
-    .btn {
-
-        font-size: 12px;
-
-        padding: 10px 5px;
-    }
-
-    .header {
-
-        padding: 18px 10px;
-    }
-
-    .header img {
-
-        width: 75px;
-
-        height: 75px;
-    }
-
-    .header h1 {
-
-        font-size: 22px;
-    }
-
-    .header h2 {
-
-        font-size: 18px;
-    }
-
-    .header p {
-
-        font-size: 14px;
-    }
-
-    .photo-box {
-
-        min-height: 170px;
-    }
-
-    .photo-box img {
-
-        min-height: 170px;
-    }
-
+  footer {
+    font-size: 14px;
+  }
 }
-
 </style>
-
 </head>
-
 
 <body>
 
-
 <div class="container">
 
+  <!-- =========================
+       FOTO SAMPUL BESAR
+  ========================== -->
 
-<!-- =========================
-     HEADER
-========================= -->
+  <div class="cover">
+    <img src="lionparcel-cover.jpeg"
+         alt="Lion Parcel Raya Barat Cicalengka Bandung">
+  </div>
 
-<div class="header">
+  <!-- =========================
+       SLOGAN
+  ========================== -->
 
-    <img src="foto.jpg"
-         alt="Lion Parcel">
+  <div class="slogan">
 
-    <h1>
-        KIRIM PAKET AREA BANDUNG
-    </h1>
+    <h1>KIRIM PAKET AREA BANDUNG</h1>
 
-    <h2>
-        NGGAK MAU RIBET?
-    </h2>
+    <h2>NGGAK MAU RIBET?</h2>
 
-    <p>
-        Tenang, Lion Parcel solusinya!
-    </p>
+    <p>Tenang, Lion Parcel solusinya!</p>
 
-</div>
+  </div>
 
+  <!-- =========================
+       2 KOLOM × 2 BARIS
+  ========================== -->
 
+  <div class="grid">
 
-<!-- =========================
-     GRID 2 x 3
-========================= -->
+    <!-- LOKASI -->
+    <div class="box">
 
-<div class="grid">
+      <h2>📍 LOKASI KAMI</h2>
 
-
-<!-- =========================
-     KIRI ATAS
-     LOKASI
-========================= -->
-
-<div class="box">
-
-    <h2>
-        📍 LOKASI KAMI
-    </h2>
-
-    <p>
+      <p>
         Lion Parcel<br>
         Raya Barat Cicalengka<br>
         Bandung
-    </p>
+      </p>
 
-    <a
+      <a
         class="btn maps"
-        href="https://maps.app.goo.gl/NwktuMgMbVmp28mw6"
+        href="https://maps.app.goo.gl/Ag75G5bT26LoBVXG9"
         target="_blank">
 
         📍 GOOGLE MAPS
 
-    </a>
+      </a>
 
-</div>
+    </div>
 
 
+    <!-- GRATIS JEMPUT -->
+    <div class="box">
 
-<!-- =========================
-     KANAN ATAS
-     GRATIS JEMPUT
-========================= -->
+      <h2>🚚 GRATIS JEMPUT</h2>
 
-<div class="box">
+      <p>
+        Mau kirim paket tanpa<br>
+        keluar rumah? Kami<br>
+        siap membantu!
+      </p>
 
-    <h2>
-        🚚 GRATIS JEMPUT
-    </h2>
-
-    <p>
-        Mau kirim paket tanpa keluar rumah?
-        Kami siap membantu!
-    </p>
-
-    <a
+      <a
         class="btn wa"
         href="https://wa.me/6285183090486"
         target="_blank">
 
         💬 HUBUNGI KAMI
 
-    </a>
+      </a>
 
-</div>
+    </div>
 
 
+    <!-- KENAPA KAMI -->
+    <div class="box">
 
-<!-- =========================
-     KIRI TENGAH
-     KENAPA KAMI
-========================= -->
+      <h2>⭐ KENAPA KAMI?</h2>
 
-<div class="box">
-
-    <h2>
-        ⭐ KENAPA KAMI?
-    </h2>
-
-    <p>
-
+      <p>
         📦 Pengiriman ke seluruh Indonesia<br>
-
         ⚡ Cepat & terpercaya<br>
-
         🛡️ Aman sampai tujuan<br>
-
         🚚 Gratis jemput paket
+      </p>
 
-    </p>
-
-</div>
-
+    </div>
 
 
-<!-- =========================
-     KANAN TENGAH
-     TRACKING
-========================= -->
+    <!-- TRACKING -->
+    <div class="box">
 
-<div class="box">
+      <h2>🔎 LACAK PAKET</h2>
 
-    <h2>
-        🔎 LACAK PAKET
-    </h2>
-
-    <p>
-
-        Mau cek posisi paket?
-
-        Masukkan nomor resi
+      <p>
+        Mau cek posisi paket?<br>
+        Masukkan nomor resi<br>
         di website resmi Lion Parcel.
+      </p>
 
-    </p>
-
-    <a
+      <a
         class="btn tracking"
-        href="https://lionparcel.com/track/stt"
+        href="https://www.lionparcel.com/"
         target="_blank">
 
         📦 LACAK PAKET
 
-    </a>
+      </a>
 
-</div>
+    </div>
 
 
+    <!-- FOTO BAWAH KIRI -->
+    <div class="box photo-box">
 
-<!-- =========================
-     KIRI BAWAH
-     FOTO LIONPARCEL
-========================= -->
-
-<div class="box photo-box">
-
-    <img
+      <img
         src="lionparcel.jpeg"
         alt="Lion Parcel">
 
-</div>
+    </div>
 
 
+    <!-- FOTO BAWAH KANAN -->
+    <div class="box photo-box">
 
-<!-- =========================
-     KANAN BAWAH
-     FOTO BERANI
-========================= -->
-
-<div class="box photo-box">
-
-    <img
+      <img
         src="berani.jpeg"
-        alt="Berani">
+        alt="Berani Diandalkan">
+
+    </div>
+
+  </div>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+    © 2026 By:Lion Parcel Raya Barat Cicalengka/POS101,BANDUNG
+  </footer>
 
 </div>
-
-
-</div>
-
-
-<!-- =========================
-     FOOTER
-========================= -->
-
-<p style="
-    text-align:center;
-    margin-top:15px;
-    font-size:14px;
-">
-
-    © 2026 Lion Parcel Raya Barat Cicalengka Bandung/POS101
-
-</p>
-
-
-</div>
-
 
 </body>
-
 </html>
