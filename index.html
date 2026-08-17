@@ -7,402 +7,260 @@
 <title>LION PARCEL RAYA BARAT CICALENGKA BANDUNG</title>
 
 <style>
-*{
-  box-sizing:border-box;
+* {
+  box-sizing: border-box;
 }
 
-body{
-  margin:0;
-  font-family:Arial,Helvetica,sans-serif;
-  background:#f2f2f2;
-  color:#222;
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f2f2f2;
+  color: #222;
 }
 
-.container{
-  width:100%;
-  max-width:900px;
-  margin:auto;
-  padding:14px;
-}
-
-/* =========================
-   FOTO SAMPUL
-========================= */
-
-.cover{
-  width:100%;
-  background:#ff1515;
-  border-radius:28px;
-  overflow:hidden;
-  margin-bottom:18px;
-  box-shadow:0 5px 15px rgba(0,0,0,.15);
-}
-
-.cover img{
-  width:100%;
-  height:auto;
-  display:block;
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 14px;
 }
 
 /* =========================
-   SLOGAN + GAME
+   FOTO SAMPUL BESAR
 ========================= */
 
-.hero{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:14px;
-  margin-bottom:18px;
+.cover {
+  width: 100%;
+  background: white;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.10);
+  margin-bottom: 14px;
 }
 
-.slogan{
-  background:white;
-  border-radius:25px;
-  padding:24px 15px;
-  text-align:center;
-  min-height:260px;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  box-shadow:0 4px 14px rgba(0,0,0,.10);
-}
-
-.slogan h1{
-  font-size:30px;
-  margin:0 0 14px;
-  font-weight:800;
-}
-
-.slogan h2{
-  color:#d9ad00;
-  font-size:28px;
-  margin:0 0 14px;
-}
-
-.slogan p{
-  font-size:20px;
-  margin:0;
+.cover img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
 
 /* =========================
-   GAME
+   SLOGAN
 ========================= */
 
-.game-box{
-  background:white;
-  border-radius:25px;
-  padding:10px;
-  box-shadow:0 4px 14px rgba(0,0,0,.10);
-  text-align:center;
+.slogan {
+  background: white;
+  border-radius: 20px;
+  padding: 16px 10px;
+  margin-bottom: 14px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-.game-title{
-  font-size:20px;
-  font-weight:bold;
-  margin:4px 0 7px;
+.slogan h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
 }
 
-#game{
-  position:relative;
-  width:100%;
-  height:180px;
-  background:linear-gradient(#8ed8ff 0%,#dff7ff 65%,#8bc34a 65%,#8bc34a 100%);
-  border-radius:18px;
-  overflow:hidden;
-  border:2px solid #ddd;
+.slogan h2 {
+  margin: 8px 0;
+  color: #d8a900;
+  font-size: 25px;
 }
 
-.sun{
-  position:absolute;
-  width:35px;
-  height:35px;
-  background:#ffd83d;
-  border-radius:50%;
-  top:15px;
-  right:20px;
-}
-
-.road{
-  position:absolute;
-  bottom:0;
-  width:100%;
-  height:63px;
-  background:#555;
-}
-
-.road-line{
-  position:absolute;
-  bottom:28px;
-  width:100%;
-  height:5px;
-  background:repeating-linear-gradient(
-    to right,
-    white 0,
-    white 30px,
-    transparent 30px,
-    transparent 55px
-  );
-}
-
-.ruko{
-  position:absolute;
-  right:8px;
-  bottom:63px;
-  width:50px;
-  height:58px;
-  background:#f5f5f5;
-  border:3px solid #333;
-  border-radius:4px;
-  font-size:8px;
-  font-weight:bold;
-  text-align:center;
-  padding-top:5px;
-}
-
-.ruko-logo{
-  background:#ed1c24;
-  color:white;
-  padding:3px 1px;
-  margin:8px 2px 0;
-  font-size:7px;
-}
-
-.kurir{
-  position:absolute;
-  left:35px;
-  bottom:62px;
-  width:30px;
-  height:48px;
-  z-index:5;
-}
-
-.head{
-  position:absolute;
-  width:18px;
-  height:18px;
-  background:#f1b27a;
-  border-radius:50%;
-  left:6px;
-  top:0;
-}
-
-.body{
-  position:absolute;
-  width:25px;
-  height:28px;
-  background:#ff9d00;
-  border-radius:5px;
-  left:2px;
-  top:17px;
-}
-
-.box-paket{
-  position:absolute;
-  width:18px;
-  height:18px;
-  background:#c98945;
-  border:2px solid #8a5725;
-  right:-11px;
-  top:20px;
-  font-size:6px;
-  color:white;
-  text-align:center;
-  padding-top:4px;
-}
-
-.obstacle{
-  position:absolute;
-  bottom:63px;
-  right:-30px;
-  width:22px;
-  height:30px;
-  background:#e53935;
-  border-radius:5px;
-}
-
-.obstacle.two{
-  height:22px;
-  background:#795548;
-}
-
-#gameMessage{
-  font-size:13px;
-  font-weight:bold;
-  margin:5px 0;
-}
-
-.game-buttons{
-  display:flex;
-  gap:4px;
-  justify-content:center;
-}
-
-.game-buttons button{
-  border:0;
-  border-radius:10px;
-  background:#ed1c24;
-  color:white;
-  font-size:12px;
-  font-weight:bold;
-  padding:8px 9px;
-  cursor:pointer;
-}
-
-.game-buttons button:active{
-  transform:scale(.94);
+.slogan p {
+  margin: 8px 0 0;
+  font-size: 20px;
 }
 
 /* =========================
-   GRID KOTAK
+   GRID 2 KOLOM
 ========================= */
 
-.grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:14px;
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
 }
 
-.box{
-  background:white;
-  border-radius:25px;
-  padding:22px 15px;
-  text-align:center;
-  min-height:300px;
-  box-shadow:0 4px 14px rgba(0,0,0,.10);
+/* =========================
+   KOTAK
+========================= */
+
+.box {
+  background: white;
+  border-radius: 22px;
+  padding: 18px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.10);
+  min-height: 250px;
 }
 
-.box h2{
-  font-size:25px;
-  margin:0 0 20px;
+.box h2 {
+  margin: 0 0 20px;
+  font-size: 25px;
 }
 
-.box p{
-  font-size:20px;
-  line-height:1.55;
+.box p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 10px 0 20px;
 }
 
-.btn{
-  display:block;
-  text-decoration:none;
-  color:white;
-  font-weight:bold;
-  font-size:18px;
-  padding:14px;
-  border-radius:35px;
-  margin-top:18px;
+/* =========================
+   TOMBOL
+========================= */
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 14px 8px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 18px;
 }
 
-.maps{
-  background:#4285f4;
+.maps {
+  background: #4285f4;
 }
 
-.wa{
-  background:#25d366;
+.wa {
+  background: #20c76a;
 }
 
-.track{
-  background:#ed1c24;
+.tracking {
+  background: #ed1c24;
 }
 
 /* =========================
    FOTO BAWAH
 ========================= */
 
-.photos{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:14px;
-  margin-top:14px;
+.photo-box {
+  padding: 14px;
+  min-height: auto;
 }
 
-.photos img{
-  width:100%;
-  border-radius:22px;
-  display:block;
-  background:white;
-  padding:8px;
-  box-shadow:0 4px 14px rgba(0,0,0,.10);
+.photo-box img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 18px;
+  display: block;
+}
+
+/* =========================
+   GAME
+========================= */
+
+.game-section {
+  background: white;
+  border-radius: 22px;
+  padding: 14px;
+  margin-top: 14px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.10);
+}
+
+.game-title {
+  text-align: center;
+  margin: 5px 0 12px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.game-frame {
+  width: 100%;
+  height: 650px;
+  border: none;
+  border-radius: 18px;
+  display: block;
+  background: #87ceeb;
 }
 
 /* =========================
    FOOTER
 ========================= */
 
-footer{
-  text-align:center;
-  padding:28px 10px 15px;
-  font-size:15px;
+footer {
+  text-align: center;
+  font-size: 16px;
+  padding: 25px 10px 15px;
 }
 
 /* =========================
-   HP
+   TAMPILAN HP
 ========================= */
 
-@media(max-width:600px){
+@media (max-width: 600px) {
 
-  .container{
-    padding:10px;
+  .container {
+    padding: 10px;
   }
 
-  .hero{
-    grid-template-columns:1fr 1fr;
-    gap:8px;
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
   }
 
-  .slogan{
-    min-height:230px;
-    padding:15px 8px;
+  .slogan {
+    padding: 14px 8px;
   }
 
-  .slogan h1{
-    font-size:21px;
+  .slogan h1 {
+    font-size: 22px;
   }
 
-  .slogan h2{
-    font-size:20px;
+  .slogan h2 {
+    font-size: 20px;
   }
 
-  .slogan p{
-    font-size:15px;
+  .slogan p {
+    font-size: 17px;
   }
 
-  .game-box{
-    padding:7px;
+  .box {
+    padding: 14px 10px;
+    border-radius: 20px;
+    min-height: 250px;
   }
 
-  .game-title{
-    font-size:15px;
+  .box h2 {
+    font-size: 21px;
+    margin-bottom: 18px;
   }
 
-  #game{
-    height:160px;
+  .box p {
+    font-size: 17px;
+    line-height: 1.55;
   }
 
-  .grid{
-    grid-template-columns:1fr 1fr;
-    gap:8px;
+  .btn {
+    font-size: 15px;
+    padding: 13px 5px;
   }
 
-  .box{
-    min-height:300px;
-    padding:18px 8px;
+  .photo-box img {
+    height: 280px;
   }
 
-  .box h2{
-    font-size:21px;
+  .game-section {
+    padding: 8px;
   }
 
-  .box p{
-    font-size:16px;
+  .game-title {
+    font-size: 21px;
   }
 
-  .btn{
-    font-size:15px;
-    padding:12px 5px;
+  .game-frame {
+    height: 600px;
   }
 
-  .photos{
-    gap:8px;
+  footer {
+    font-size: 14px;
   }
 }
 </style>
@@ -412,21 +270,19 @@ footer{
 
 <div class="container">
 
-<!-- =========================
-     FOTO SAMPUL
-========================= -->
+  <!-- =========================
+       FOTO SAMPUL BESAR
+  ========================== -->
 
-<div class="cover">
-  <img src="foto.jpg"
-       alt="Lion Parcel Raya Barat Cicalengka Bandung">
-</div>
+  <div class="cover">
+    <img src="foto.jpg"
+         alt="Lion Parcel Raya Barat Cicalengka Bandung">
+  </div>
 
 
-<!-- =========================
-     SLOGAN + GAME
-========================= -->
-
-<div class="hero">
+  <!-- =========================
+       SLOGAN
+  ========================== -->
 
   <div class="slogan">
 
@@ -439,309 +295,153 @@ footer{
   </div>
 
 
-  <div class="game-box">
+  <!-- =========================
+       2 KOLOM × 3 BARIS
+  ========================== -->
+
+  <div class="grid">
+
+    <!-- LOKASI -->
+
+    <div class="box">
+
+      <h2>📍 LOKASI KAMI</h2>
+
+      <p>
+        Lion Parcel<br>
+        Raya Barat Cicalengka<br>
+        Bandung
+      </p>
+
+      <a
+        class="btn maps"
+        href="https://maps.app.goo.gl/Ag75G5bT26LoBVXG9"
+        target="_blank">
+
+        📍 GOOGLE MAPS
+
+      </a>
+
+    </div>
+
+
+    <!-- GRATIS JEMPUT -->
+
+    <div class="box">
+
+      <h2>🚚 GRATIS JEMPUT</h2>
+
+      <p>
+        Mau kirim paket tanpa<br>
+        keluar rumah? Kami<br>
+        siap membantu!
+      </p>
+
+      <a
+        class="btn wa"
+        href="https://wa.me/6285183090486"
+        target="_blank">
+
+        💬 HUBUNGI KAMI
+
+      </a>
+
+    </div>
+
+
+    <!-- KENAPA KAMI -->
+
+    <div class="box">
+
+      <h2>⭐ KENAPA KAMI?</h2>
+
+      <p>
+        📦 Pengiriman ke seluruh Indonesia<br>
+        ⚡ Cepat & terpercaya<br>
+        🛡️ Aman sampai tujuan<br>
+        🚚 Gratis jemput paket
+      </p>
+
+    </div>
+
+
+    <!-- TRACKING -->
+
+    <div class="box">
+
+      <h2>🔎 LACAK PAKET</h2>
+
+      <p>
+        Mau cek posisi paket?<br>
+        Masukkan nomor resi<br>
+        di website resmi Lion Parcel.
+      </p>
+
+      <a
+        class="btn tracking"
+        href="https://www.lionparcel.com/"
+        target="_blank">
+
+        📦 LACAK PAKET
+
+      </a>
+
+    </div>
+
+
+    <!-- FOTO BAWAH KIRI -->
+
+    <div class="box photo-box">
+
+      <img
+        src="lionparcel.jpeg"
+        alt="Lion Parcel">
+
+    </div>
+
+
+    <!-- FOTO BAWAH KANAN -->
+
+    <div class="box photo-box">
+
+      <img
+        src="berani.jpeg"
+        alt="Berani Diandalkan">
+
+    </div>
+
+  </div>
+
+
+  <!-- =========================
+       GAME KURIR
+       TEPAT SEBELUM FOOTER
+  ========================== -->
+
+  <div class="game-section">
 
     <div class="game-title">
-      🎮 MAIN GAME KURIR
+      🎮 GAME KURIR LION PARCEL
     </div>
 
-    <div id="game">
-
-      <div class="sun"></div>
-
-      <div class="ruko">
-        🏪
-        <div class="ruko-logo">
-          LION PARCEL
-        </div>
-      </div>
-
-      <div class="kurir" id="kurir">
-
-        <div class="head"></div>
-
-        <div class="body"></div>
-
-        <div class="box-paket">
-          LP
-        </div>
-
-      </div>
-
-      <div class="obstacle" id="obstacle"></div>
-
-      <div class="road"></div>
-
-      <div class="road-line"></div>
-
-    </div>
-
-    <div id="gameMessage">
-      Antar paket sampai ke ruko!
-    </div>
-
-    <div class="game-buttons">
-
-      <button onclick="moveLeft()">⬅️</button>
-
-      <button onclick="jump()">⬆️ LOMPAT</button>
-
-      <button onclick="moveRight()">➡️</button>
-
-    </div>
+    <iframe
+      src="game.html"
+      class="game-frame"
+      title="Game Kurir Lion Parcel">
+    </iframe>
 
   </div>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer>
+    © 2026 Lion Parcel Raya Barat Cicalengka Bandung/POS101
+  </footer>
 
 </div>
-
-
-<!-- =========================
-     GRID 2 x 2
-========================= -->
-
-<div class="grid">
-
-  <!-- LOKASI -->
-
-  <div class="box">
-
-    <h2>📍 LOKASI KAMI</h2>
-
-    <p>
-      Lion Parcel<br>
-      Raya Barat Cicalengka<br>
-      Bandung
-    </p>
-
-    <a
-      class="btn maps"
-      href="https://maps.app.goo.gl/Ag75G5bT26LoBVXG9"
-      target="_blank">
-      📍 GOOGLE MAPS
-    </a>
-
-  </div>
-
-
-  <!-- GRATIS JEMPUT -->
-
-  <div class="box">
-
-    <h2>🚚 GRATIS JEMPUT</h2>
-
-    <p>
-      Mau kirim paket tanpa
-      keluar rumah? Kami
-      siap membantu!
-    </p>
-
-    <a
-      class="btn wa"
-      href="https://wa.me/6285183090486"
-      target="_blank">
-      💬 HUBUNGI KAMI
-    </a>
-
-  </div>
-
-
-  <!-- KENAPA KAMI -->
-
-  <div class="box">
-
-    <h2>⭐ KENAPA KAMI?</h2>
-
-    <p>
-      📦 Pengiriman ke
-      seluruh Indonesia<br>
-
-      ⚡ Cepat & terpercaya<br>
-
-      🛡️ Aman sampai tujuan<br>
-
-      🚚 Gratis jemput paket
-    </p>
-
-  </div>
-
-
-  <!-- LACAK PAKET -->
-
-  <div class="box">
-
-    <h2>🔎 LACAK PAKET</h2>
-
-    <p>
-      Mau cek posisi paket?
-      Masukkan nomor resi
-      di website resmi
-      Lion Parcel.
-    </p>
-
-    <a
-      class="btn track"
-      href="https://lionparcel.com/"
-      target="_blank">
-      📦 LACAK PAKET
-    </a>
-
-  </div>
-
-</div>
-
-
-<!-- =========================
-     FOTO BAWAH
-========================= -->
-
-<div class="photos">
-
-  <img src="lionparcel.jpeg"
-       alt="Lion Parcel">
-
-  <img src="berani.jpeg"
-       alt="Lion Parcel Cicalengka">
-
-</div>
-
-
-<footer>
-  © 2026 Lion Parcel Raya Barat Cicalengka Bandung
-</footer>
-
-</div>
-
-
-<!-- =========================
-     JAVASCRIPT GAME
-========================= -->
-
-<script>
-
-let posisi = 35;
-let sedangLompat = false;
-let gameJalan = true;
-
-const kurir = document.getElementById("kurir");
-const obstacle = document.getElementById("obstacle");
-const message = document.getElementById("gameMessage");
-
-function updateKurir(){
-
-  kurir.style.left = posisi + "px";
-
-}
-
-function moveLeft(){
-
-  if(posisi > 5){
-    posisi -= 15;
-    updateKurir();
-  }
-
-}
-
-function moveRight(){
-
-  if(posisi < 250){
-    posisi += 15;
-    updateKurir();
-  }
-
-}
-
-function jump(){
-
-  if(sedangLompat || !gameJalan) return;
-
-  sedangLompat = true;
-
-  kurir.style.bottom = "115px";
-
-  setTimeout(function(){
-
-    kurir.style.bottom = "62px";
-    sedangLompat = false;
-
-  },600);
-
-}
-
-
-/* GERAKAN RINTANGAN */
-
-let obstaclePos = -30;
-
-function gameLoop(){
-
-  if(!gameJalan){
-    requestAnimationFrame(gameLoop);
-    return;
-  }
-
-  obstaclePos += 2;
-
-  if(obstaclePos > 100){
-
-    obstaclePos = -30;
-
-  }
-
-  obstacle.style.right = obstaclePos + "%";
-
-  requestAnimationFrame(gameLoop);
-
-}
-
-gameLoop();
-
-
-/* TABRAKAN SEDERHANA */
-
-setInterval(function(){
-
-  if(!gameJalan) return;
-
-  const k = kurir.getBoundingClientRect();
-  const o = obstacle.getBoundingClientRect();
-
-  const tabrak =
-    k.left < o.right &&
-    k.right > o.left &&
-    k.top < o.bottom &&
-    k.bottom > o.top;
-
-  if(tabrak && !sedangLompat){
-
-    message.innerHTML =
-      "💥 Aduh! Paket jatuh. Coba lagi!";
-
-    obstaclePos = -30;
-
-  }
-
-},50);
-
-
-/* KEYBOARD */
-
-document.addEventListener("keydown",function(e){
-
-  if(e.key === "ArrowLeft"){
-    moveLeft();
-  }
-
-  if(e.key === "ArrowRight"){
-    moveRight();
-  }
-
-  if(e.key === "ArrowUp" || e.key === " "){
-    jump();
-  }
-
-});
-
-</script>
 
 </body>
 </html>
