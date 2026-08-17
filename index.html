@@ -1,262 +1,249 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Kirim Paket - Lion Parcel Bandung</title>
+<title>Lion Parcel Raya Barat Cicalengka Bandung</title>
 
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-        body {
-            font-family: Arial, sans-serif;
-            background: #fff4e8;
-            color: #222;
-        }
+body {
+  font-family: Arial, sans-serif;
+  background: #fff4e8;
+  color: #222;
+  min-height: 100vh;
+}
 
-        .hero {
-            width: 100%;
-            text-align: center;
-            padding: 20px;
-        }
+.container {
+  width: 100%;
+  max-width: 650px;
+  margin: auto;
+  padding: 20px 16px;
+}
 
-        .hero h1 {
-            font-size: 42px;
-            font-weight: 900;
-            color: #111;
-            margin-bottom: 10px;
-        }
+/* JUDUL */
+.header {
+  text-align: center;
+  margin-bottom: 18px;
+}
 
-        .hero h1 span {
-            color: #ffb000;
-        }
+.header h1 {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 1.05;
+  margin-bottom: 6px;
+}
 
-        .hero p {
-            font-size: 20px;
-            margin-bottom: 25px;
-        }
+.header h2 {
+  font-size: 29px;
+  font-weight: 900;
+  color: #f5a900;
+  line-height: 1.05;
+}
 
-        .button {
-            display: block;
-            max-width: 400px;
-            margin: 12px auto;
-            padding: 18px;
-            border-radius: 15px;
-            text-decoration: none;
-            color: white;
-            font-size: 20px;
-            font-weight: bold;
-        }
+.header p {
+  font-size: 17px;
+  margin-top: 10px;
+}
 
-        .whatsapp {
-            background: #25D366;
-        }
+/* IDENTITAS */
+.nama {
+  text-align: center;
+  font-weight: bold;
+  font-size: 17px;
+  margin: 12px 0 18px;
+}
 
-        .tracking {
-            background: #e53935;
-        }
+/* KOTAK 2 X 2 */
+.menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
 
-        .gratis {
-            background: #ffb000;
-            padding: 25px;
-            margin: 30px 15px;
-            border-radius: 20px;
-            font-size: 30px;
-            font-weight: 900;
-        }
+.card {
+  min-height: 145px;
+  border-radius: 20px;
+  padding: 18px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.12);
+  transition: 0.2s;
+}
 
-        .section {
-            padding: 25px 15px;
-            text-align: center;
-        }
+.card:active {
+  transform: scale(0.96);
+}
 
-        .section h2 {
-            font-size: 30px;
-            margin-bottom: 20px;
-        }
+.icon {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
 
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 12px;
-            max-width: 600px;
-            margin: auto;
-        }
+.card h3 {
+  font-size: 19px;
+  font-weight: 900;
+  line-height: 1.15;
+}
 
-        .card {
-            background: white;
-            padding: 20px 10px;
-            border-radius: 15px;
-            box-shadow: 0 3px 10px #0002;
-            font-weight: bold;
-        }
+/* WARNA */
+.whatsapp {
+  background: #20c968;
+}
 
-        .card .icon {
-            font-size: 40px;
-            margin-bottom: 10px;
-        }
+.tracking {
+  background: #e83232;
+}
 
-        .steps {
-            max-width: 600px;
-            margin: auto;
-        }
+.pickup {
+  background: #ffb000;
+  color: #222;
+}
 
-        .step {
-            background: white;
-            padding: 18px;
-            margin: 10px 0;
-            border-radius: 15px;
-            text-align: left;
-            box-shadow: 0 3px 10px #0002;
-        }
+.maps {
+  background: #287be5;
+}
 
-        .contact {
-            background: #e53221;
-            color: white;
-            padding: 35px 15px;
-            text-align: center;
-        }
+/* INFO */
+.info {
+  margin-top: 16px;
+  background: white;
+  border-radius: 18px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
 
-        .contact h2 {
-            font-size: 30px;
-            margin-bottom: 10px;
-        }
+.info strong {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
 
-        .phone {
-            font-size: 28px;
-            font-weight: bold;
-            margin: 15px 0;
-        }
+.info p {
+  font-size: 14px;
+  line-height: 1.4;
+}
 
-        footer {
-            background: #111;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
+/* FOOTER */
+.footer {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 12px;
+  color: #777;
+}
 
-        @media (max-width: 500px) {
-            .hero h1 {
-                font-size: 32px;
-            }
+/* HP KECIL */
+@media (max-width: 380px) {
 
-            .cards {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-    </style>
+  .container {
+    padding: 15px 12px;
+  }
+
+  .header h1 {
+    font-size: 27px;
+  }
+
+  .header h2 {
+    font-size: 24px;
+  }
+
+  .header p {
+    font-size: 15px;
+  }
+
+  .card {
+    min-height: 125px;
+  }
+
+  .icon {
+    font-size: 40px;
+  }
+
+  .card h3 {
+    font-size: 16px;
+  }
+}
+</style>
 </head>
 
 <body>
 
-    <div class="hero">
+<div class="container">
 
-        <h1>KIRIM PAKET AREA BANDUNG<br><span>NGGAK MAU RIBET?</span></h1>
+  <!-- JUDUL -->
+  <div class="header">
+    <h1>KIRIM PAKET AREA BANDUNG</h1>
+    <h2>NGGAK MAU RIBET?</h2>
+    <p>Tenang, Lion Parcel solusinya!</p>
+  </div>
 
-        <p>Tenang, #LION PARCEL BANDUNG  solusinya!</p>
+  <div class="nama">
+    🦁 Lion Parcel Raya Barat Cicalengka, Bandung
+  </div>
 
-        <a class="button whatsapp"
-           href="https://wa.me/6285183090486">
-           💬 CHAT WHATSAPP
-        </a>
+  <!-- MENU 2 X 2 -->
+  <div class="menu">
 
-        <a class="button tracking"
-    href="https://lionparcel.com/track/stt">
-    📦 LACAK PAKET
-        
-        </a>
+    <!-- WHATSAPP -->
+    <a class="card whatsapp"
+       href="https://wa.me/6285183090486"
+       target="_blank">
+      <div class="icon">💬</div>
+      <h3>CHAT<br>WHATSAPP</h3>
+    </a>
 
-    </div>
+    <!-- TRACKING RESI -->
+    <a class="card tracking"
+       href="https://www.lionparcel.com/"
+       target="_blank">
+      <div class="icon">📦</div>
+      <h3>LACAK<br>PAKET</h3>
+    </a>
 
-    <div class="gratis">
-        🚚 # GRATIS JEMPUT PAKET
-    </div>
+    <!-- GRATIS JEMPUT -->
+    <a class="card pickup"
+       href="https://wa.me/6285183090486?text=Halo%20Lion%20Parcel%20Raya%20Barat%20Cicalengka,%20saya%20mau%20request%20gratis%20jemput%20paket."
+       target="_blank">
+      <div class="icon">🚚</div>
+      <h3>GRATIS<br>JEMPUT PAKET</h3>
+    </a>
 
-    <div class="section">
+    <!-- MAPS -->
+    <a class="card maps"
+       href="https://maps.app.goo.gl/Ag75G5bT26LoBVXG9"
+       target="_blank">
+      <div class="icon">📍</div>
+      <h3>LOKASI<br>KAMI</h3>
+    </a>
 
-        <h2>Kenapa Kirim Lewat Kami?</h2>
+  </div>
 
-        <div class="cards">
+  <!-- INFO -->
+  <div class="info">
+    <strong>📦 Lion Parcel Raya Barat Cicalengka</strong>
+    <p>
+      Pengiriman paket dalam & luar negeri<br>
+      Cepat • Aman • Terpercaya
+    </p>
+  </div>
 
-            <div class="card">
-                <div class="icon">📦</div>
-                Pengiriman ke seluruh Indonesia
-            </div>
+  <div class="footer">
+    © 2026 Lion Parcel Raya Barat Cicalengka, Bandung
+  </div>
 
-            <div class="card">
-                <div class="icon">⚡</div>
-                Cepat & terpercaya
-            </div>
-
-            <div class="card">
-                <div class="icon">🛡️</div>
-                Packing aman
-            </div>
-
-            <div class="card">
-                <div class="icon">🔎</div>
-                Tracking real-time
-            </div>
-
-        </div>
-
-    </div>
-
-    <div class="section">
-
-        <h2>📦 Cara Kirim Paket</h2>
-
-        <div class="steps">
-
-            <div class="step">
-                <b>1️⃣ Hubungi kami</b><br>
-                Klik tombol WhatsApp.
-            </div>
-
-            <div class="step">
-                <b>2️⃣ Siapkan paket</b><br>
-                Kami bantu proses pengiriman.
-            </div>
-
-            <div class="step">
-                <b>3️⃣ Paket dijemput</b><br>
-                Gratis jemput paket.
-            </div>
-
-            <div class="step">
-                <b>4️⃣ Paket dikirim</b><br>
-                Pantau perjalanan paket.
-            </div>
-
-        </div>
-
-    </div>
-
-    <div class="contact">
-
-        <h2>📱 Mau Kirim Paket?</h2>
-
-        <p>Hubungi kami sekarang!</p>
-
-        <div class="phone">
-            085183090486
-        </div>
-
-        <a class="button whatsapp"
-           href="https://wa.me/6285183090486">
-           CHAT SEKARANG
-        </a>
-
-    </div>
-
-    <footer>
-        © 2026 Lion Parcel BANDUNG/ MITRA:LIONPARCEL RAYA BARAT CICALENGKA POS101
-    </footer>
+</div>
 
 </body>
 </html>
