@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lion Parcel Barat Cicalengka - Kurir Game</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  background: #87ceeb;
+  touch-action: none;
+}
+
+#game {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
+#hud {
+  position: fixed;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  background: rgba(0,0,0,.65);
+  color: white;
+  padding: 9px 18px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#controls {
+  position: fixed;
+  bottom: 18px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px;
+  z-index: 20;
+  pointer-events: none;
+}
+
+.control {
+  pointer-events: auto;
+  width: 75px;
+  height: 65px;
+  border: 0;
+  border-radius: 20px;
+  background: rgba(255,255,255,.88);
+  font-size: 30px;
+  box-shadow: 0 5px 12px rgba(0,0,0,.3);
+}
+
+#jump {
+  position: fixed;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+  width: 85px;
+  height: 65px;
+  border: 0;
+  border-radius: 20px;
+  background: rgba(255,255,255,.9);
+  font-size: 28px;
+  box-shadow: 0 5px 12px rgba(0,0,0,.3);
+}
+
+#startScreen,
+#winScreen,
+#loseScreen {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background: rgba(0,0,0,.78);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.panel {
+  max-width: 420px;
+  background: white;
+  color: #222;
+  border-radius: 25px;
+  padding: 28px 22px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.4);
+}
+
+.panel h1 {
+  color: #d71920;
+  margin-top: 0;
+  font-size: 30px;
+}
+
+.panel p {
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.mainButton {
+  border: 0;
+  background: #d71920;
+  color: white;
+  padding: 14px 30px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none !important;
+}
+</style>
+</head>
+
+<body>
+
+<canvas id="game"></canvas>
+
+<div id="hud">
+  📦 Paket: <span id="distance">0</span>% 
+  &nbsp; | &nbsp;
+  ⭐ <span id="score">0</span>
+</div>
+
+<!-- LAYAR AWAL -->
+<div id="startScreen">
+  <div class="panel">
+    <h1>🦁 LION PARCEL</h1>
+
+    <h2>Kurir Cicalengka</h2>
+
+    <p>
+      Bantu kurir mengantarkan paket
+      dari rumah pengirim sampai ke
+      <b>LION PARCEL BARAT CICALENGKA</b>!
+    </p>
+
+    <p>
+      🚧 Hindari rintangan<br>
+      📦 Jangan sampai paket jatuh<br>
+      🏁 Sampai ke ruko tujuan
+    </p>
+
+    <button class="mainButton" onclick="startGame()">
+      🚚 MULAI ANTAR PAKET
+    </button>
+  </div>
+</div>
+
+<!-- MENANG -->
+<div id="winScreen" class="hidden">
+  <div class="panel">
+    <h1>🎉 PAKET SAMPAI!</h1>
+
+    <p>
+      Hebat! Kurir berhasil melewati
+      semua rintangan.
+    </p>
+
+    <h2>🏢 LION PARCEL BARAT CICALENGKA</h2>
+
+    <p>
+      ⭐ Skor: <b id="finalScore">0</b>
+    </p>
+
+    <button class="mainButton" onclick="restartGame()">
+      🔄 MAIN LAGI
+    </button>
+  </div>
+</div>
+
+<!-- KALAH -->
+<div id="loseScreen" class="hidden">
+  <div class="panel">
+    <h1>💥 WADUH!</h1>
+
+    <p>
+      Kurir menabrak rintangan!
+    </p>
+
+    <p>
+      Paket belum sampai tujuan.
+    </p>
+
+    <h2>⭐ Skor: <span id="loseScore">0</span></h2>
+
+    <button class="mainButton" onclick="restartGame()">
+      🔄 COBA LAGI
+    </button>
+  </div>
+</div>
+
+<!-- KONTROL HP -->
+<div id="controls">
+  <button class="control" id="leftButton">⬅️</button>
+  <button class="control" id="rightButton">➡️</button>
+</div>
+
+<button id="jump">⬆️</button>
+
+
+<script>
+
+const canvas = document.getElementById("game");
+const ctx = canvas.getContext("2d");
+
+let W = 0;
+let H = 0;
+
+function resizeCanvas() {
+  W = canvas.width = window.innerWidth;
+  H = canvas.height = window.innerHeight;
+}
+
+resizeCanvas();
+
+window.addEventListener("resize", resizeCanvas);
+
+
+/* =========================
+   GAME
+========================= */
+
+let playing = false;
+let score = 0;
+let distance = 0;
+let speed = 5;
+
+let roadOffset = 0;
+
+let obstacles = [];
+
+let obstacleTimer = 0;
+
+let keys = {
+  left: false,
+  right: false,
+  jump: false
+};
+
+
+/* =========================
+   PLAYER
+========================= */
+
+const player = {
+  x: 0,
+  y: 0,
+  width: 48,
+  height: 72,
+  velocityY: 0,
+  jumping: false
+};
+
+
+function resetPlayer() {
+
+  player.x = W / 2 - player.width / 2;
+
+  player.y = H - 170;
+
+  player.velocityY = 0;
+
+  player.jumping = false;
+}
+
+
+/* =========================
+   JALAN
+========================= */
+
+function roadLeft() {
+  return W * 0.18;
+}
+
+function roadRight() {
+  return W * 0.82;
+}
+
+function roadWidth() {
+  return roadRight() - roadLeft();
+}
+
+
+/* =========================
+   LANGIT
+========================= */
+
+function drawSky() {
+
+  const gradient =
+    ctx.createLinearGradient(0,0,0,H);
+
+  gradient.addColorStop(0,"#68c7ff");
+
+  gradient.addColorStop(1,"#e5f7ff");
+
+  ctx.fillStyle = gradient;
+
+  ctx.fillRect(0,0,W,H);
+}
+
+
+/* =========================
+   AWAN
+========================= */
+
+function drawCloud(x,y,size) {
+
+  ctx.fillStyle = "rgba(255,255,255,.9)";
+
+  ctx.beginPath();
+
+  ctx.arc(x,y,size*.5,0,Math.PI*2);
+
+  ctx.arc(
+    x+size*.5,
+    y+5,
+    size*.4,
+    0,
+    Math.PI*2
+  );
+
+  ctx.arc(
+    x-size*.45,
+    y+8,
+    size*.35,
+    0,
+    Math.PI*2
+  );
+
+  ctx.fill();
+}
+
+
+function drawClouds() {
+
+  drawCloud(W*.18,90,55);
+
+  drawCloud(W*.75,145,65);
+
+  drawCloud(W*.45,60,45);
+}
+
+
+/* =========================
+   RUMAH PENGIRIM
+========================= */
+
+function drawStartHouse() {
+
+  if(distance > 8) return;
+
+  const x = W*.05;
+  const y = H*.25;
+
+  ctx.fillStyle = "#f2d1a0";
+
+  ctx.fillRect(x,y,105,85);
+
+  ctx.fillStyle = "#c7352b";
+
+  ctx.beginPath();
+
+  ctx.moveTo(x-10,y);
+
+  ctx.lineTo(x+52,y-55);
+
+  ctx.lineTo(x+115,y);
+
+  ctx.closePath();
+
+  ctx.fill();
+
+  ctx.fillStyle = "#5a3a24";
+
+  ctx.fillRect(x+40,y+42,25,43);
+
+  ctx.fillStyle = "#222";
+
+  ctx.font = "bold 11px Arial";
+
+  ctx.textAlign = "center";
+
+  ctx.fillText(
+    "RUMAH",
+    x+52,
+    y+102
+  );
+
+  ctx.fillText(
+    "PENGIRIM",
+    x+52,
+    y+116
+  );
+}
+
+
+/* =========================
+   RUKO TUJUAN
+========================= */
+
+function drawDestination() {
+
+  if(distance < 82) return;
+
+  const x = W*.26;
+  const y = 45;
+
+  ctx.fillStyle = "#eeeeee";
+
+  ctx.fillRect(
+    x,
+    y,
+    W*.48,
+    130
+  );
+
+  /* papan merah */
+
+  ctx.fillStyle = "#d71920";
+
+  ctx.fillRect(
+    x-10,
+    y-20,
+    W*.50,
+    45
+  );
+
+  ctx.fillStyle = "white";
+
+  ctx.font = "bold 21px Arial";
+
+  ctx.textAlign = "center";
+
+  ctx.fillText(
+    "LION PARCEL",
+    W/2,
+    y+9
+  );
+
+  ctx.fillStyle = "#222";
+
+  ctx.font = "bold 16px Arial";
+
+  ctx.fillText(
+    "BARAT CICALENGKA",
+    W/2,
+    y+55
+  );
+
+  /* pintu */
+
+  ctx.fillStyle = "#333";
+
+  ctx.fillRect(
+    W/2-30,
+    y+80,
+    60,
+    50
+  );
+
+  ctx.fillStyle = "#fff";
+
+  ctx.font = "bold 12px Arial";
+
+  ctx.fillText(
+    "MASUK",
+    W/2,
+    y+110
+  );
+}
+
+
+/* =========================
+   RUMPUT
+========================= */
+
+function drawGrass() {
+
+  ctx.fillStyle = "#55a83f";
+
+  ctx.fillRect(
+    0,
+    0,
+    roadLeft(),
+    H
+  );
+
+  ctx.fillRect(
+    roadRight(),
+    0,
+    W-roadRight(),
+    H
+  );
+}
+
+
+/* =========================
+   JALAN
+========================= */
+
+function drawRoad() {
+
+  ctx.fillStyle = "#454545";
+
+  ctx.fillRect(
+    roadLeft(),
+    0,
+    roadWidth(),
+    H
+  );
+
+  /* garis pinggir */
+
+  ctx.strokeStyle = "white";
+
+  ctx.lineWidth = 5;
+
+  ctx.beginPath();
+
+  ctx.moveTo(roadLeft(),0);
+
+  ctx.lineTo(roadLeft(),H);
+
+  ctx.stroke();
+
+  ctx.beginPath();
+
+  ctx.moveTo(roadRight(),0);
+
+  ctx.lineTo(roadRight(),H);
+
+  ctx.stroke();
+
+
+  /* garis tengah bergerak */
+
+  ctx.strokeStyle = "#ffffff";
+
+  ctx.lineWidth = 4;
+
+  ctx.setLineDash([30,30]);
+
+  ctx.lineDashOffset = roadOffset;
+
+  ctx.beginPath();
+
+  ctx.moveTo(W/2,0);
+
+  ctx.lineTo(W/2,H);
+
+  ctx.stroke();
+
+  ctx.setLineDash([]);
+}
+
+
+/* =========================
+   KURIR
+========================= */
+
+function drawCourier() {
+
+  const x = player.x;
+  const y = player.y;
+
+  /* bayangan */
+
+  ctx.fillStyle = "rgba(0,0,0,.25)";
+
+  ctx.beginPath();
+
+  ctx.ellipse(
+    x+24,
+    y+73,
+    28,
+    7,
+    0,
+    0,
+    Math.PI*2
+  );
+
+  ctx.fill();
+
+
+  /* kaki */
+
+  ctx.fillStyle = "#222";
+
+  ctx.fillRect(
+    x+8,
+    y+55,
+    12,
+    18
+  );
+
+  ctx.fillRect(
+    x+29,
+    y+55,
+    12,
+    18
+  );
+
+
+  /* badan */
+
+  ctx.fillStyle = "#d71920";
+
+  ctx.fillRect(
+    x+8,
+    y+25,
+    34,
+    35
+  );
+
+
+  /* kepala */
+
+  ctx.fillStyle = "#d99463";
+
+  ctx.beginPath();
+
+  ctx.arc(
+    x+25,
+    y+16,
+    14,
+    0,
+    Math.PI*2
+  );
+
+  ctx.fill();
+
+
+  /* topi */
+
+  ctx.fillStyle = "#c9141c";
+
+  ctx.fillRect(
+    x+9,
+    y+3,
+    32,
+    8
+  );
+
+
+  /* kardus */
+
+  ctx.fillStyle = "#b9793c";
+
+  ctx.fillRect(
+    x-9,
+    y+27,
+    23,
+    25
+  );
+
+  ctx.strokeStyle = "#774b25";
+
+  ctx.strokeRect(
+    x-9,
+    y+27,
+    23,
+    25
+  );
+
+  ctx.fillStyle = "#fff";
+
+  ctx.font = "bold 6px Arial";
+
+  ctx.textAlign = "center";
+
+  ctx.fillText(
+    "LION",
+    x+2,
+    y+38
+  );
+
+  ctx.fillText(
+    "PARCEL",
+    x+2,
+    y+46
+  );
+}
+
+
+/* =========================
+   RINTANGAN
+========================= */
+
+function createObstacle() {
+
+  const types = [
+    "🚧",
+    "🛵",
+    "📦",
+    "🪨"
+  ];
+
+  const type =
+    types[
+      Math.floor(Math.random()*types.length)
+    ];
+
+  const margin = 25;
+
+  const x =
+    roadLeft()+margin+
+    Math.random()*
+    (roadWidth()-50);
+
+  obstacles.push({
+    x: x,
+    y: -80,
+    width: 45,
+    height: 45,
+    type: type
+  });
+}
+
+
+function drawObstacles() {
+
+  ctx.textAlign = "center";
+
+  for(const o of obstacles) {
+
+    ctx.font = "40px Arial";
+
+    ctx.fillText(
+      o.type,
+      o.x+o.width/2,
+      o.y+38
+    );
+  }
+}
+
+
+function updateObstacles() {
+
+  for(const o of obstacles) {
+
+    o.y += speed;
+  }
+
+  obstacles =
+    obstacles.filter(
+      o => o.y < H+100
+    );
+
+  obstacleTimer++;
+
+  if(obstacleTimer > 70) {
+
+    createObstacle();
+
+    obstacleTimer = 0;
+  }
+}
+
+
+/* =========================
+   LOMPAT
+========================= */
+
+function jump() {
+
+  if(!player.jumping) {
+
+    player.velocityY = -13;
+
+    player.jumping = true;
+  }
+}
+
+
+function updateJump() {
+
+  if(player.jumping) {
+
+    player.y += player.velocityY;
+
+    player.velocityY += .65;
+
+    if(player.y >= H-170) {
+
+      player.y = H-170;
+
+      player.velocityY = 0;
+
+      player.jumping = false;
+    }
+  }
+}
+
+
+/* =========================
+   GERAK PEMAIN
+========================= */
+
+function updatePlayer() {
+
+  if(keys.left) {
+
+    player.x -= 6;
+  }
+
+  if(keys.right) {
+
+    player.x += 6;
+  }
+
+  if(
+    player.x <
+    roadLeft()+5
+  ) {
+
+    player.x =
+      roadLeft()+5;
+  }
+
+  if(
+    player.x+player.width >
+    roadRight()-5
+  ) {
+
+    player.x =
+      roadRight()-
+      player.width-5;
+  }
+
+  updateJump();
+}
+
+
+/* =========================
+   TABRAKAN
+========================= */
+
+function collision(a,b) {
+
+  const padding = 10;
+
+  return (
+    a.x+padding <
+    b.x+b.width-padding &&
+
+    a.x+a.width-padding >
+    b.x+padding &&
+
+    a.y+padding <
+    b.y+b.height-padding &&
+
+    a.y+a.height-padding >
+    b.y+padding
+  );
+}
+
+
+function checkCollision() {
+
+  for(const o of obstacles) {
+
+    if(collision(player,o)) {
+
+      loseGame();
+
+      return;
+    }
+  }
+}
+
+
+/* =========================
+   GAME LOOP
+========================= */
+
+function gameLoop() {
+
+  if(!playing) return;
+
+  drawSky();
+
+  drawClouds();
+
+  drawGrass();
+
+  drawRoad();
+
+  drawStartHouse();
+
+  drawDestination();
+
+  updatePlayer();
+
+  updateObstacles();
+
+  drawObstacles();
+
+  drawCourier();
+
+  checkCollision();
+
+  roadOffset += speed;
+
+  distance += .035;
+
+  score += 1;
+
+  if(distance >= 100) {
+
+    winGame();
+
+    return;
+  }
+
+  document.getElementById(
+    "distance"
+  ).textContent =
+    Math.floor(distance);
+
+  document.getElementById(
+    "score"
+  ).textContent =
+    score;
+
+  requestAnimationFrame(gameLoop);
+}
+
+
+/* =========================
+   MULAI
+========================= */
+
+function startGame() {
+
+  document.getElementById(
+    "startScreen"
+  ).classList.add("hidden");
+
+  document.getElementById(
+    "winScreen"
+  ).classList.add("hidden");
+
+  document.getElementById(
+    "loseScreen"
+  ).classList.add("hidden");
+
+  obstacles = [];
+
+  score = 0;
+
+  distance = 0;
+
+  speed = 5;
+
+  obstacleTimer = 0;
+
+  resetPlayer();
+
+  playing = true;
+
+  requestAnimationFrame(gameLoop);
+}
+
+
+/* =========================
+   MENANG
+========================= */
+
+function winGame() {
+
+  playing = false;
+
+  document.getElementById(
+    "finalScore"
+  ).textContent = score;
+
+  document.getElementById(
+    "winScreen"
+  ).classList.remove("hidden");
+}
+
+
+/* =========================
+   KALAH
+========================= */
+
+function loseGame() {
+
+  playing = false;
+
+  document.getElementById(
+    "loseScore"
+  ).textContent = score;
+
+  document.getElementById(
+    "loseScreen"
+  ).classList.remove("hidden");
+}
+
+
+/* =========================
+   ULANG
+========================= */
+
+function restartGame() {
+
+  startGame();
+}
+
+
+/* =========================
+   KEYBOARD PC
+========================= */
+
+window.addEventListener(
+  "keydown",
+  function(e) {
+
+    if(e.key === "ArrowLeft") {
+
+      keys.left = true;
+    }
+
+    if(e.key === "ArrowRight") {
+
+      keys.right = true;
+    }
+
+    if(e.key === "ArrowUp" ||
+       e.code === "Space") {
+
+      jump();
+    }
+  }
+);
+
+
+window.addEventListener(
+  "keyup",
+  function(e) {
+
+    if(e.key === "ArrowLeft") {
+
+      keys.left = false;
+    }
+
+    if(e.key === "ArrowRight") {
+
+      keys.right = false;
+    }
+  }
+);
+
+
+/* =========================
+   TOMBOL HP
+========================= */
+
+function holdButton(
+  button,
+  key
+) {
+
+  button.addEventListener(
+    "touchstart",
+    function(e) {
+
+      e.preventDefault();
+
+      keys[key] = true;
+    }
+  );
+
+  button.addEventListener(
+    "touchend",
+    function(e) {
+
+      e.preventDefault();
+
+      keys[key] = false;
+    }
+  );
+
+  button.addEventListener(
+    "mousedown",
+    function() {
+
+      keys[key] = true;
+    }
+  );
+
+  button.addEventListener(
+    "mouseup",
+    function() {
+
+      keys[key] = false;
+    }
+  );
+
+  button.addEventListener(
+    "mouseleave",
+    function() {
+
+      keys[key] = false;
+    }
+  );
+}
+
+
+holdButton(
+  document.getElementById("leftButton"),
+  "left"
+);
+
+holdButton(
+  document.getElementById("rightButton"),
+  "right"
+);
+
+
+document.getElementById(
+  "jump"
+).addEventListener(
+  "touchstart",
+  function(e) {
+
+    e.preventDefault();
+
+    jump();
+  }
+);
+
+
+document.getElementById(
+  "jump"
+).addEventListener(
+  "click",
+  function() {
+
+    jump();
+  }
+);
+
+</script>
+
+</body>
+</html>
