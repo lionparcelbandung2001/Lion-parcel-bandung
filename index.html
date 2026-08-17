@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
 <title>Lion Parcel Raya Barat Cicalengka Bandung</title>
 
@@ -15,7 +19,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #f5f5f5;
+    background: #f3f3f3;
     color: #222;
 }
 
@@ -26,7 +30,11 @@ body {
     padding: 15px;
 }
 
-/* JUDUL */
+
+/* =========================
+   HEADER
+========================= */
+
 .header {
     background: white;
     text-align: center;
@@ -57,61 +65,85 @@ body {
     font-size: 17px;
 }
 
-/* GRID 2 x 3 */
+
+/* =========================
+   GRID 2 x 3
+========================= */
+
 .grid {
     display: grid;
+
     grid-template-columns: 1fr 1fr;
+
     gap: 15px;
 }
 
-/* KOTAK */
+
+/* =========================
+   KOTAK
+========================= */
+
 .box {
     background: white;
+
     padding: 20px;
+
     border-radius: 20px;
+
     text-align: center;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+
+    box-shadow:
+        0 3px 10px rgba(0,0,0,0.08);
+
     min-height: 190px;
 
     display: flex;
+
     flex-direction: column;
+
     justify-content: center;
 }
 
 .box h2 {
     margin: 5px 0 10px;
+
     font-size: 21px;
 }
 
 .box p {
     font-size: 15px;
+
     line-height: 1.5;
 }
 
-/* FOTO */
-.foto {
-    width: 85px;
-    height: 85px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin: 0 auto 10px;
-}
 
-/* TOMBOL */
+/* =========================
+   TOMBOL
+========================= */
+
 .btn {
     display: block;
+
     width: 100%;
+
     padding: 12px;
+
     margin-top: 10px;
 
     border-radius: 30px;
+
     text-decoration: none;
+
     color: white;
+
     font-weight: bold;
+
     font-size: 15px;
 }
 
-/* WARNA TOMBOL */
+
+/* WARNA */
+
 .wa {
     background: #20c968;
 }
@@ -126,27 +158,40 @@ body {
 
 .pickup {
     background: #ffb914;
+
     color: #222;
 }
 
-/* FOOTER */
-.footer {
-    margin-top: 15px;
-    background: white;
-    padding: 20px;
-    text-align: center;
-    border-radius: 20px;
+
+/* =========================
+   FOTO BAWAH
+========================= */
+
+.photo-box {
+    padding: 0;
+
+    overflow: hidden;
+
+    min-height: 190px;
 }
 
-.footer h2 {
-    margin: 5px;
+.photo-box img {
+    width: 100%;
+
+    height: 100%;
+
+    min-height: 190px;
+
+    object-fit: cover;
+
+    display: block;
 }
 
-.footer p {
-    margin: 8px;
-}
 
-/* HP */
+/* =========================
+   HP
+========================= */
+
 @media (max-width: 600px) {
 
     .container {
@@ -154,217 +199,290 @@ body {
     }
 
     .grid {
-        grid-template-columns: 1fr 1fr;
+
+        grid-template-columns:
+        1fr 1fr;
+
         gap: 8px;
     }
 
     .box {
+
         padding: 10px;
+
         min-height: 170px;
+
         border-radius: 18px;
     }
 
     .box h2 {
+
         font-size: 16px;
     }
 
     .box p {
+
         font-size: 13px;
     }
 
     .btn {
+
         font-size: 12px;
+
         padding: 10px 5px;
     }
 
     .header {
+
         padding: 18px 10px;
     }
 
     .header img {
+
         width: 75px;
+
         height: 75px;
     }
 
     .header h1 {
+
         font-size: 22px;
     }
 
     .header h2 {
+
         font-size: 18px;
     }
 
     .header p {
+
         font-size: 14px;
+    }
+
+    .photo-box {
+
+        min-height: 170px;
+    }
+
+    .photo-box img {
+
+        min-height: 170px;
     }
 
 }
 
 </style>
+
 </head>
+
 
 <body>
 
+
 <div class="container">
 
-    <!-- HEADER -->
-    <div class="header">
 
-        <img src="foto.jpg" alt="Lion Parcel">
+<!-- =========================
+     HEADER
+========================= -->
 
-        <h1>KIRIM PAKET AREA BANDUNG</h1>
+<div class="header">
 
-        <h2>NGGAK MAU RIBET?</h2>
+    <img src="foto.jpg"
+         alt="Lion Parcel">
 
-        <p>Tenang, Lion Parcel solusinya!</p>
+    <h1>
+        KIRIM PAKET AREA BANDUNG
+    </h1>
 
-    </div>
+    <h2>
+        NGGAK MAU RIBET?
+    </h2>
 
-
-    <!-- GRID 2 x 3 -->
-    <div class="grid">
-
-        <!-- 1 -->
-        <div class="box">
-
-            <h2>📦 KIRIM PAKET</h2>
-
-            <p>
-                Mau kirim paket dengan mudah?
-                Hubungi kami sekarang.
-            </p>
-
-            <a class="btn wa"
-               href="https://wa.me/6285183090486"
-               target="_blank">
-                💬 CHAT WHATSAPP
-            </a>
-
-        </div>
-
-
-        <!-- 2 -->
-        <div class="box">
-
-            <h2>🚚 GRATIS JEMPUT</h2>
-
-            <p>
-                Mau kirim paket tanpa keluar rumah?
-                Kami siap membantu!
-            </p>
-
-            <a class="btn wa"
-               href="https://wa.me/6285183090486"
-               target="_blank">
-                📱 HUBUNGI KAMI
-            </a>
-
-        </div>
-
-
-        <!-- 3 -->
-        <div class="box">
-
-            <h2>📍 LOKASI KAMI</h2>
-
-            <p>
-                Lion Parcel<br>
-                Raya Barat Cicalengka<br>
-                Bandung
-            </p>
-
-            <a class="btn maps"
-               href="https://maps.app.goo.gl/NwktuMgMbVmp28mw6"
-               target="_blank">
-                📍 GOOGLE MAPS
-            </a>
-
-        </div>
-
-
-        <!-- 4 -->
-        <div class="box">
-
-            <h2>🔎 LACAK PAKET</h2>
-
-            <p>
-                Mau cek posisi paket?
-                Masukkan nomor resi di website resmi Lion Parcel.
-            </p>
-
-            <a class="btn tracking"
-               href="https://lionparcel.com/track/stt"
-               target="_blank">
-                📦 LACAK PAKET
-            </a>
-
-        </div>
-
-
-        <!-- 5 -->
-        <div class="box">
-
-            <h2>⭐ KENAPA KAMI?</h2>
-
-            <p>
-                📦 Pengiriman ke seluruh Indonesia<br>
-                ⚡ Cepat & terpercaya<br>
-                🛡️ Aman sampai tujuan<br>
-                🚚 Gratis jemput paket
-            </p>
-
-        </div>
-
-
-        <!-- 6 -->
-        <div class="box">
-
-            <h2>📱 HUBUNGI KAMI</h2>
-
-            <p>
-                Lion Parcel<br>
-                Raya Barat Cicalengka<br>
-                Bandung
-            </p>
-
-            <a class="btn wa"
-               href="https://wa.me/6285183090486"
-               target="_blank">
-                💬 0851-8309-0486
-            </a>
-
-        </div>
-
-    </div>
-
-
-    <!-- FOOTER -->
-    <div class="footer">
-
-        <h2>LION PARCEL</h2>
-
-        <p>
-            Raya Barat Cicalengka<br>
-            Bandung
-        </p>
-
-        <p>
-            📱 0851-8309-0486
-        </p>
-
-        <a class="btn maps"
-           href="https://maps.app.goo.gl/NwktuMgMbVmp28mw6"
-           target="_blank">
-            📍 BUKA GOOGLE MAPS
-        </a>
-
-    </div>
-
-<p style="text-align:center;">
-        © 2026 Lion Parcel Raya Barat Cicalengka Bandung
+    <p>
+        Tenang, Lion Parcel solusinya!
     </p>
 
 </div>
 
+
+
+<!-- =========================
+     GRID 2 x 3
+========================= -->
+
+<div class="grid">
+
+
+<!-- =========================
+     KIRI ATAS
+     LOKASI
+========================= -->
+
+<div class="box">
+
+    <h2>
+        📍 LOKASI KAMI
+    </h2>
+
+    <p>
+        Lion Parcel<br>
+        Raya Barat Cicalengka<br>
+        Bandung
+    </p>
+
+    <a
+        class="btn maps"
+        href="https://maps.app.goo.gl/NwktuMgMbVmp28mw6"
+        target="_blank">
+
+        📍 GOOGLE MAPS
+
+    </a>
+
+</div>
+
+
+
+<!-- =========================
+     KANAN ATAS
+     GRATIS JEMPUT
+========================= -->
+
+<div class="box">
+
+    <h2>
+        🚚 GRATIS JEMPUT
+    </h2>
+
+    <p>
+        Mau kirim paket tanpa keluar rumah?
+        Kami siap membantu!
+    </p>
+
+    <a
+        class="btn wa"
+        href="https://wa.me/6285183090486"
+        target="_blank">
+
+        💬 HUBUNGI KAMI
+
+    </a>
+
+</div>
+
+
+
+<!-- =========================
+     KIRI TENGAH
+     KENAPA KAMI
+========================= -->
+
+<div class="box">
+
+    <h2>
+        ⭐ KENAPA KAMI?
+    </h2>
+
+    <p>
+
+        📦 Pengiriman ke seluruh Indonesia<br>
+
+        ⚡ Cepat & terpercaya<br>
+
+        🛡️ Aman sampai tujuan<br>
+
+        🚚 Gratis jemput paket
+
+    </p>
+
+</div>
+
+
+
+<!-- =========================
+     KANAN TENGAH
+     TRACKING
+========================= -->
+
+<div class="box">
+
+    <h2>
+        🔎 LACAK PAKET
+    </h2>
+
+    <p>
+
+        Mau cek posisi paket?
+
+        Masukkan nomor resi
+        di website resmi Lion Parcel.
+
+    </p>
+
+    <a
+        class="btn tracking"
+        href="https://lionparcel.com/track/stt"
+        target="_blank">
+
+        📦 LACAK PAKET
+
+    </a>
+
+</div>
+
+
+
+<!-- =========================
+     KIRI BAWAH
+     FOTO LIONPARCEL
+========================= -->
+
+<div class="box photo-box">
+
+    <img
+        src="lionparcel.jpeg"
+        alt="Lion Parcel">
+
+</div>
+
+
+
+<!-- =========================
+     KANAN BAWAH
+     FOTO BERANI
+========================= -->
+
+<div class="box photo-box">
+
+    <img
+        src="berani.jpeg"
+        alt="Berani">
+
+</div>
+
+
+</div>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<p style="
+    text-align:center;
+    margin-top:15px;
+    font-size:14px;
+">
+
+    © 2026 Lion Parcel Raya Barat Cicalengka Bandung/POS101
+
+</p>
+
+
+</div>
+
+
 </body>
+
 </html>
