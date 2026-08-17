@@ -18,161 +18,182 @@ body {
   background: #fff4e8;
   color: #222;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 .container {
-  width: 100%;
-  max-width: 650px;
-  margin: auto;
-  padding: 20px 16px;
-}
-
-/* JUDUL */
-.header {
-  text-align: center;
-  margin-bottom: 18px;
-}
-
-.header h1 {
-  font-size: 32px;
-  font-weight: 900;
-  line-height: 1.05;
-  margin-bottom: 6px;
-}
-
-.header h2 {
-  font-size: 29px;
-  font-weight: 900;
-  color: #f5a900;
-  line-height: 1.05;
-}
-
-.header p {
-  font-size: 17px;
-  margin-top: 10px;
-}
-
-/* IDENTITAS */
-.nama {
-  text-align: center;
-  font-weight: bold;
-  font-size: 17px;
-  margin: 12px 0 18px;
-}
-
-/* KOTAK 2 X 2 */
-.menu {
+  height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   gap: 12px;
+  padding: 12px;
 }
 
-.card {
-  min-height: 145px;
-  border-radius: 20px;
-  padding: 18px 10px;
+/* SEMUA KOTAK */
+.box {
+  border-radius: 24px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   text-align: center;
-  text-decoration: none;
-  color: white;
-  box-shadow: 0 5px 12px rgba(0,0,0,0.12);
-  transition: 0.2s;
+  box-shadow: 0 5px 15px rgba(0,0,0,.12);
 }
 
-.card:active {
-  transform: scale(0.96);
+/* KOTAK KIRI ATAS */
+.hero {
+  background: white;
 }
 
-.icon {
-  font-size: 48px;
+.hero h1 {
+  font-size: clamp(24px, 4vw, 42px);
+  margin-bottom: 8px;
+}
+
+.hero h2 {
+  color: #f2a900;
+  font-size: clamp(22px, 3.5vw, 36px);
+  margin-bottom: 8px;
+}
+
+.hero p {
+  font-size: clamp(14px, 2vw, 20px);
+  margin-bottom: 12px;
+}
+
+.foto {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
   margin-bottom: 10px;
 }
 
-.card h3 {
-  font-size: 19px;
-  font-weight: 900;
-  line-height: 1.15;
+/* TOMBOL */
+.btn {
+  display: block;
+  width: 90%;
+  max-width: 350px;
+  padding: 14px;
+  margin: 5px;
+  border-radius: 14px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
 }
 
-/* WARNA */
 .whatsapp {
-  background: #20c968;
+  background: #20d565;
 }
 
 .tracking {
-  background: #e83232;
-}
-
-.pickup {
-  background: #ffb000;
-  color: #222;
+  background: #e93636;
 }
 
 .maps {
-  background: #287be5;
+  background: #4285f4;
 }
 
-/* INFO */
+/* KOTAK KANAN ATAS */
 .info {
-  margin-top: 16px;
-  background: white;
-  border-radius: 18px;
-  padding: 15px;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  background: #ffb511;
 }
 
-.info strong {
-  display: block;
-  font-size: 18px;
-  margin-bottom: 5px;
+.info h2 {
+  font-size: clamp(22px, 3vw, 34px);
+  margin-bottom: 12px;
 }
 
 .info p {
-  font-size: 14px;
-  line-height: 1.4;
+  font-size: clamp(15px, 2vw, 21px);
+  font-weight: bold;
+  line-height: 1.5;
 }
 
-/* FOOTER */
-.footer {
-  text-align: center;
-  margin-top: 15px;
-  font-size: 12px;
-  color: #777;
+/* KOTAK KIRI BAWAH */
+.keunggulan {
+  background: white;
 }
 
-/* HP KECIL */
-@media (max-width: 380px) {
+.keunggulan h2 {
+  font-size: clamp(22px, 3vw, 32px);
+  margin-bottom: 15px;
+}
+
+.keunggulan p {
+  font-size: clamp(15px, 2vw, 20px);
+  margin: 7px;
+}
+
+/* KOTAK KANAN BAWAH */
+.kontak {
+  background: #f1f1f1;
+}
+
+.kontak h2 {
+  font-size: clamp(22px, 3vw, 32px);
+  margin-bottom: 12px;
+}
+
+.nomor {
+  font-size: clamp(18px, 2.5vw, 28px);
+  font-weight: bold;
+  margin: 10px;
+}
+
+/* HP */
+@media (max-width: 600px) {
 
   .container {
-    padding: 15px 12px;
+    gap: 8px;
+    padding: 8px;
   }
 
-  .header h1 {
-    font-size: 27px;
+  .box {
+    padding: 10px;
+    border-radius: 18px;
   }
 
-  .header h2 {
-    font-size: 24px;
+  .foto {
+    width: 75px;
+    height: 75px;
   }
 
-  .header p {
-    font-size: 15px;
+  .btn {
+    width: 100%;
+    padding: 9px 5px;
+    font-size: 12px;
+    margin: 3px;
   }
 
-  .card {
-    min-height: 125px;
+  .hero h1 {
+    font-size: 19px;
   }
 
-  .icon {
-    font-size: 40px;
+  .hero h2 {
+    font-size: 17px;
   }
 
-  .card h3 {
-    font-size: 16px;
+  .hero p {
+    font-size: 11px;
+  }
+
+  .info h2,
+  .keunggulan h2,
+  .kontak h2 {
+    font-size: 17px;
+  }
+
+  .info p,
+  .keunggulan p {
+    font-size: 11px;
+  }
+
+  .nomor {
+    font-size: 13px;
   }
 }
 </style>
@@ -182,68 +203,112 @@ body {
 
 <div class="container">
 
-  <!-- JUDUL -->
-  <div class="header">
-    <h1>KIRIM PAKET AREA BANDUNG</h1>
+  <!-- KIRI ATAS -->
+  <div class="box hero">
+
+    <img
+      src="IMG-20260813-WA0002.jpg"
+      alt="Lion Parcel"
+      class="foto"
+    >
+
+    <h1>KIRIM PAKET</h1>
     <h2>NGGAK MAU RIBET?</h2>
     <p>Tenang, Lion Parcel solusinya!</p>
-  </div>
 
-  <div class="nama">
-    🦁 Lion Parcel Raya Barat Cicalengka, Bandung
-  </div>
-
-  <!-- MENU 2 X 2 -->
-  <div class="menu">
-
-    <!-- WHATSAPP -->
-    <a class="card whatsapp"
-       href="https://wa.me/6285183090486"
-       target="_blank">
-      <div class="icon">💬</div>
-      <h3>CHAT<br>WHATSAPP</h3>
+    <a
+      class="btn whatsapp"
+      href="https://wa.me/6285183090486"
+      target="_blank">
+      💬 CHAT WHATSAPP
     </a>
 
-    <!-- TRACKING RESI -->
-    <a class="card tracking"
-       href="https://www.lionparcel.com/"
-       target="_blank">
-      <div class="icon">📦</div>
-      <h3>LACAK<br>PAKET</h3>
-    </a>
-
-    <!-- GRATIS JEMPUT -->
-    <a class="card pickup"
-       href="https://wa.me/6285183090486?text=Halo%20Lion%20Parcel%20Raya%20Barat%20Cicalengka,%20saya%20mau%20request%20gratis%20jemput%20paket."
-       target="_blank">
-      <div class="icon">🚚</div>
-      <h3>GRATIS<br>JEMPUT PAKET</h3>
-    </a>
-
-    <!-- MAPS -->
-    <a class="card maps"
-       href="https://maps.app.goo.gl/Ag75G5bT26LoBVXG9"
-       target="_blank">
-      <div class="icon">📍</div>
-      <h3>LOKASI<br>KAMI</h3>
+    <a
+      class="btn tracking"
+      href="https://www.lionparcel.com/"
+      target="_blank">
+      📦 LACAK PAKET
     </a>
 
   </div>
 
-  <!-- INFO -->
-  <div class="info">
-    <strong>📦 Lion Parcel Raya Barat Cicalengka</strong>
+
+  <!-- KANAN ATAS -->
+  <div class="box info">
+
+    <h2>🚚 GRATIS JEMPUT PAKET</h2>
+
     <p>
-      Pengiriman paket dalam & luar negeri<br>
-      Cepat • Aman • Terpercaya
+      Mau kirim paket tanpa keluar rumah?
     </p>
+
+    <p>
+      Kami siap membantu!
+    </p>
+
+    <a
+      class="btn maps"
+      href="https://maps.app.goo.gl/Ag75G5bT26LoBVXG9"
+      target="_blank">
+      📍 LIHAT LOKASI KAMI
+    </a>
+
   </div>
 
-  <div class="footer">
-    © 2026 Lion Parcel Raya Barat Cicalengka, Bandung
+
+  <!-- KIRI BAWAH -->
+  <div class="box keunggulan">
+
+    <h2>KENAPA KIRIM LEWAT KAMI?</h2>
+
+    <p>📦 Pengiriman ke seluruh Indonesia</p>
+    <p>⚡ Cepat & terpercaya</p>
+    <p>🛡️ Aman sampai tujuan</p>
+    <p>🚚 Gratis jemput paket</p>
+
+  </div>
+
+
+  <!-- KANAN BAWAH -->
+  <div class="box kontak">
+
+    <h2>LION PARCEL</h2>
+
+    <p>
+      Raya Barat Cicalengka
+    </p>
+
+    <p>
+      Bandung
+    </p>
+
+    <div class="nomor">
+      📱 0851-8309-0486
+    </div>
+
+    <a
+      class="btn whatsapp"
+      href="https://wa.me/6285183090486"
+      target="_blank">
+      HUBUNGI KAMI
+    </a>
+
+    <a
+      class="btn maps"
+      href="https://maps.app.goo.gl/Ag75G5bT26LoBVXG9"
+      target="_blank">
+      📍 GOOGLE MAPS
+    </a>
+
   </div>
 
 </div>
+
+<footer>
+  © 2026 Lion Parcel Raya Barat Cicalengka Bandung
+  <br>
+  Mitra Resmi Lion Parcel
+</footer>
 
 </body>
 </html>
