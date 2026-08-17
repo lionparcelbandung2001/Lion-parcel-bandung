@@ -18,30 +18,33 @@ body {
   color: #222;
 }
 
+/* =========================
+   CONTAINER
+========================= */
+
 .container {
-  max-width: 1000px;
+  max-width: 900px;
   margin: auto;
-  padding: 14px;
+  padding: 10px;
 }
 
 /* =========================
-   FOTO SAMPUL BESAR
+   FOTO SAMPUL
 ========================= */
 
 .cover {
   width: 100%;
   background: white;
-  border-radius: 28px;
+  border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.10);
-  margin-bottom: 14px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.10);
+  margin-bottom: 10px;
 }
 
 .cover img {
   width: 100%;
   height: auto;
   display: block;
-  object-fit: cover;
 }
 
 /* =========================
@@ -50,28 +53,28 @@ body {
 
 .slogan {
   background: white;
-  border-radius: 20px;
-  padding: 16px 10px;
-  margin-bottom: 14px;
+  border-radius: 16px;
+  padding: 11px 8px;
+  margin-bottom: 10px;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 3px 9px rgba(0,0,0,0.08);
 }
 
 .slogan h1 {
   margin: 0;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: bold;
 }
 
 .slogan h2 {
-  margin: 8px 0;
+  margin: 5px 0;
   color: #d8a900;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .slogan p {
-  margin: 8px 0 0;
-  font-size: 20px;
+  margin: 5px 0 0;
+  font-size: 16px;
 }
 
 /* =========================
@@ -81,7 +84,7 @@ body {
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 14px;
+  gap: 10px;
 }
 
 /* =========================
@@ -90,22 +93,22 @@ body {
 
 .box {
   background: white;
-  border-radius: 22px;
-  padding: 18px;
+  border-radius: 17px;
+  padding: 13px 10px;
   text-align: center;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.10);
-  min-height: 250px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.09);
+  min-height: 210px;
 }
 
 .box h2 {
-  margin: 0 0 20px;
-  font-size: 25px;
+  margin: 0 0 13px;
+  font-size: 20px;
 }
 
 .box p {
-  font-size: 20px;
-  line-height: 1.5;
-  margin: 10px 0 20px;
+  font-size: 16px;
+  line-height: 1.45;
+  margin: 8px 0 14px;
 }
 
 /* =========================
@@ -115,13 +118,13 @@ body {
 .btn {
   display: block;
   width: 100%;
-  padding: 14px 8px;
-  border-radius: 30px;
+  padding: 11px 6px;
+  border-radius: 25px;
   text-decoration: none;
   color: white;
   font-weight: bold;
-  font-size: 18px;
-  margin-top: 18px;
+  font-size: 15px;
+  margin-top: 12px;
 }
 
 .maps {
@@ -141,15 +144,15 @@ body {
 ========================= */
 
 .photo-box {
-  padding: 14px;
+  padding: 10px;
   min-height: auto;
 }
 
 .photo-box img {
   width: 100%;
-  height: 300px;
+  height: 240px;
   object-fit: cover;
-  border-radius: 18px;
+  border-radius: 14px;
   display: block;
 }
 
@@ -159,8 +162,8 @@ body {
 
 footer {
   text-align: center;
-  font-size: 16px;
-  padding: 25px 10px 15px;
+  font-size: 13px;
+  padding: 18px 8px 10px;
 }
 
 /* =========================
@@ -170,57 +173,67 @@ footer {
 @media (max-width: 600px) {
 
   .container {
-    padding: 10px;
+    padding: 7px;
   }
 
   .grid {
     grid-template-columns: 1fr 1fr;
-    gap: 12px;
+    gap: 8px;
   }
 
   .slogan {
-    padding: 14px 8px;
+    padding: 10px 6px;
+    margin-bottom: 8px;
   }
 
   .slogan h1 {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   .slogan h2 {
-    font-size: 20px;
+    font-size: 17px;
+    margin: 4px 0;
   }
 
   .slogan p {
-    font-size: 17px;
+    font-size: 14px;
   }
 
   .box {
-    padding: 14px 10px;
-    border-radius: 20px;
-    min-height: 250px;
+    padding: 11px 7px;
+    border-radius: 15px;
+    min-height: 200px;
   }
 
   .box h2 {
-    font-size: 21px;
-    margin-bottom: 18px;
+    font-size: 17px;
+    margin-bottom: 12px;
   }
 
   .box p {
-    font-size: 17px;
-    line-height: 1.55;
+    font-size: 14px;
+    line-height: 1.45;
+    margin: 7px 0 12px;
   }
 
   .btn {
-    font-size: 15px;
-    padding: 13px 5px;
+    font-size: 13px;
+    padding: 10px 4px;
+    margin-top: 10px;
+  }
+
+  .photo-box {
+    padding: 7px;
   }
 
   .photo-box img {
-    height: 280px;
+    height: 220px;
+    border-radius: 12px;
   }
 
   footer {
-    font-size: 14px;
+    font-size: 12px;
+    padding: 15px 5px 8px;
   }
 }
 </style>
@@ -231,13 +244,14 @@ footer {
 <div class="container">
 
   <!-- =========================
-       FOTO SAMPUL BESAR
+       FOTO SAMPUL
   ========================== -->
 
   <div class="cover">
     <img src="foto.jpg"
          alt="Lion Parcel Raya Barat Cicalengka Bandung">
   </div>
+
 
   <!-- =========================
        SLOGAN
@@ -253,13 +267,15 @@ footer {
 
   </div>
 
+
   <!-- =========================
-       2 KOLOM × 2 BARIS
+       2 KOLOM × 3 BARIS
   ========================== -->
 
   <div class="grid">
 
     <!-- LOKASI -->
+
     <div class="box">
 
       <h2>📍 LOKASI KAMI</h2>
@@ -283,6 +299,7 @@ footer {
 
 
     <!-- GRATIS JEMPUT -->
+
     <div class="box">
 
       <h2>🚚 GRATIS JEMPUT</h2>
@@ -306,6 +323,7 @@ footer {
 
 
     <!-- KENAPA KAMI -->
+
     <div class="box">
 
       <h2>⭐ KENAPA KAMI?</h2>
@@ -321,6 +339,7 @@ footer {
 
 
     <!-- TRACKING -->
+
     <div class="box">
 
       <h2>🔎 LACAK PAKET</h2>
@@ -344,6 +363,7 @@ footer {
 
 
     <!-- FOTO BAWAH KIRI -->
+
     <div class="box photo-box">
 
       <img
@@ -354,6 +374,7 @@ footer {
 
 
     <!-- FOTO BAWAH KANAN -->
+
     <div class="box photo-box">
 
       <img
@@ -365,10 +386,12 @@ footer {
   </div>
 
 
-  <!-- FOOTER -->
+  <!-- =========================
+       FOOTER
+  ========================== -->
 
   <footer>
-    © 2026 by: Lion Parcel Raya Barat Cicalengka/POS101,BANDUNG
+    © 2026 Lion Parcel Raya Barat Cicalengka Bandung/POS101
   </footer>
 
 </div>
