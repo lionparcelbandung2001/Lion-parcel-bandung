@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
 <meta name="description"
-content="Lion Parcel Bandung POS101 - layanan pengiriman paket di Raya Barat Cicalengka, Rancaekek, Bandung.">
+content="Lion Parcel Bandung POS101 - layanan pengiriman paket dalam dan luar negeri.">
 
 <title>Lion Parcel Bandung POS101</title>
 
 <style>
+
+/* =========================
+   DASAR
+========================= */
+
 *{
     box-sizing:border-box;
     margin:0;
@@ -38,7 +46,10 @@ a{
     margin:auto;
 }
 
-/* ================= HEADER ================= */
+
+/* =========================
+   HEADER
+========================= */
 
 header{
     background:#fff;
@@ -75,7 +86,9 @@ header{
 }
 
 
-/* ================= HERO ================= */
+/* =========================
+   HERO
+========================= */
 
 .hero{
     background:
@@ -85,33 +98,33 @@ header{
         rgba(255,255,255,.93) 48%,
         rgba(255,255,255,.35) 100%
     ),
-    url("berani.jpeg");
+    url("lionparcel.jpeg");
 
     background-size:cover;
     background-position:center;
 
-    min-height:440px;
+    min-height:500px;
 
     display:flex;
     align-items:center;
 }
 
 .hero-content{
-    max-width:620px;
+    max-width:650px;
 }
 
 .small-title{
-    color:#e51b23;
+    color:#c71920;
     font-size:14px;
     font-weight:bold;
     letter-spacing:2px;
-    margin-bottom:10px;
+    margin-bottom:12px;
 }
 
 .hero h1{
     font-size:clamp(38px,6vw,65px);
     line-height:1;
-    margin-bottom:18px;
+    margin-bottom:20px;
     font-weight:900;
 }
 
@@ -122,7 +135,7 @@ header{
 .hero p{
     font-size:18px;
     color:#555;
-    max-width:550px;
+    max-width:570px;
     margin-bottom:25px;
 }
 
@@ -134,7 +147,7 @@ header{
 
 .btn{
     display:inline-block;
-    padding:13px 23px;
+    padding:14px 25px;
     border-radius:8px;
     font-weight:bold;
     font-size:14px;
@@ -143,7 +156,7 @@ header{
 
 .btn-red{
     background:#e51b23;
-    color:white;
+    color:#fff;
 }
 
 .btn-red:hover{
@@ -151,9 +164,9 @@ header{
 }
 
 .btn-white{
-    background:white;
+    background:#fff;
     color:#222;
-    border:2px solid #e51b23;
+    border:2px solid #c71920;
 }
 
 .btn:hover{
@@ -161,7 +174,44 @@ header{
 }
 
 
-/* ================= SECTION ================= */
+/* =========================
+   WHATSAPP DI HERO
+========================= */
+
+.hero-whatsapp{
+    margin-top:14px;
+    width:100%;
+}
+
+.hero-whatsapp a{
+    display:block;
+    width:100%;
+    background:#12a86b;
+    color:#fff;
+    text-align:center;
+    padding:13px 18px;
+    border-radius:8px;
+    font-size:14px;
+    font-weight:bold;
+    transition:.2s;
+}
+
+.hero-whatsapp a:hover{
+    background:#0c8f59;
+    transform:translateY(-2px);
+}
+
+.wa-number{
+    font-size:12px;
+    font-weight:normal;
+    opacity:.95;
+    margin-left:5px;
+}
+
+
+/* =========================
+   SECTION
+========================= */
 
 section{
     padding:55px 0;
@@ -193,7 +243,9 @@ section{
 }
 
 
-/* ================= SERVICES ================= */
+/* =========================
+   LAYANAN
+========================= */
 
 .services{
     display:grid;
@@ -239,7 +291,9 @@ section{
 }
 
 
-/* ================= ABOUT ================= */
+/* =========================
+   TENTANG + LOKASI
+========================= */
 
 .about-wrapper{
     display:grid;
@@ -250,7 +304,7 @@ section{
 
 .about-box{
     background:#e51b23;
-    color:white;
+    color:#fff;
     border-radius:12px;
     padding:35px;
 }
@@ -265,7 +319,7 @@ section{
     display:block;
     width:40px;
     height:3px;
-    background:white;
+    background:#fff;
     margin-top:10px;
 }
 
@@ -291,10 +345,12 @@ section{
 }
 
 
-/* ================= LOCATION ================= */
+/* =========================
+   LOKASI
+========================= */
 
 .location-box{
-    background:white;
+    background:#fff;
     border-radius:12px;
     padding:30px;
     box-shadow:0 4px 18px rgba(0,0,0,.07);
@@ -322,7 +378,7 @@ section{
     display:inline-block;
     margin-top:15px;
     background:#e51b23;
-    color:white;
+    color:#fff;
     padding:11px 18px;
     border-radius:7px;
     font-weight:bold;
@@ -330,10 +386,12 @@ section{
 }
 
 
-/* ================= TRACKING ================= */
+/* =========================
+   TRACKING
+========================= */
 
 .tracking{
-    background:white;
+    background:#fff;
     border-radius:12px;
     padding:35px;
     box-shadow:0 4px 18px rgba(0,0,0,.06);
@@ -396,7 +454,9 @@ section{
 }
 
 
-/* ================= CONTACT ================= */
+/* =========================
+   KONTAK
+========================= */
 
 .contact-grid{
     display:grid;
@@ -428,7 +488,9 @@ section{
 }
 
 
-/* ================= FOOTER ================= */
+/* =========================
+   FOOTER
+========================= */
 
 footer{
     background:#191c1f;
@@ -476,7 +538,9 @@ footer li{
 }
 
 
-/* ================= TABLET ================= */
+/* =========================
+   TABLET
+========================= */
 
 @media(max-width:850px){
 
@@ -494,7 +558,7 @@ footer li{
     }
 
     .hero{
-        min-height:430px;
+        min-height:470px;
     }
 
     .hero h1{
@@ -534,7 +598,9 @@ footer li{
 }
 
 
-/* ================= HP ================= */
+/* =========================
+   HP
+========================= */
 
 @media(max-width:500px){
 
@@ -552,38 +618,58 @@ footer li{
     }
 
     .hero{
-        min-height:430px;
-
-        padding:35px 0;
+        min-height:520px;
+        padding:40px 0;
 
         background:
         linear-gradient(
-            rgba(255,255,255,.93),
-            rgba(255,255,255,.96)
+            rgba(255,255,255,.94),
+            rgba(255,255,255,.97)
         ),
-        url("lionparcel.jpeg");
+        url("berani.jpeg");
 
         background-size:cover;
         background-position:center;
     }
 
+    .small-title{
+        font-size:12px;
+        letter-spacing:1.5px;
+    }
+
     .hero h1{
-        font-size:35px;
+        font-size:37px;
     }
 
     .hero p{
         font-size:14px;
+        margin-bottom:22px;
     }
 
     .hero-buttons{
         display:grid;
         grid-template-columns:1fr 1fr;
+        gap:10px;
     }
 
     .btn{
         text-align:center;
-        padding:12px 8px;
+        padding:13px 7px;
         font-size:12px;
+    }
+
+    .hero-whatsapp{
+        margin-top:12px;
+    }
+
+    .hero-whatsapp a{
+        padding:13px 10px;
+        font-size:13px;
+    }
+
+    .wa-number{
+        display:block;
+        margin:2px 0 0;
     }
 
     .section-title h2{
@@ -639,24 +725,27 @@ footer li{
     .footer-logo{
         width:160px;
     }
+
 }
+
 </style>
+
 </head>
 
 
 <body>
 
 
-<!-- ================================================= -->
-<!-- HEADER -->
-<!-- ================================================= -->
+<!-- ==================================================
+     HEADER
+================================================== -->
 
 <header>
 
 <div class="container navbar">
 
     <img
-        src="lionparcel.jpeg"
+        src="foto.jpg"
         alt="Lion Parcel"
         class="logo"
     >
@@ -691,9 +780,9 @@ footer li{
 
 
 
-<!-- ================================================= -->
-<!-- HERO -->
-<!-- ================================================= -->
+<!-- ==================================================
+     HERO
+================================================== -->
 
 <section
     class="hero"
@@ -704,8 +793,11 @@ footer li{
 
 <div class="hero-content">
 
+
     <div class="small-title">
+
         LION PARCEL • BANDUNG POS101
+
     </div>
 
 
@@ -721,16 +813,15 @@ footer li{
 
     <p>
 
-        Solusi pengiriman paket dari
-        Raya Barat Cicalengka,
-        Rancaekek, Bandung.
-
-        Praktis, mudah dan terpercaya.
+        Solusi pengiriman paket cepat dan hemat.
 
     </p>
 
 
+    <!-- TOMBOL UTAMA -->
+
     <div class="hero-buttons">
+
 
         <a
             href="https://lionparcel.com/track"
@@ -753,7 +844,29 @@ footer li{
 
         </a>
 
+
     </div>
+
+
+    <!-- WHATSAPP DI SINI -->
+
+    <div class="hero-whatsapp">
+
+        <a
+            href="https://wa.me/6285183090486"
+            target="_blank"
+        >
+
+            💬 HUBUNGI KAMI VIA WHATSAPP
+
+            <span class="085183090486">
+                085183090486
+            </span>
+
+        </a>
+
+    </div>
+
 
 </div>
 
@@ -763,9 +876,9 @@ footer li{
 
 
 
-<!-- ================================================= -->
-<!-- LAYANAN -->
-<!-- ================================================= -->
+<!-- ==================================================
+     LAYANAN
+================================================== -->
 
 <section id="layanan">
 
@@ -789,80 +902,79 @@ footer li{
 <div class="services">
 
 
-<div class="service">
+    <div class="service">
 
-    <div class="service-icon">
-        📦
+        <div class="service-icon">
+            📦
+        </div>
+
+        <h3>
+            PENGIRIMAN PAKET
+        </h3>
+
+        <p>
+            Kirim paket ke berbagai wilayah
+            dalam dan luar negeri.
+        </p>
+
     </div>
 
-    <h3>
-        PENGIRIMAN PAKET
-    </h3>
-
-    <p>
-        Kirim paket ke berbagai wilayah
-        Indonesia melalui layanan
-        Lion Parcel.
-    </p>
-
-</div>
 
 
+    <div class="service">
 
-<div class="service">
+        <div class="service-icon">
+            📄
+        </div>
 
-    <div class="service-icon">
-        📄
+        <h3>
+            PENGIRIMAN DOKUMEN
+        </h3>
+
+        <p>
+            Solusi pengiriman dokumen penting
+            dengan praktis dan aman.
+        </p>
+
     </div>
 
-    <h3>
-        PENGIRIMAN DOKUMEN
-    </h3>
-
-    <p>
-        Solusi pengiriman dokumen penting
-        dengan praktis dan aman.
-    </p>
-
-</div>
 
 
+    <div class="service">
 
-<div class="service">
+        <div class="service-icon">
+            🚚
+        </div>
 
-    <div class="service-icon">
-        🚚
+        <h3>
+            JEMPUT PAKET
+        </h3>
+
+        <p>
+            Hubungi kami untuk menanyakan
+            ketersediaan layanan jemput paket.
+        </p>
+
     </div>
 
-    <h3>
-        JEMPUT PAKET
-    </h3>
-
-    <p>
-        Hubungi kami untuk menanyakan
-        ketersediaan layanan jemput paket.
-    </p>
-
-</div>
 
 
+    <div class="service">
 
-<div class="service">
+        <div class="service-icon">
+            🛡️
+        </div>
 
-    <div class="service-icon">
-        🛡️
+        <h3>
+            AMAN & TERPERCAYA
+        </h3>
+
+        <p>
+            Paket diproses melalui jaringan
+            layanan Lion Parcel.
+        </p>
+
     </div>
-
-    <h3>
-        AMAN & TERPERCAYA
-    </h3>
-
-    <p>
-        Paket diproses melalui jaringan
-        layanan Lion Parcel.
-    </p>
-
-</div>
 
 
 </div>
@@ -873,9 +985,9 @@ footer li{
 
 
 
-<!-- ================================================= -->
-<!-- TENTANG + LOKASI -->
-<!-- ================================================= -->
+<!-- ==================================================
+     TENTANG + LOKASI
+================================================== -->
 
 <section id="tentang">
 
@@ -884,161 +996,159 @@ footer li{
 <div class="about-wrapper">
 
 
-<!-- TENTANG -->
+    <!-- TENTANG KAMI -->
 
-<div class="about-box">
+    <div class="about-box">
 
-    <h2>
-        TENTANG KAMI
-    </h2>
-
-
-    <p>
-
-        <strong>
-            Lion Parcel Bandung POS101
-        </strong>
-
-        melayani kebutuhan pengiriman
-        paket dari wilayah Raya Barat
-        Cicalengka, Nanjung Mekar,
-        Rancaekek, Bandung.
-
-    </p>
+        <h2>
+            TENTANG KAMI
+        </h2>
 
 
-    <p style="margin-top:12px;">
-
-        Kami berkomitmen memberikan
-        informasi pengiriman yang mudah
-        diakses serta pelayanan yang
-        praktis bagi pelanggan.
-
-    </p>
-
-
-    <div class="about-points">
-
-
-        <div class="point">
-
-            <div style="font-size:28px;">
-                ✓
-            </div>
+        <p>
 
             <strong>
-                MUDAH
+                Lion Parcel Bandung POS101
             </strong>
 
-        </div>
+            melayani kebutuhan pengiriman
+            dalam dan luar negeri dari bandung.
+
+        </p>
 
 
-        <div class="point">
+        <p style="margin-top:12px;">
 
-            <div style="font-size:28px;">
-                ⚡
+            Kami berkomitmen memberikan
+            informasi pengiriman yang mudah
+            diakses serta pelayanan yang
+            praktis bagi pelanggan.
+
+        </p>
+
+
+        <div class="about-points">
+
+
+            <div class="point">
+
+                <div style="font-size:28px;">
+                    ✓
+                </div>
+
+                <strong>
+                    MUDAH
+                </strong>
+
             </div>
 
-            <strong>
-                PRAKTIS
-            </strong>
 
-        </div>
+            <div class="point">
 
+                <div style="font-size:28px;">
+                    ⚡
+                </div>
 
-        <div class="point">
+                <strong>
+                    PRAKTIS
+                </strong>
 
-            <div style="font-size:28px;">
-                🛡️
             </div>
 
-            <strong>
-                AMAN
-            </strong>
 
-        </div>
+            <div class="point">
 
+                <div style="font-size:28px;">
+                    🛡️
+                </div>
 
-        <div class="point">
+                <strong>
+                    AMAN
+                </strong>
 
-            <div style="font-size:28px;">
-                🤝
             </div>
 
-            <strong>
-                TERPERCAYA
-            </strong>
+
+            <div class="point">
+
+                <div style="font-size:28px;">
+                    🤝
+                </div>
+
+                <strong>
+                    TERPERCAYA
+                </strong>
+
+            </div>
+
 
         </div>
-
-
-    </div>
-
-</div>
-
-
-
-<!-- LOKASI -->
-
-<div
-    class="location-box"
-    id="lokasi"
->
-
-    <h2>
-        📍 LOKASI KAMI
-    </h2>
-
-
-    <div class="address">
-
-        <strong>
-            Lion Parcel Bandung POS101
-        </strong>
-
-        <br><br>
-
-        Jl. Raya Barat Cicalengka
-        RT 1 RW 1,
-
-        <br>
-
-        Nanjung Mekar,
-        Rancaekek,
-
-        <br>
-
-        Bandung, Jawa Barat
 
     </div>
 
 
-    <iframe
 
-        class="map"
+    <!-- LOKASI -->
 
-        src="https://www.google.com/maps?q=Jl.+Raya+Barat+Cicalengka+RT+1+RW+1+Nanjung+Mekar+Rancaekek+Bandung&output=embed"
+    <div
+        class="location-box"
+        id="lokasi"
+    >
 
-        loading="lazy"
-
-        title="Lokasi Lion Parcel Bandung POS101">
-
-    </iframe>
+        <h2>
+            📍 LOKASI KAMI
+        </h2>
 
 
-    <a
+        <div class="address">
 
-        class="map-button"
+            <strong>
+                Lion Parcel Bandung POS101
+            </strong>
 
-        target="_blank"
+            <br><br>
 
-        href="https://www.google.com/maps/search/?api=1&query=Jl.+Raya+Barat+Cicalengka+RT+1+RW+1+Nanjung+Mekar+Rancaekek+Bandung">
+            Jl. Raya Barat Cicalengka
+            RT 1 RW 1,
 
-        📍 BUKA DI GOOGLE MAPS
+            <br>
 
-    </a>
+            Nanjung Mekar,
+            Rancaekek,
 
-</div>
+            <br>
+
+            Bandung, Jawa Barat
+
+        </div>
+
+
+        <iframe
+
+            class="map"
+
+            src="https://www.google.com/maps?q=Jl.+Raya+Barat+Cicalengka+RT+1+RW+1+Nanjung+Mekar+Rancaekek+Bandung&output=embed"
+
+            loading="lazy"
+
+            title="Lokasi Lion Parcel Bandung POS101">
+
+        </iframe>
+
+
+        <a
+
+            class="map-button"
+
+            target="_blank"
+
+            href="https://www.google.com/maps/search/?api=1&query=Jl.+Raya+Barat+Cicalengka+RT+1+RW+1+Nanjung+Mekar+Rancaekek+Bandung">
+
+            📍 BUKA DI GOOGLE MAPS
+
+        </a>
+
+    </div>
 
 
 </div>
@@ -1049,9 +1159,9 @@ footer li{
 
 
 
-<!-- ================================================= -->
-<!-- TRACKING -->
-<!-- ================================================= -->
+<!-- ==================================================
+     TRACKING
+================================================== -->
 
 <section id="tracking">
 
@@ -1063,58 +1173,51 @@ footer li{
 <div class="tracking-content">
 
 
-<div class="tracking-text">
+    <div class="tracking-text">
 
-    <h2>
-        🔎 LACAK PAKET ANDA
-    </h2>
-
-
-    <p>
-
-        Cek status pengiriman paket Anda
-        melalui halaman tracking resmi
-        Lion Parcel.
-
-    </p>
-
-</div>
+        <h2>
+            🔎 LACAK PAKET ANDA
+        </h2>
 
 
+        <p>
 
-<div class="tracking-button">
+            Cek status pengiriman paket Anda
+            melalui halaman tracking resmi
+            Lion Parcel.
 
+        </p>
 
-    <!-- TOMBOL LACAK -->
-
-    <a
-
-        href="https://lionparcel.com/track"
-
-        target="_blank"
-
-        class="track-btn">
-
-        📦 LACAK PAKET
-
-    </a>
+    </div>
 
 
 
-    <a
-
-        href="https://wa.me/6285183090486"
-
-        target="_blank"
-
-        class="wa-button">
-
-        💬 HUBUNGI VIA WHATSAPP
-
-    </a>
+    <div class="tracking-button">
 
 
-</div>
+        <a
+            href="https://lionparcel.com/track"
+            target="_blank"
+            class="track-btn"
+        >
+
+            📦 LACAK PAKET
+
+        </a>
+
+
+        <a
+            href="https://wa.me/6285183090486"
+            target="_blank"
+            class="wa-button"
+        >
+
+            💬 WHATSAPP
+
+        </a>
+
+
+    </div>
 
 
 </div>
@@ -1127,9 +1230,9 @@ footer li{
 
 
 
-<!-- ================================================= -->
-<!-- KONTAK -->
-<!-- ================================================= -->
+<!-- ==================================================
+     KONTAK
+================================================== -->
 
 <section id="kontak">
 
@@ -1153,71 +1256,71 @@ footer li{
 <div class="contact-grid">
 
 
-<div class="contact-card">
+    <div class="contact-card">
 
-    <div class="icon">
-        🕐
+        <div class="icon">
+            🕐
+        </div>
+
+        <h3>
+            JAM OPERASIONAL
+        </h3>
+
+        <p>
+
+            Senin - Sabtu
+            <br>
+
+            08.00 - 17.00 WIB
+
+        </p>
+
     </div>
 
-    <h3>
-        JAM OPERASIONAL
-    </h3>
-
-    <p>
-
-        Senin - Sabtu
-        <br>
-
-        08.00 - 17.00 WIB
-
-    </p>
-
-</div>
 
 
+    <div class="contact-card">
 
-<div class="contact-card">
+        <div class="icon">
+            📍
+        </div>
 
-    <div class="icon">
-        📍
+        <h3>
+            ALAMAT
+        </h3>
+
+        <p>
+
+            Raya Barat Cicalengka
+            <br>
+
+            Nanjung Mekar,
+            Rancaekek
+
+        </p>
+
     </div>
 
-    <h3>
-        ALAMAT
-    </h3>
-
-    <p>
-
-        Raya Barat Cicalengka
-        <br>
-
-        Nanjung Mekar,
-        Rancaekek
-
-    </p>
-
-</div>
 
 
+    <div class="contact-card">
 
-<div class="contact-card">
+        <div class="icon">
+            💬
+        </div>
 
-    <div class="icon">
-        💬
+        <h3>
+            WHATSAPP
+        </h3>
+
+        <p>
+
+            Hubungi kami melalui
+            WhatsApp.
+
+        </p>
+
     </div>
-
-    <h3>
-        WHATSAPP
-    </h3>
-
-    <p>
-
-        Hubungi kami melalui
-        WhatsApp.
-
-    </p>
-
-</div>
 
 
 </div>
@@ -1228,9 +1331,9 @@ footer li{
 
 
 
-<!-- ================================================= -->
-<!-- FOOTER -->
-<!-- ================================================= -->
+<!-- ==================================================
+     FOOTER
+================================================== -->
 
 <footer>
 
@@ -1240,106 +1343,104 @@ footer li{
 <div class="footer-grid">
 
 
-<div>
+    <div>
 
-    <img
-
-        src="lionparcel.jpeg"
-
-        class="footer-logo"
-
-        alt="Lion Parcel">
+        <img
+            src="lionparcel.jpeg"
+            class="footer-logo"
+            alt="Lion Parcel"
+        >
 
 
-    <p>
-        Lion Parcel Bandung POS101
-    </p>
+        <p>
+            Lion Parcel Bandung POS101
+        </p>
 
 
-    <p style="margin-top:8px;">
+        <p style="margin-top:8px;">
 
-        Solusi pengiriman paket Anda
-        dari Raya Barat Cicalengka.
+            Solusi pengiriman paket Anda
+            dari Raya Barat Cicalengka.
 
-    </p>
+        </p>
 
-</div>
+    </div>
 
 
 
-<div>
+    <div>
 
-    <h3>
-        LINK CEPAT
-    </h3>
-
-
-    <ul>
-
-        <li>
-            <a href="#beranda">
-                Beranda
-            </a>
-        </li>
-
-        <li>
-            <a href="#layanan">
-                Layanan
-            </a>
-        </li>
-
-        <li>
-            <a href="#tentang">
-                Tentang Kami
-            </a>
-        </li>
-
-        <li>
-            <a href="#lokasi">
-                Lokasi
-            </a>
-        </li>
-
-        <li>
-            <a href="#tracking">
-                Lacak Paket
-            </a>
-        </li>
-
-    </ul>
-
-</div>
+        <h3>
+            LINK CEPAT
+        </h3>
 
 
+        <ul>
 
-<div>
+            <li>
+                <a href="#beranda">
+                    Beranda
+                </a>
+            </li>
 
-    <h3>
-        LAYANAN
-    </h3>
+            <li>
+                <a href="#layanan">
+                    Layanan
+                </a>
+            </li>
+
+            <li>
+                <a href="#tentang">
+                    Tentang Kami
+                </a>
+            </li>
+
+            <li>
+                <a href="#lokasi">
+                    Lokasi
+                </a>
+            </li>
+
+            <li>
+                <a href="#tracking">
+                    Lacak Paket
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
 
 
-    <ul>
 
-        <li>
-            ✓ Pengiriman Paket
-        </li>
+    <div>
 
-        <li>
-            ✓ Pengiriman Dokumen
-        </li>
+        <h3>
+            LAYANAN
+        </h3>
 
-        <li>
-            ✓ Jemput Paket
-        </li>
 
-        <li>
-            ✓ Informasi Agen
-        </li>
+        <ul>
 
-    </ul>
+            <li>
+                ✓ Pengiriman Paket
+            </li>
 
-</div>
+            <li>
+                ✓ Pengiriman Dokumen
+            </li>
+
+            <li>
+                ✓ Jemput Paket
+            </li>
+
+            <li>
+                ✓ Informasi Agen
+            </li>
+
+        </ul>
+
+    </div>
 
 
 </div>
@@ -1348,7 +1449,7 @@ footer li{
 
 <div class="copyright">
 
-    © 2026 by: Lion Parcel RAYA BARAT CICALENGKA-POS101.
+    © 2026 by:Lion Parcel raya barat cicalengka-POS101.
     All Rights Reserved.
 
 </div>
