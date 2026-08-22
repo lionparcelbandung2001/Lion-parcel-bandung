@@ -12,20 +12,13 @@
      SEO UTAMA
 ========================= -->
 
-<title>Lion Parcel Bandung POS101 | Cicalengka & Rancaekek</title>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0XGE0ZG2JN"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-0XGE0ZG2JN');
-</script>
+<title>Lion Parcel Bandung POS101 | Cicalengka, Rancaekek & Bandung</title>
+
 <meta name="description"
-      content="Lion Parcel Bandung POS101 melayani pengiriman paket dan dokumen dari Cicalengka, Rancaekek, Bandung, Jawa Barat. Lacak paket dan hubungi kami via WhatsApp.">
+      content="Lion Parcel Bandung POS101 melayani pengiriman paket dan dokumen untuk Cicalengka, Rancaekek, Bandung dan wilayah Jawa Barat. Layanan pengiriman untuk pribadi, UMKM dan perusahaan.">
 
 <meta name="keywords"
-      content="Lion Parcel Bandung, Lion Parcel Cicalengka, Lion Parcel Rancaekek, ekspedisi Cicalengka, kirim paket Bandung, Lion Parcel POS101">
+      content="Lion Parcel Bandung, Lion Parcel Cicalengka, Lion Parcel Rancaekek, Lion Parcel Jawa Barat, ekspedisi Bandung, ekspedisi Cicalengka, ekspedisi Rancaekek, kirim paket Bandung, pengiriman perusahaan Bandung, pengiriman dokumen perusahaan, jasa ekspedisi perusahaan">
 
 <meta name="author"
       content="Lion Parcel Bandung POS101">
@@ -41,6 +34,26 @@
 
 
 <!-- =========================
+     GOOGLE ANALYTICS
+========================= -->
+
+<script async
+src="https://www.googletagmanager.com/gtag/js?id=G-0XGE0ZG2JN"></script>
+
+<script>
+window.dataLayer = window.dataLayer || [];
+
+function gtag(){
+    dataLayer.push(arguments);
+}
+
+gtag('js', new Date());
+
+gtag('config', 'G-0XGE0ZG2JN');
+</script>
+
+
+<!-- =========================
      OPEN GRAPH
 ========================= -->
 
@@ -48,10 +61,10 @@
       content="website">
 
 <meta property="og:title"
-      content="Lion Parcel Bandung POS101 | Cicalengka & Rancaekek">
+      content="Lion Parcel Bandung POS101 | Cicalengka, Rancaekek & Bandung">
 
 <meta property="og:description"
-      content="Layanan pengiriman paket dan dokumen dari Cicalengka, Rancaekek, Bandung. Lacak paket dan hubungi Lion Parcel Bandung POS101.">
+      content="Layanan pengiriman paket dan dokumen dari Cicalengka, Rancaekek, Bandung dan wilayah Jawa Barat.">
 
 <meta property="og:url"
       content="https://lionparcel-bandung.com/">
@@ -64,7 +77,7 @@
 
 
 <!-- =========================
-     TWITTER / SOCIAL
+     TWITTER
 ========================= -->
 
 <meta name="twitter:card"
@@ -74,7 +87,7 @@
       content="Lion Parcel Bandung POS101">
 
 <meta name="twitter:description"
-      content="Layanan pengiriman paket dan dokumen dari Cicalengka, Rancaekek, Bandung.">
+      content="Layanan pengiriman paket dan dokumen dari Cicalengka, Rancaekek, Bandung dan Jawa Barat.">
 
 <meta name="twitter:image"
       content="https://lionparcel-bandung.com/lionparcel.jpeg">
@@ -101,6 +114,7 @@
   "url": "https://lionparcel-bandung.com/",
   "telephone": "+6285183090486",
   "image": "https://lionparcel-bandung.com/lionparcel.jpeg",
+
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Jl. Raya Barat Cicalengka RT 1 RW 1, Nanjung Mekar",
@@ -108,12 +122,26 @@
     "addressRegion": "Jawa Barat",
     "addressCountry": "ID"
   },
+
   "areaServed": [
-    "Bandung",
-    "Cicalengka",
-    "Rancaekek",
-    "Jawa Barat"
+    {
+      "@type": "City",
+      "name": "Cicalengka"
+    },
+    {
+      "@type": "City",
+      "name": "Rancaekek"
+    },
+    {
+      "@type": "City",
+      "name": "Bandung"
+    },
+    {
+      "@type": "State",
+      "name": "Jawa Barat"
+    }
   ],
+
   "sameAs": []
 }
 </script>
@@ -227,7 +255,7 @@ header{
 
 .hero-content{
     max-width:620px;
-      transform:translateY(-25px);
+    transform:translateY(-25px);
 }
 
 .small-title{
@@ -255,14 +283,14 @@ header{
     line-height:1.3;
     color:#222;
     margin-top:6px;
-      margin-bottom:0;
+    margin-bottom:0;
 }
 
 .hero p{
     font-size:18px;
     color:#555;
     max-width:570px;
-      margin-top:8px;
+    margin-top:8px;
     margin-bottom:25px;
 }
 
@@ -756,15 +784,6 @@ footer li{
 ========================= */
 
 @media(max-width:500px){
-      .hero-whatsapp{
-        width:100vw;
-    }
-
-    .hero-whatsapp a{
-        width:100%;
-    }
-
-}
 
     .container{
         width:100%;
@@ -778,14 +797,11 @@ footer li{
         width:195px;
         height:48px;
     }
-.hero-content {
-        max-width: 100%;
+
+    .hero-content{
+        max-width:100%;
     }
 
-    .hero-whatsapp a {
-        width: 100%;
-        display: block;
-            }
     .hero{
         min-height:520px;
         padding:40px 0;
@@ -833,9 +849,12 @@ footer li{
 
     .hero-whatsapp{
         margin-top:12px;
+        width:100vw;
     }
 
     .hero-whatsapp a{
+        width:100%;
+        display:block;
         padding:13px 10px;
         font-size:13px;
     }
@@ -932,6 +951,8 @@ footer li{
         <a href="#beranda">Beranda</a>
 
         <a href="#layanan">Layanan</a>
+
+        <a href="#area-pelayanan">Area Pelayanan</a>
 
         <a href="#tentang">Tentang Kami</a>
 
@@ -1093,7 +1114,8 @@ footer li{
         <h3>Jemput Paket</h3>
 
         <p>
-            Hubungi kami untuk request jemput paket,kurir kami akan segera merespon.
+            Hubungi kami untuk request jemput paket,
+            kurir kami akan segera merespon.
         </p>
 
     </div>
@@ -1108,6 +1130,96 @@ footer li{
         <p>
             Paket diproses melalui jaringan
             layanan Lion Parcel.
+        </p>
+
+    </div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     AREA PELAYANAN & SEO
+========================= -->
+
+<section id="area-pelayanan">
+
+<div class="container">
+
+<div class="section-title">
+
+    <h2>Area Pelayanan Lion Parcel</h2>
+
+    <p>
+        Melayani kebutuhan pengiriman dari Cicalengka,
+        Rancaekek, Bandung dan wilayah Jawa Barat.
+    </p>
+
+</div>
+
+
+<div class="faq-wrapper">
+
+
+    <div class="faq-item">
+
+        <h3>
+            📍 Lion Parcel Cicalengka
+        </h3>
+
+        <p>
+            Lion Parcel Bandung POS101 melayani pengiriman
+            paket dan dokumen dari wilayah Cicalengka
+            dan sekitarnya.
+        </p>
+
+    </div>
+
+
+    <div class="faq-item">
+
+        <h3>
+            📍 Lion Parcel Rancaekek
+        </h3>
+
+        <p>
+            Melayani kebutuhan pengiriman paket, dokumen
+            dan kebutuhan logistik pelanggan di Rancaekek
+            dan wilayah sekitar Bandung Timur.
+        </p>
+
+    </div>
+
+
+    <div class="faq-item">
+
+        <h3>
+            📍 Lion Parcel Bandung
+        </h3>
+
+        <p>
+            Menjadi salah satu pilihan layanan pengiriman
+            Lion Parcel untuk kebutuhan pengiriman dari
+            wilayah Bandung dan Jawa Barat.
+        </p>
+
+    </div>
+
+
+    <div class="faq-item">
+
+        <h3>
+            🏢 Pengiriman untuk Perusahaan
+        </h3>
+
+        <p>
+            Kami juga melayani kebutuhan pengiriman paket
+            dan dokumen untuk UMKM, toko online dan
+            perusahaan yang membutuhkan layanan ekspedisi.
         </p>
 
     </div>
@@ -1305,7 +1417,7 @@ footer li{
     <h2>Pertanyaan Umum</h2>
 
     <p>
-        Informasi singkat seputar layanan Lion Parcel Bandung POS101
+        Informasi seputar layanan Lion Parcel Bandung POS101
     </p>
 
 </div>
@@ -1317,12 +1429,14 @@ footer li{
     <div class="faq-item">
 
         <h3>
-            📦 Apakah Lion Parcel Bandung POS101 melayani pengiriman paket?
+            📦 Apakah Lion Parcel Bandung POS101 melayani
+            pengiriman paket?
         </h3>
 
         <p>
             Ya, Lion Parcel Bandung POS101 melayani kebutuhan
-            pengiriman paket dan dokumen baik  dalam atau luar negeri.
+            pengiriman paket dan dokumen baik dalam maupun
+            luar negeri.
         </p>
 
     </div>
@@ -1331,12 +1445,13 @@ footer li{
     <div class="faq-item">
 
         <h3>
-            📍 LOKASI KAMI?
+            📍 Di mana lokasi Lion Parcel Bandung POS101?
         </h3>
 
         <p>
-            Lokasi berada di Jl. Raya Barat Cicalengka RT 1 RW 1,
-            Nanjung Mekar, Rancaekek, Bandung, Jawa Barat.
+            Lokasi berada di Jl. Raya Barat Cicalengka
+            RT 1 RW 1, Nanjung Mekar, Rancaekek,
+            Bandung, Jawa Barat.
         </p>
 
     </div>
@@ -1345,11 +1460,42 @@ footer li{
     <div class="faq-item">
 
         <h3>
-            🔎 mau melacak paket?
+            📍 Apakah melayani pelanggan dari Cicalengka
+            dan Rancaekek?
         </h3>
 
         <p>
-            wa kami, dan segera kami bantu melacak paket anda.
+            Ya. Kami melayani pelanggan dari Cicalengka,
+            Rancaekek, Bandung dan wilayah sekitarnya.
+        </p>
+
+    </div>
+
+
+    <div class="faq-item">
+
+        <h3>
+            🏢 Apakah melayani pengiriman untuk perusahaan?
+        </h3>
+
+        <p>
+            Ya. Lion Parcel Bandung POS101 melayani kebutuhan
+            pengiriman paket dan dokumen untuk perusahaan,
+            UMKM, toko online dan pelanggan umum.
+        </p>
+
+    </div>
+
+
+    <div class="faq-item">
+
+        <h3>
+            🔎 Bagaimana cara melacak paket?
+        </h3>
+
+        <p>
+            Pelanggan dapat menggunakan tombol Lacak Paket
+            pada website untuk menuju halaman tracking Lion Parcel.
         </p>
 
     </div>
@@ -1362,8 +1508,22 @@ footer li{
         </h3>
 
         <p>
-            Hubungi Lion Parcel Bandung POS101 melalui WhatsApp
-            pada nomor 0851-8309-0486.
+            Hubungi Lion Parcel Bandung POS101 melalui
+            WhatsApp pada nomor 0851-8309-0486.
+        </p>
+
+    </div>
+
+
+    <div class="faq-item">
+
+        <h3>
+            🚚 Apakah tersedia layanan jemput paket?
+        </h3>
+
+        <p>
+            Hubungi kami melalui WhatsApp untuk mendapatkan
+            informasi mengenai layanan jemput paket.
         </p>
 
     </div>
@@ -1405,7 +1565,7 @@ footer li{
         <h3>JAM OPERASIONAL</h3>
 
         <p>
-            Senin - minggu
+            Senin - Minggu
             <br>
             08.00 - 20.00 WIB
         </p>
@@ -1420,10 +1580,12 @@ footer li{
         <h3>ALAMAT</h3>
 
         <p>
-            lion parcel raya barat cicalengka jl.Raya Barat Cicalengka
+            Lion Parcel Raya Barat Cicalengka
+            <br>
+            Jl. Raya Barat Cicalengka
             <br>
             Nanjung Mekar,
-            Rancaekek,bandung
+            Rancaekek, Bandung
         </p>
 
     </div>
@@ -1497,6 +1659,10 @@ footer li{
             </li>
 
             <li>
+                <a href="#area-pelayanan">Area Pelayanan</a>
+            </li>
+
+            <li>
                 <a href="#tentang">Tentang Kami</a>
             </li>
 
@@ -1529,6 +1695,10 @@ footer li{
 
             <li>✓ Jemput Paket</li>
 
+            <li>✓ Pengiriman untuk UMKM</li>
+
+            <li>✓ Pengiriman untuk Perusahaan</li>
+
             <li>✓ Informasi Agen</li>
 
         </ul>
@@ -1553,4 +1723,4 @@ footer li{
 
 
 </body>
-</html
+</html>
