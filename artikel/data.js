@@ -4,7 +4,7 @@ const artikelData = [
     deskripsi: "Panduan sederhana mengirim paket agar lebih aman sampai tujuan.",
     tanggal: "21 September 2026",
     gambar: "images/cara-kirim-paket.jpg",
-    link: "carakirimpaket.html"
+    link: "carakirimpaket.html",
   }
   {
   judul: "Tips Packing Paket agar Aman Sampai Tujuan",
