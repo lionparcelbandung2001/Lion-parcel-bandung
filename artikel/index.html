@@ -7,12 +7,17 @@
 
   <title>Artikel Lion Parcel Bandung | Tips Kirim Paket & Logistik</title>
 
-  <meta name="description"
-        content="Kumpulan artikel Lion Parcel Bandung tentang tips mengirim paket, packing, pengiriman, dan informasi seputar layanan logistik.">
+  <meta
+    name="description"
+    content="Kumpulan artikel Lion Parcel Bandung tentang tips mengirim paket, packing, pengiriman, dan informasi seputar layanan logistik."
+  >
 
   <meta name="robots" content="index, follow">
 
-  <link rel="canonical" href="https://lionparcel-bandung.com/artikel/">
+  <link
+    rel="canonical"
+    href="https://lionparcel-bandung.com/artikel/"
+  >
 
   <link rel="icon" href="../foto.jpg">
 
@@ -66,7 +71,10 @@
 
     .artikel-list {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(
+        auto-fit,
+        minmax(280px, 1fr)
+      );
       gap: 22px;
     }
 
@@ -75,7 +83,8 @@
       border-radius: 12px;
       overflow: hidden;
       box-shadow: 0 3px 12px rgba(0,0,0,0.08);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      transition: transform 0.2s ease,
+                  box-shadow 0.2s ease;
     }
 
     .artikel-card:hover {
@@ -103,7 +112,7 @@
     .artikel-card h2 {
       margin: 0 0 10px;
       font-size: 21px;
-      color: #222;
+      line-height: 1.4;
     }
 
     .artikel-card p {
@@ -126,6 +135,42 @@
       background: #b9141a;
     }
 
+    /* PAGINATION */
+
+    .pagination {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      margin-top: 35px;
+      flex-wrap: wrap;
+    }
+
+    .pagination button {
+      border: none;
+      background: white;
+      color: #222;
+      padding: 10px 15px;
+      border-radius: 7px;
+      cursor: pointer;
+      font-weight: bold;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .pagination button:hover {
+      background: #eee;
+    }
+
+    .pagination button.active {
+      background: #d71920;
+      color: white;
+    }
+
+    .pagination button:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+
     .kosong {
       background: white;
       padding: 30px;
@@ -144,6 +189,7 @@
     }
 
     @media (max-width: 600px) {
+
       header h1 {
         font-size: 26px;
       }
@@ -151,6 +197,11 @@
       .container {
         padding: 25px 15px;
       }
+
+      .artikel-list {
+        grid-template-columns: 1fr;
+      }
+
     }
   </style>
 </head>
@@ -158,10 +209,14 @@
 <body>
 
 <header>
+
   <h1>Artikel Lion Parcel Bandung</h1>
+
   <p>
-    Tips pengiriman, packing, logistik, dan informasi bermanfaat lainnya.
+    Tips pengiriman, packing, logistik,
+    dan informasi bermanfaat lainnya.
   </p>
+
 </header>
 
 <main class="container">
@@ -171,69 +226,234 @@
   </a>
 
   <div id="artikelList" class="artikel-list">
+
     <div class="kosong">
       Memuat artikel...
     </div>
+
+  </div>
+
+  <div
+    id="pagination"
+    class="pagination">
   </div>
 
 </main>
 
 <footer>
+
   &copy; 2026 Lion Parcel Bandung POS101
+
 </footer>
 
 <script src="data.js"></script>
 
 <script>
-  const container = document.getElementById("artikelList");
 
-  if (typeof artikelData === "undefined" || artikelData.length === 0) {
+  /* =========================================
+     PENGATURAN PAGINATION
+     ========================================= */
 
-    container.innerHTML = `
+  const artikelPerHalaman = 5;
+
+  const artikelList =
+    document.getElementById("artikelList");
+
+  const pagination =
+    document.getElementById("pagination");
+
+
+  /* =========================================
+     AMBIL NOMOR HALAMAN DARI URL
+     ========================================= */
+
+  const params =
+    new URLSearchParams(window.location.search);
+
+  let halaman =
+    parseInt(params.get("page")) || 1;
+
+
+  /* =========================================
+     CEK DATA ARTIKEL
+     ========================================= */
+
+  if (
+    typeof artikelData === "undefined" ||
+    artikelData.length === 0
+  ) {
+
+    artikelList.innerHTML = `
       <div class="kosong">
         Belum ada artikel.
       </div>
     `;
 
+    pagination.innerHTML = "";
+
   } else {
 
-    container.innerHTML = artikelData.map(artikel => `
+    const totalArtikel =
+      artikelData.length;
 
-      <article class="artikel-card">
+    const totalHalaman =
+      Math.ceil(
+        totalArtikel / artikelPerHalaman
+      );
 
-        ${artikel.gambar ? `
-          <img
-            src="${artikel.gambar}"
-            alt="${artikel.judul}"
-            loading="lazy"
-          >
-        ` : ""}
 
-        <div class="artikel-content">
+    /* =========================================
+       JIKA NOMOR HALAMAN TERLALU BESAR
+       ========================================= */
 
-          <div class="artikel-tanggal">
-            ${artikel.tanggal}
+    if (halaman < 1) {
+      halaman = 1;
+    }
+
+    if (halaman > totalHalaman) {
+      halaman = totalHalaman;
+    }
+
+
+    /* =========================================
+       HITUNG ARTIKEL YANG DITAMPILKAN
+       ========================================= */
+
+    const mulai =
+      (halaman - 1) *
+      artikelPerHalaman;
+
+    const selesai =
+      mulai +
+      artikelPerHalaman;
+
+    const artikelHalaman =
+      artikelData.slice(
+        mulai,
+        selesai
+      );
+
+
+    /* =========================================
+       TAMPILKAN ARTIKEL
+       ========================================= */
+
+    artikelList.innerHTML =
+      artikelHalaman.map(artikel => `
+
+        <article class="artikel-card">
+
+          ${
+            artikel.gambar
+              ? `
+                <img
+                  src="${artikel.gambar}"
+                  alt="${artikel.judul}"
+                  loading="lazy"
+                >
+              `
+              : ""
+          }
+
+          <div class="artikel-content">
+
+            <div class="artikel-tanggal">
+              ${artikel.tanggal}
+            </div>
+
+            <h2>
+              ${artikel.judul}
+            </h2>
+
+            <p>
+              ${artikel.deskripsi}
+            </p>
+
+            <a
+              class="btn"
+              href="${artikel.link}"
+            >
+              Baca Artikel →
+            </a>
+
           </div>
 
-          <h2>${artikel.judul}</h2>
+        </article>
 
-          <p>
-            ${artikel.deskripsi}
-          </p>
+      `).join("");
 
-          <a
-            class="btn"
-            href="${artikel.link}"
+
+    /* =========================================
+       BUAT PAGINATION
+       ========================================= */
+
+    if (totalHalaman > 1) {
+
+      let html = "";
+
+
+      /* TOMBOL SEBELUMNYA */
+
+      html += `
+        <button
+          onclick="gantiHalaman(${halaman - 1})"
+          ${halaman === 1 ? "disabled" : ""}
+        >
+          ← Sebelumnya
+        </button>
+      `;
+
+
+      /* NOMOR HALAMAN */
+
+      for (
+        let i = 1;
+        i <= totalHalaman;
+        i++
+      ) {
+
+        html += `
+          <button
+            class="${i === halaman ? "active" : ""}"
+            onclick="gantiHalaman(${i})"
           >
-            Baca Artikel →
-          </a>
+            ${i}
+          </button>
+        `;
 
-        </div>
+      }
 
-      </article>
 
-    `).join("");
+      /* TOMBOL BERIKUTNYA */
+
+      html += `
+        <button
+          onclick="gantiHalaman(${halaman + 1})"
+          ${halaman === totalHalaman ? "disabled" : ""}
+        >
+          Berikutnya →
+        </button>
+      `;
+
+
+      pagination.innerHTML = html;
+
+    }
+
   }
+
+
+  /* =========================================
+     PINDAH HALAMAN
+     ========================================= */
+
+  function gantiHalaman(nomor) {
+
+    window.location.href =
+      "index.html?page=" + nomor;
+
+  }
+
 </script>
 
 </body>
