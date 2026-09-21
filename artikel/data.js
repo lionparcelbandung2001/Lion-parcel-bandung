@@ -11,6 +11,6 @@ const artikelData = [
   deskripsi: "Tips packing paket agar lebih aman sampai tujuan, mulai dari memilih kemasan hingga menutup paket dengan benar.",
   tanggal: "21 September 2026",
   gambar: "",
-  link: "tips-packing.html"
+  link: "tipspacking.html"
 }
 ];
