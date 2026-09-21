@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Video Lion Parcel Bandung — Informasi & Tips Pengiriman</title>
+
+  <meta name="description"
+        content="Kumpulan video terbaru dari channel YouTube resmi Lion Parcel tentang layanan, tips pengiriman, informasi paket, dan berbagai informasi lainnya.">
+
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical"
+        href="https://lionparcel-bandung.com/video/">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      color: #222;
+    }
+
+    header {
+      background: #d71920;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    header h1 {
+      margin: 0 0 10px;
+      font-size: 30px;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    /* KETERANGAN SUMBER VIDEO */
+    .video-notice {
+      background: white;
+      border-left: 5px solid #d71920;
+      padding: 18px 20px;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      line-height: 1.6;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .video-notice strong {
+      display: block;
+      margin-bottom: 7px;
+      font-size: 16px;
+    }
+
+    .video-notice a {
+      color: #d71920;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .video-notice a:hover {
+      text-decoration: underline;
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+    }
+
+    .video-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    }
+
+    .video-frame {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border: 0;
+      display: block;
+    }
+
+    .video-info {
+      padding: 18px;
+    }
+
+    .video-title {
+      margin: 0 0 10px;
+      font-size: 18px;
+      line-height: 1.4;
+    }
+
+    .video-date {
+      color: #777;
+      font-size: 14px;
+    }
+
+    .pagination {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin: 35px 0;
+      flex-wrap: wrap;
+    }
+
+    .pagination button {
+      border: none;
+      background: #d71920;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 7px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .pagination button.active {
+      background: #222;
+    }
+
+    .pagination button:disabled {
+      opacity: 0.5;
+      cursor: default;
+    }
+
+    .loading,
+    .error,
+    .empty {
+      text-align: center;
+      padding: 40px 20px;
+      background: white;
+      border-radius: 12px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: #777;
+      font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
+      .video-grid {
+        grid-template-columns: 1fr;
+      }
+
+      header h1 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Video Lion Parcel</h1>
+  <p>Video terbaru dari channel resmi Lion Parcel</p>
+</header>
+
+<main class="container">
+
+  <!-- KETERANGAN SUMBER VIDEO -->
+  <div class="video-notice">
+
+    <strong>📺 Tentang Video di Halaman Ini</strong>
+
+    Semua video di halaman ini berasal dari channel YouTube resmi
+    Lion Parcel. Kami hanya menampilkan video melalui fitur embed
+    YouTube dan tidak mengunggah atau menyimpan file video tersebut
+    di website ini.
+
+    <br><br>
+
+    Untuk melihat video dan channel aslinya, silakan kunjungi
+    <a
+      href="https://www.youtube.com/@lionparcelid"
+      target="_blank"
+      rel="noopener noreferrer">
+      YouTube resmi Lion Parcel
+    </a>.
+
+  </div>
+
+
+  <!-- STATUS -->
+  <div id="status" class="loading">
+    Memuat video terbaru...
+  </div>
+
+
+  <!-- VIDEO -->
+  <div id="videoGrid" class="video-grid"></div>
+
+
+  <!-- PAGINATION -->
+  <div id="pagination" class="pagination"></div>
+
+</main>
+
+
+<footer>
+  © 2026 Lion Parcel Bandung POS101
+</footer>
+
+
+<script>
+
+  // =========================================================
+  // 🔴 API KEY
+  // =========================================================
+  const API_KEY = "AIzaSyDZEHnsmJ8JsEoCO9CCMCIuHtaJsfB5h-U";
+
+
+  // =========================================================
+  // CHANNEL RESMI LION PARCEL
+  // =========================================================
+  const CHANNEL_ID = "UCFpSdUfuyHJPsiIE99mCnyg";
+
+
+  // =========================================================
+  // UPLOADS PLAYLIST RESMI
+  // =========================================================
+  const UPLOADS_PLAYLIST_ID =
+    "UUFpSdUfuyHJPsiIE99mCnyg";
+
+
+  // =========================================================
+  // PENGATURAN
+  // =========================================================
+  const VIDEO_PER_HALAMAN = 5;
+
+  let semuaVideo = [];
+  let halamanSekarang = 1;
+
+
+  // =========================================================
+  // AMBIL VIDEO DARI YOUTUBE
+  // =========================================================
+  async function ambilVideo() {
+
+    const url =
+      "https://www.googleapis.com/youtube/v3/playlistItems" +
+      "?part=snippet,contentDetails" +
+      "&playlistId=" + UPLOADS_PLAYLIST_ID +
+      "&maxResults=50" +
+      "&key=" + API_KEY;
+
+    try {
+
+      const response = await fetch(url);
+
+      const data = await response.json();
+
+      if (!response.ok) {
+
+        throw new Error(
+          data.error?.message ||
+          "Gagal mengambil data YouTube."
+        );
+
+      }
+
+      semuaVideo = data.items || [];
+
+
+      // Video terbaru selalu berada di atas
+      semuaVideo.sort(function(a, b) {
+
+        return new Date(
+          b.snippet.publishedAt
+        ) - new Date(
+          a.snippet.publishedAt
+        );
+
+      });
+
+
+      document.getElementById(
+        "status"
+      ).style.display = "none";
+
+
+      tampilkanHalaman(1);
+
+    }
+
+    catch (error) {
+
+      console.error(error);
+
+      document.getElementById(
+        "status"
+      ).className = "error";
+
+      document.getElementById(
+        "status"
+      ).innerHTML =
+        "Maaf, video belum dapat dimuat.<br><br>" +
+        "Silakan coba lagi beberapa saat kemudian.";
+
+    }
+
+  }
+
+
+  // =========================================================
+  // TAMPILKAN VIDEO
+  // =========================================================
+  function tampilkanHalaman(halaman) {
+
+    halamanSekarang = halaman;
+
+    const mulai =
+      (halaman - 1) *
+      VIDEO_PER_HALAMAN;
+
+    const selesai =
+      mulai +
+      VIDEO_PER_HALAMAN;
+
+    const videoHalaman =
+      semuaVideo.slice(
+        mulai,
+        selesai
+      );
+
+
+    const grid =
+      document.getElementById(
+        "videoGrid"
+      );
+
+    grid.innerHTML = "";
+
+
+    if (videoHalaman.length === 0) {
+
+      grid.innerHTML =
+        '<div class="empty">Belum ada video.</div>';
+
+      return;
+
+    }
+
+
+    videoHalaman.forEach(function(video) {
+
+      const videoId =
+        video.contentDetails.videoId;
+
+      const judul =
+        video.snippet.title;
+
+      const tanggal =
+        new Date(
+          video.snippet.publishedAt
+        ).toLocaleDateString(
+          "id-ID",
+          {
+            day: "numeric",
+            month: "long",
+            year: "numeric"
+          }
+        );
+
+
+      const card =
+        document.createElement(
+          "article"
+        );
+
+      card.className =
+        "video-card";
+
+
+      card.innerHTML = `
+
+        <iframe
+          class="video-frame"
+          src="https://www.youtube.com/embed/${videoId}"
+          title="${escapeHTML(judul)}"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+
+        <div class="video-info">
+
+          <h2 class="video-title">
+            ${escapeHTML(judul)}
+          </h2>
+
+          <div class="video-date">
+            ${tanggal}
+          </div>
+
+        </div>
+
+      `;
+
+
+      grid.appendChild(card);
+
+    });
+
+
+    buatPagination();
+
+  }
+
+
+  // =========================================================
+  // PAGINATION OTOMATIS
+  // =========================================================
+  function buatPagination() {
+
+    const pagination =
+      document.getElementById(
+        "pagination"
+      );
+
+    pagination.innerHTML = "";
+
+
+    const totalHalaman =
+      Math.ceil(
+        semuaVideo.length /
+        VIDEO_PER_HALAMAN
+      );
+
+
+    if (totalHalaman <= 1) {
+      return;
+    }
+
+
+    // SEBELUMNYA
+    const tombolSebelumnya =
+      document.createElement(
+        "button"
+      );
+
+    tombolSebelumnya.textContent =
+      "← Sebelumnya";
+
+    tombolSebelumnya.disabled =
+      halamanSekarang === 1;
+
+
+    tombolSebelumnya.onclick =
+      function() {
+
+        if (halamanSekarang > 1) {
+
+          tampilkanHalaman(
+            halamanSekarang - 1
+          );
+
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
+
+        }
+
+      };
+
+
+    pagination.appendChild(
+      tombolSebelumnya
+    );
+
+
+    // NOMOR HALAMAN
+    for (
+      let i = 1;
+      i <= totalHalaman;
+      i++
+    ) {
+
+      const tombol =
+        document.createElement(
+          "button"
+        );
+
+      tombol.textContent = i;
+
+
+      if (
+        i === halamanSekarang
+      ) {
+
+        tombol.classList.add(
+          "active"
+        );
+
+      }
+
+
+      tombol.onclick =
+        function() {
+
+          tampilkanHalaman(i);
+
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
+
+        };
+
+
+      pagination.appendChild(
+        tombol
+      );
+
+    }
+
+
+    // BERIKUTNYA
+    const tombolBerikutnya =
+      document.createElement(
+        "button"
+      );
+
+    tombolBerikutnya.textContent =
+      "Berikutnya →";
+
+
+    tombolBerikutnya.disabled =
+      halamanSekarang ===
+      totalHalaman;
+
+
+    tombolBerikutnya.onclick =
+      function() {
+
+        if (
+          halamanSekarang <
+          totalHalaman
+        ) {
+
+          tampilkanHalaman(
+            halamanSekarang + 1
+          );
+
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
+
+        }
+
+      };
+
+
+    pagination.appendChild(
+      tombolBerikutnya
+    );
+
+  }
+
+
+  // =========================================================
+  // AMANKAN JUDUL VIDEO DARI HTML
+  // =========================================================
+  function escapeHTML(text) {
+
+    const div =
+      document.createElement(
+        "div"
+      );
+
+    div.textContent = text;
+
+    return div.innerHTML;
+
+  }
+
+
+  // =========================================================
+  // JALANKAN
+  // =========================================================
+  ambilVideo();
+
+</script>
+
+</body>
+</html>
