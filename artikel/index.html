@@ -14,20 +14,11 @@
     content="Kumpulan artikel Lion Parcel Bandung tentang cara kirim paket, tips packing, pengiriman, logistik, dan informasi bermanfaat seputar pengiriman paket."
   >
 
-  <meta
-    name="robots"
-    content="index, follow"
-  >
+  <meta name="robots" content="index, follow">
 
-  <meta
-    name="googlebot"
-    content="index, follow"
-  >
+  <meta name="googlebot" content="index, follow">
 
-  <meta
-    name="author"
-    content="Lion Parcel Bandung POS101"
-  >
+  <meta name="author" content="Lion Parcel Bandung POS101">
 
   <meta
     name="keywords"
@@ -171,6 +162,38 @@
       max-width: 1100px;
       margin: auto;
       padding: 30px 20px;
+    }
+
+    /* =========================
+       NAVIGASI ANTAR HALAMAN
+    ========================= */
+
+    .page-nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 25px;
+    }
+
+    .page-nav a {
+      display: inline-block;
+      background: white;
+      color: #d71920;
+      border: 1px solid #e5e5e5;
+      padding: 10px 16px;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      transition: 0.2s;
+    }
+
+    .page-nav a:hover {
+      background: #d71920;
+      color: white;
     }
 
     .back {
@@ -323,6 +346,25 @@
       font-size: 14px;
     }
 
+    .footer-nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+      margin-bottom: 15px;
+    }
+
+    .footer-nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .footer-nav a:hover {
+      color: #ff4a4a;
+    }
+
     @media (max-width: 600px) {
 
       header h1 {
@@ -335,6 +377,15 @@
 
       .artikel-list {
         grid-template-columns: 1fr;
+      }
+
+      .page-nav {
+        gap: 7px;
+      }
+
+      .page-nav a {
+        font-size: 12px;
+        padding: 9px 12px;
       }
 
     }
@@ -361,9 +412,34 @@
 
 <main class="container">
 
+
+  <!-- =========================================
+       NAVIGASI 3 HALAMAN
+       ========================================= -->
+
+  <nav
+    class="page-nav"
+    aria-label="Navigasi antar halaman"
+  >
+
+    <a href="../">
+      🏠 Beranda
+    </a>
+
+    <a href="./">
+      📰 Artikel
+    </a>
+
+    <a href="../video/">
+      📺 Video
+    </a>
+
+  </nav>
+
+
   <a
     class="back"
-    href="../index.html"
+    href="../"
   >
     ← Kembali ke Lion Parcel Bandung
   </a>
@@ -424,6 +500,25 @@
 
 
 <footer>
+
+  <nav
+    class="footer-nav"
+    aria-label="Navigasi footer"
+  >
+
+    <a href="../">
+      Beranda
+    </a>
+
+    <a href="./">
+      Artikel
+    </a>
+
+    <a href="../video/">
+      Video
+    </a>
+
+  </nav>
 
   &copy; 2026 Lion Parcel Bandung POS101
 
