@@ -1,8 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- HOMEPAGE -->
   <url>
     <loc>https://www.lionparcel-bandung.com/</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <priority>1.0</priority>
   </url>
+
+  <!-- HALAMAN ARTIKEL -->
+  <url>
+    <loc>https://www.lionparcel-bandung.com/artikel/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ARTIKEL 1 -->
+  <url>
+    <loc>https://www.lionparcel-bandung.com/artikel/carakirimpaket.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ARTIKEL 2 -->
+  <url>
+    <loc>https://www.lionparcel-bandung.com/artikel/tipspacking.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ARTIKEL 3 -->
+  <url>
+    <loc>https://www.lionparcel-bandung.com/artikel/kelebihan-lion-parcel.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- HALAMAN VIDEO -->
+  <url>
+    <loc>https://www.lionparcel-bandung.com/video/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
