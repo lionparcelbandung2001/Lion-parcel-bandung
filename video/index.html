@@ -188,6 +188,38 @@
 
 
     /* =====================================================
+       NAVIGASI ANTAR HALAMAN
+       ===================================================== */
+
+    .page-nav {
+      background: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      padding: 14px 20px;
+      border-bottom: 1px solid #eee;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+
+    .page-nav a {
+      color: #d71920;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 14px;
+      border-radius: 7px;
+    }
+
+
+    .page-nav a:hover {
+      background: #f7f7f7;
+      text-decoration: underline;
+    }
+
+
+    /* =====================================================
        CONTAINER
        ===================================================== */
 
@@ -410,6 +442,17 @@
     }
 
 
+    .footer-nav {
+      margin-bottom: 15px;
+    }
+
+
+    .footer-nav a {
+      margin: 0 8px;
+      font-weight: bold;
+    }
+
+
     /* =====================================================
        MOBILE
        ===================================================== */
@@ -428,6 +471,18 @@
 
       .container {
         padding: 0 15px;
+      }
+
+
+      .page-nav {
+        gap: 4px;
+        padding: 10px;
+      }
+
+
+      .page-nav a {
+        padding: 7px 9px;
+        font-size: 14px;
       }
 
     }
@@ -457,6 +512,31 @@
   </header>
 
 
+  <!-- =====================================================
+       NAVIGASI ANTAR HALAMAN
+       Beranda ↔ Artikel ↔ Video
+       ===================================================== -->
+
+  <nav
+    class="page-nav"
+    aria-label="Navigasi antar halaman"
+  >
+
+    <a href="../">
+      🏠 Beranda
+    </a>
+
+    <a href="../artikel/">
+      📰 Artikel
+    </a>
+
+    <a href="./">
+      📺 Video
+    </a>
+
+  </nav>
+
+
 
   <main class="container">
 
@@ -470,7 +550,7 @@
       aria-label="Breadcrumb"
     >
 
-      <a href="/">
+      <a href="../">
         Beranda
       </a>
 
@@ -504,6 +584,23 @@
       <p>
         Video terbaru akan muncul secara otomatis di bagian
         paling atas ketika tersedia di channel resmi Lion Parcel.
+      </p>
+
+      <p>
+        Selain video, kamu juga dapat membaca
+        <a
+          href="../artikel/"
+          style="color:#d71920;font-weight:bold;text-decoration:none;"
+        >
+          artikel dan informasi pengiriman
+        </a>
+        atau kembali ke
+        <a
+          href="../"
+          style="color:#d71920;font-weight:bold;text-decoration:none;"
+        >
+          Beranda Lion Parcel Bandung
+        </a>.
       </p>
 
     </section>
@@ -592,11 +689,30 @@
 
   <footer>
 
+    <nav
+      class="footer-nav"
+      aria-label="Navigasi footer"
+    >
+
+      <a href="../">
+        Beranda
+      </a>
+
+      <a href="../artikel/">
+        Artikel
+      </a>
+
+      <a href="./">
+        Video
+      </a>
+
+    </nav>
+
     © 2026 Lion Parcel Bandung POS101
 
     <br>
 
-    <a href="/">
+    <a href="../">
       Kembali ke Beranda
     </a>
 
