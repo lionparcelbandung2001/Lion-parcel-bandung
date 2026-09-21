@@ -5,6 +5,12 @@ const artikelData = [
     tanggal: "21 September 2026",
     gambar: "images/cara-kirim-paket.jpg",
     link: "carakirimpaket.html"
+  }, {
+    judul: "kelebihan lionparcel",
+    deskripsi: "mengapa anda harus memilih kami daripada expedisi lain.",
+    tanggal: "21 September 2026",
+    gambar: "images/cara-kirim-paket.jpg",
+    link: "kelebihanlionparcel.html"
   },
   {
   judul: "Tips Packing Paket agar Aman Sampai Tujuan",
