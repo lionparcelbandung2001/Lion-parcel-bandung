@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Artikel Lion Parcel Bandung | Tips Kirim Paket & Logistik</title>
+
+  <meta name="description"
+        content="Kumpulan artikel Lion Parcel Bandung tentang tips mengirim paket, packing, pengiriman, dan informasi seputar layanan logistik.">
+
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://lionparcel-bandung.com/artikel/">
+
+  <link rel="icon" href="../foto.jpg">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #d71920;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 0 10px;
+      font-size: 32px;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    .back {
+      display: inline-block;
+      margin-bottom: 25px;
+      color: #d71920;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .back:hover {
+      text-decoration: underline;
+    }
+
+    .artikel-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 22px;
+    }
+
+    .artikel-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .artikel-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    }
+
+    .artikel-card img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .artikel-content {
+      padding: 20px;
+    }
+
+    .artikel-tanggal {
+      font-size: 13px;
+      color: #777;
+      margin-bottom: 8px;
+    }
+
+    .artikel-card h2 {
+      margin: 0 0 10px;
+      font-size: 21px;
+      color: #222;
+    }
+
+    .artikel-card p {
+      margin: 0 0 18px;
+      color: #555;
+      font-size: 15px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #d71920;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: #b9141a;
+    }
+
+    .kosong {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+      color: #666;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 25px 20px;
+      text-align: center;
+      background: #222;
+      color: white;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 26px;
+      }
+
+      .container {
+        padding: 25px 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Artikel Lion Parcel Bandung</h1>
+  <p>
+    Tips pengiriman, packing, logistik, dan informasi bermanfaat lainnya.
+  </p>
+</header>
+
+<main class="container">
+
+  <a class="back" href="../index.html">
+    ← Kembali ke Lion Parcel Bandung
+  </a>
+
+  <div id="artikelList" class="artikel-list">
+    <div class="kosong">
+      Memuat artikel...
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  &copy; 2026 Lion Parcel Bandung POS101
+</footer>
+
+<script src="data.js"></script>
+
+<script>
+  const container = document.getElementById("artikelList");
+
+  if (typeof artikelData === "undefined" || artikelData.length === 0) {
+
+    container.innerHTML = `
+      <div class="kosong">
+        Belum ada artikel.
+      </div>
+    `;
+
+  } else {
+
+    container.innerHTML = artikelData.map(artikel => `
+
+      <article class="artikel-card">
+
+        ${artikel.gambar ? `
+          <img
+            src="${artikel.gambar}"
+            alt="${artikel.judul}"
+            loading="lazy"
+          >
+        ` : ""}
+
+        <div class="artikel-content">
+
+          <div class="artikel-tanggal">
+            ${artikel.tanggal}
+          </div>
+
+          <h2>${artikel.judul}</h2>
+
+          <p>
+            ${artikel.deskripsi}
+          </p>
+
+          <a
+            class="btn"
+            href="${artikel.link}"
+          >
+            Baca Artikel →
+          </a>
+
+        </div>
+
+      </article>
+
+    `).join("");
+  }
+</script>
+
+</body>
+</html>
