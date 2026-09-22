@@ -3,19 +3,19 @@ const artikelData = [
     judul: "TIPS AMAN KIRIM PARFUM",
     deskripsi: "YANG PERLU DI SIAPKAN SAAT  KIRIM PARFUM.",
     tanggal: "22 September 2026",
-    gambar: "images/cara-kirim-paket.jpg",
+    gambar: "#",
     link: "tipsamankirimparfum.html"
   },{
     judul: "TIPS AMAN KIRIM LAPTOP",
     deskripsi: "YANG PERLU DI SIAPKAN SAAT  KIRIM LAPTOP.",
     tanggal: "22 September 2026",
-    gambar: "images/cara-kirim-paket.jpg",
+    gambar: "#",
     link: "tipsamankirimlaptop.html"
   },{
     judul: "TIPS AMAN KIRIM HP",
     deskripsi: "YANG PERLU DI SIAPKAN SAAT  KIRIM HP.",
     tanggal: "22 September 2026",
-    gambar: "images/cara-kirim-paket.jpg",
+    gambar: "#",
     link: "tipsamankirimhp.html"
   }, {
     judul: "Cara Kirim Paket yang Aman dan Mudah",
