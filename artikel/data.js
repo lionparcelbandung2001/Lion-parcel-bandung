@@ -1,26 +1,26 @@
 const artikelData = [
  {
-    judul: "TIPS AMAN KIRIM PARFUM",
+    judul: "CARA AMAN KIRIM VAKSIN DAN OBAT",
     deskripsi: "YANG PERLU DI SIAPKAN SAAT  KIRIM VAKSIN & OBAT.",
     tanggal: "23 September 2026",
     gambar: "#",
     link: "tipsamankirimvaksin&obat.html"
       },
     {
-    judul: "TIPS AMAN KIRIM PARFUM",
+    judul: "CARA AMAN KIRIM PARFUM",
     deskripsi: "YANG PERLU DI SIAPKAN SAAT  KIRIM PARFUM.",
     tanggal: "22 September 2026",
     gambar: "#",
     link: "tipsamankirimparfum.html"
   },
  {
-    judul: "TIPS AMAN KIRIM LAPTOP",
+    judul: "CARA AMAN KIRIM LAPTOP",
     deskripsi: "YANG PERLU DI SIAPKAN SAAT  KIRIM LAPTOP.",
     tanggal: "22 September 2026",
     gambar: "#",
     link: "tipsamankirimlaptop.html"
   },{
-    judul: "TIPS AMAN KIRIM HP",
+    judul: "CARA AMAN KIRIM HP",
     deskripsi: "YANG PERLU DI SIAPKAN SAAT  KIRIM HP.",
     tanggal: "22 September 2026",
     gambar: "#",
