@@ -1,5 +1,11 @@
 const artikelData = [
  {
+    judul: "CARA AMAN KIRIM TANAMAN",
+    deskripsi: "YANG PERLU DI SIAPKAN SAAT  KIRIM TANAMAN.",
+    tanggal: "23 September 2026",
+    gambar: "#",
+    link: "caraamankirimtanaman.html"
+      },{
     judul: "CARA AMAN KIRIM VAKSIN DAN OBAT",
     deskripsi: "YANG PERLU DI SIAPKAN SAAT  KIRIM VAKSIN & OBAT.",
     tanggal: "23 September 2026",
