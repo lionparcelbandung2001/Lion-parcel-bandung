@@ -3,52 +3,52 @@ const artikelData = [
     judul: "CARA AMAN KIRIM TANAMAN",
     deskripsi: "YANG PERLU DI SIAPKAN SAAT  KIRIM TANAMAN.",
     tanggal: "23 September 2026",
-    gambar: "#",
+    gambar: "images/tanaman.jpeg",
     link: "caraamankirimtanaman.html"
       },{
     judul: "CARA AMAN KIRIM VAKSIN DAN OBAT",
     deskripsi: "YANG PERLU DI SIAPKAN SAAT  KIRIM VAKSIN & OBAT.",
     tanggal: "23 September 2026",
-    gambar: "#",
+    gambar: "images/vaksin.jpeg",
     link: "caraamankirimvaksin&obat.html"
       },
     {
     judul: "CARA AMAN KIRIM PARFUM",
     deskripsi: "YANG PERLU DI SIAPKAN SAAT  KIRIM PARFUM.",
     tanggal: "22 September 2026",
-    gambar: "#",
+    gambar: "images/pafum.jpeg",
     link: "tipsamankirimparfum.html"
   },
  {
     judul: "CARA AMAN KIRIM LAPTOP",
     deskripsi: "YANG PERLU DI SIAPKAN SAAT  KIRIM LAPTOP.",
     tanggal: "22 September 2026",
-    gambar: "#",
+    gambar: "images/laptop.jpeg",
     link: "tipsamankirimlaptop.html"
   },{
     judul: "CARA AMAN KIRIM HP",
     deskripsi: "YANG PERLU DI SIAPKAN SAAT  KIRIM HP.",
     tanggal: "22 September 2026",
-    gambar: "#",
+    gambar: "images/hp.jpeg",
     link: "tipsamankirimhp.html"
   }, {
     judul: "Cara Kirim Paket yang Aman dan Mudah",
     deskripsi: "Panduan sederhana mengirim paket agar lebih aman sampai tujuan.",
     tanggal: "21 September 2026",
-    gambar: "images/cara-kirim-paket.jpg",
+    gambar: "images/mudah.jpeg",
     link: "carakirimpaket.html"
   }, {
     judul: "kelebihan lionparcel",
     deskripsi: "mengapa anda harus memilih kami daripada expedisi lain.",
     tanggal: "21 September 2026",
-    gambar: "images/cara-kirim-paket.jpg",
+    gambar: "images/banding.jpeg",
     link: "kelebihanlionparcel.html"
   },
   {
   judul: "Tips Packing Paket agar Aman Sampai Tujuan",
   deskripsi: "Tips packing paket agar lebih aman sampai tujuan, mulai dari memilih kemasan hingga menutup paket dengan benar.",
   tanggal: "21 September 2026",
-  gambar: "",
+  gambar: "images/packing.jpeg",
   link: "tipspacking.html"
 }
 ];
