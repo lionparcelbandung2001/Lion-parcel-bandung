@@ -1,5 +1,11 @@
 const artikelData = [
- {
+  {
+    judul: "CARA CEK RESI LIONPARCEL",
+    deskripsi: "cara mudah cek resi lionparcel.",
+    tanggal: "25 September 2026",
+    gambar: "cekresi.jpeg",
+    link: "cekresi.html"
+      },{
     judul: "CARA AMAN KIRIM TANAMAN",
     deskripsi: "YANG PERLU DI SIAPKAN SAAT  KIRIM TANAMAN.",
     tanggal: "23 September 2026",
