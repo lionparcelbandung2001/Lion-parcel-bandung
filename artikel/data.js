@@ -5,7 +5,8 @@ const artikelData = [
     tanggal: "25 September 2026",
     gambar: "cekresi.jpeg",
     link: "cekresi.html"
-      },{
+      },
+  {
     judul: "CARA AMAN KIRIM TANAMAN",
     deskripsi: "YANG PERLU DI SIAPKAN SAAT  KIRIM TANAMAN.",
     tanggal: "23 September 2026",
