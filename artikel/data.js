@@ -1,4 +1,11 @@
 const artikelData = [
+ {
+    judul: "AGEN LIONPARCEL TERDEKAT",
+    deskripsi: "kami salah satu agen lionparcel terdekat di rancaekek dan cicalengka.",
+    tanggal: "25 September 2026",
+    gambar: "images/citarik.jpeg",
+    link: "terdekat.html"
+      },
   {
     judul: "CARA CEK RESI LIONPARCEL",
     deskripsi: "cara mudah cek resi lionparcel.",
