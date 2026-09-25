@@ -3,7 +3,7 @@ const artikelData = [
     judul: "CARA CEK RESI LIONPARCEL",
     deskripsi: "cara mudah cek resi lionparcel.",
     tanggal: "25 September 2026",
-    gambar: "cekresi.jpeg",
+    gambar: "images/cekresi.jpeg",
     link: "cekresi.html"
       },
   {
