@@ -1,5 +1,12 @@
 const artikelData = [
   {
+    judul: "EXPEDISI YANG MELAYANI PENGIRIMAN DARI PT.INSAN SANDANG",
+    deskripsi: "kami salah satu expedisi yg melayani pengiriman dari pt.insan sandang.",
+    tanggal: "27 September 2026",
+    gambar: "images/insansandang.jpeg",
+    link: "insansandang.html"
+      },
+  {
     judul: "EXPEDISI YANG MELAYANI PENGIRIMAN DARI PT.KAHATEX",
     deskripsi: "kami salah satu expedisi yg melayani pengiriman dari pt.kahatex.",
     tanggal: "27 September 2026",
