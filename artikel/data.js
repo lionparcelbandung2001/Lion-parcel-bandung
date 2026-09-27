@@ -10,7 +10,7 @@ const artikelData = [
     judul: "EXPEDISI YANG MELAYANI PENGIRIMAN DARI PT.KAHATEX",
     deskripsi: "kami salah satu expedisi yg melayani pengiriman dari pt.kahatex.",
     tanggal: "27 September 2026",
-    gambar: "video/kahatex.mp4",
+    gambar: "images/kahatex.jpeg",
     link: "kahatex.html"
       },
   {
