@@ -52,7 +52,7 @@ const artikelData = [
     deskripsi: "YANG PERLU DI SIAPKAN SAAT  KIRIM VAKSIN & OBAT.",
     tanggal: "23 September 2026",
     gambar: "images/vaksin.jpeg",
-    link: "caraamankirimvaksin&obat.html"
+    link: "caraamankirimvaksin.html"
       },
     {
     judul: "CARA AMAN KIRIM PARFUM",
