@@ -1,5 +1,19 @@
 const artikelData = [
   {
+    judul: "EXPEDISI DI CICALENGKA",
+    deskripsi: "EXPEDISI YANG MELAYANI PENGIRIMAN DARI CICALENGKA.",
+    tanggal: "28 September 2026",
+    gambar: "images/expedisicicalengka.jpeg",
+    link: "expedisicicalengka.html"
+      },
+  {
+    judul: "EXPEDISI DI RANCAEKEK",
+    deskripsi: "EXPEDISI YANG MELAYANI PENGIRIMAN DARI RANCAEKEK.",
+    tanggal: "28 September 2026",
+    gambar: "images/expedisirancaekek.jpeg",
+    link: "expedisirancaekek.html"
+      },
+  {
     judul: "EXPEDISI YANG MELAYANI PENGIRIMAN DARI PT.INSAN SANDANG",
     deskripsi: "kami salah satu expedisi yg melayani pengiriman dari pt.insan sandang.",
     tanggal: "27 September 2026",
