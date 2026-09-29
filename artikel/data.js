@@ -1,5 +1,19 @@
 const artikelData = [
  {
+    judul: "AGEN LIONPARCEL DI RANCAEKEK",
+    deskripsi: "EXPEDISI LIONPARCEL YANG MELAYANI PENGIRIMAN DARI RANCAEKEK.",
+    tanggal: "29 September 2026",
+    gambar: "images/rancaekek1.jpeg",
+    link: "rancaekek1.html"
+      },
+ {
+    judul: "AGEN LIONPARCEL DI CICALENGKA",
+    deskripsi: "EXPEDISI LIONPARCEL YANG MELAYANI PENGIRIMAN DARI CICALENGKA.",
+    tanggal: "29 September 2026",
+    gambar: "images/cicalengka1.jpeg",
+    link: "cicalengka1.html"
+      }, 
+ {
     judul: "EXPEDISI DI BANDUNG",
     deskripsi: "EXPEDISI YANG MELAYANI PENGIRIMAN DARI BANDUNG.",
     tanggal: "28 September 2026",
