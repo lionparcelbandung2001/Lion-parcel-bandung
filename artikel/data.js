@@ -1,4 +1,19 @@
 const artikelData = [
+  {
+    judul: "CEK ONGKIR LIONPARCEL",
+    deskripsi: "CARA MUDAH CEK ONGKIR LIONPARCEL.",
+    tanggal: "30 September 2026",
+    gambar: "images/cek-ongkir.jpeg",
+    link: "cek-ongkir.html"
+      },
+
+  {
+    judul: "LOKASI AGEN LIONPARCEL",
+    deskripsi: "CARA MUDAH CEK LOKASI AGEN LIONPARCEL.",
+    tanggal: "30 September 2026",
+    gambar: "images/lokasi-agen.jpeg",
+    link: "lokasi-agen.html"
+      },
  {
     judul: "AGEN LIONPARCEL DI RANCAEKEK",
     deskripsi: "EXPEDISI LIONPARCEL YANG MELAYANI PENGIRIMAN DARI RANCAEKEK.",
