@@ -1,5 +1,19 @@
 const artikelData = [
   {
+    judul: "EXPEDISI PENGIRIMAN PAKET DARI BANDUNG KE MALAYSIA",
+    deskripsi: "LIONPARCEL MELAYANI PENGIRIMAN PAKET TUJUAN MALAYSIA,ONGKIR MURAH.",
+    tanggal: "01 oktober 2026",
+    gambar: "images/expedisi-malaysia.jpeg",
+    link: "expedisi-malaysia.html"
+      },
+      {
+    judul: "EXPEDISI PENGIRIMAN PAKET DARI BANDUNG KE SINGAPURA",
+    deskripsi: "LIONPARCEL MELAYANI PENGIRIMAN PAKET TUJUAN SINGAPURA.ONGKIR MURAH",
+    tanggal: "01 oktober 2026",
+    gambar: "images/expedisi-singapura.jpeg",
+    link: "expedisi-singapura.html"
+      },
+    {
     judul: "CEK ONGKIR LIONPARCEL",
     deskripsi: "CARA MUDAH CEK ONGKIR LIONPARCEL.",
     tanggal: "30 September 2026",
