@@ -1,28 +1,28 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Pastikan artikelData dari data.js tersedia
+  // 1. Cek ketersediaan data artikel
   if (typeof artikelData === "undefined" || artikelData.length === 0) return;
 
-  // Deteksi nama file artikel yang sedang dibuka saat ini
+  // 2. Ambil nama file HTML yang sedang dibuka
   const currentFileName = window.location.pathname.split("/").pop();
 
-  // Filter daftar artikel agar tidak menampilkan artikel yang sedang dibaca
+  // 3. Filter agar artikel yang sedang dibaca tidak muncul di daftar
   const artikelLain = artikelData.filter(item => {
-    return !item.link.includes(currentFileName);
+    return item.link && !item.link.includes(currentFileName);
   });
 
   if (artikelLain.length === 0) return;
 
-  // Ambil 3 artikel acak dari artikel lama/lainnya (bisa disesuaikan jumlahnya)
+  // 4. Ambil 3 artikel acak
   const rekomendasi = artikelLain
     .sort(() => 0.5 - Math.random())
     .slice(0, 3);
 
-  // Buat komponen Widget Artikel Terkait
+  // 5. Buat elemen tampilan Rekomendasi
   const relatedBox = document.createElement("section");
   relatedBox.className = "artikel-terkait-wrapper";
   relatedBox.innerHTML = `
     <div style="
-      margin: 40px 0 20px 0;
+      margin: 30px 0 10px 0;
       padding: 20px;
       background: #ffffff;
       border-left: 4px solid #d71920;
@@ -48,13 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
     </div>
   `;
 
-  // Sisipkan otomatis ke dalam tag <main> atau sebelum <footer>
-  const targetContainer = document.querySelector("main") || document.body;
-  const footer = document.querySelector("footer");
-
-  if (footer) {
-    targetContainer.insertBefore(relatedBox, footer);
-  } else {
-    targetContainer.appendChild(relatedBox);
-  }
+  // 6. Masukkan box rekomendasi ke dalam <main> atau .container
+  const target = document.querySelector("main") || document.querySelector(".container") || document.body;
+  target.appendChild(relatedBox);
 });
