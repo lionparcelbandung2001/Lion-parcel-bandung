@@ -1,5 +1,18 @@
 const artikelData = [
-
+  {
+    judul: "Ekspedisi Pengiriman barang dari pt kahatex,rancaekek",
+    deskripsi: "Lionparcel Melayani pengambilan dan pengiriman barang dari pt kahatex rancaekek.",
+    tanggal: "03 oktober 2026",
+    gambar: "images/ekspedisi-kahatex.jpeg",
+    link: "ekspedisi-kahatex.html"
+      },
+  {
+    judul: "Ekspedisi Pengiriman barang dari pt insan sandang,rancaekek",
+    deskripsi: "Lionparcel Melayani pengambilan dan pengiriman barang dari pt insan sandang rancaekek.",
+    tanggal: "03 oktober 2026",
+    gambar: "images/ekspedisi-insansandang.jpeg",
+    link: "ekspedisi-insansandang.html"
+      },
   {
     judul: "Ekspedisi PENGIRIMAN PAKET DARI BANDUNG KE JEPANG",
     deskripsi: "LIONPARCEL MELAYANI PENGIRIMAN PAKET TUJUAN JEPANG,ONGKIR MURAH.",
