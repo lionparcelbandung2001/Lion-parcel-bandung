@@ -1,4 +1,18 @@
 const artikelData = [
+ {
+    judul: "Ekspedisi Pengiriman barang ke negara korea selatan",
+    deskripsi: "Lionparcel Melayani pengiriman barang ke negara korea selatan.",
+    tanggal: "04 oktober 2026",
+    gambar: "images/ekspedisi-koreaselatan.jpeg",
+    link: "ekspedisi-koreaselatan.html"
+      },
+  {
+    judul: "Ekspedisi Pengiriman barang ke negara arab saudi",
+    deskripsi: "Lionparcel Melayani pengiriman barang ke arab saudi.",
+    tanggal: "04 oktober 2026",
+    gambar: "images/ekspedisi-arabsaudi.jpeg",
+    link: "ekspedisi-arabsaudi.html"
+      },
   {
     judul: "Ekspedisi Pengiriman barang dari pt kahatex,rancaekek",
     deskripsi: "Lionparcel Melayani pengambilan dan pengiriman barang dari pt kahatex rancaekek.",
