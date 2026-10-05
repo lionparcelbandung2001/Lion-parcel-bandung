@@ -1,5 +1,11 @@
 const artikelData = [
-{
+judul: "EKSPEDISI PENGIRIMAN PAKET DARI BANDUNG KE SINGAPURA",
+    deskripsi: "LIONPARCEL MELAYANI PENGIRIMAN PAKET TUJUAN SINGAPURA.ONGKIR MURAH",
+    tanggal: "05 oktober 2026",
+    gambar: "images/ekspedisi-singapura.jpeg",
+    link: "ekspedisi-singapura.html"
+      },
+    {
     judul: "Ekspedisi Pengiriman barang ke negara australia",
     deskripsi: "Lionparcel Melayani pengiriman barang ke negara australia.",
     tanggal: "05 oktober 2026",
