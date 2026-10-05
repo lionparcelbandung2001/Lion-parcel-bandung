@@ -14,7 +14,7 @@
   <link rel="canonical" href="https://lionparcel-bandung.com/artikel/expedisi-australia.html">
   <link rel="icon" href="../foto.jpg">
 
-  <!-- Open Graph / Facebook SEO -->
+  <!-- Open Graph / Facebook / Twitter Share SEO -->
   <meta property="og:type" content="article">
   <meta property="og:title" content="Ekspedisi Bandung ke australia Cepat & Murah | Lion Parcel Bandung">
   <meta property="og:description" content="Kirim paket dari Bandung ke australia aman & cepat. Kirim baju, dokumen, hingga produk UMKM. Konsultasikan biaya & jemput paket gratis!">
@@ -22,7 +22,7 @@
   <meta property="og:site_name" content="Lion Parcel Bandung">
   <meta property="og:image" content="https://lionparcel-bandung.com/foto.jpg">
 
-  <!-- Schema.org JSON-LD untuk Local Business & SEO Google -->
+  <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -114,12 +114,6 @@
       padding-bottom: 8px;
     }
 
-    .artikel h3 {
-      margin-top: 25px;
-      font-size: 20px;
-      color: #333;
-    }
-
     .artikel p {
       margin: 15px 0;
       font-size: 16px;
@@ -162,6 +156,54 @@
       background-color: #1ebc57;
     }
 
+    /* Styling Area Share Sosial Media */
+    .share-container {
+      margin-top: 40px;
+      padding-top: 25px;
+      border-top: 2px dashed #eee;
+    }
+
+    .share-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 12px;
+      color: #444;
+    }
+
+    .share-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .share-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 18px;
+      border-radius: 25px;
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      transition: opacity 0.2s ease, transform 0.1s ease;
+    }
+
+    .share-btn:hover {
+      opacity: 0.9;
+    }
+
+    .share-btn:active {
+      transform: scale(0.97);
+    }
+
+    .btn-fb { background-color: #1877f2; }
+    .btn-x { background-color: #000000; }
+    .btn-native { background-color: #d71920; }
+    .btn-copy { background-color: #555555; }
+
     footer {
       margin-top: 40px;
       padding: 25px 20px;
@@ -172,21 +214,12 @@
     }
 
     @media (max-width: 600px) {
-      .container {
-        padding: 15px;
-      }
-
-      .artikel {
-        padding: 20px;
-      }
-
-      header h1 {
-        font-size: 22px;
-      }
-
-      .artikel h2 {
-        font-size: 20px;
-      }
+      .container { padding: 15px; }
+      .artikel { padding: 20px; }
+      header h1 { font-size: 22px; }
+      .artikel h2 { font-size: 20px; }
+      .share-buttons { flex-direction: column; }
+      .share-btn { width: 100%; text-align: center; }
     }
   </style>
 </head>
@@ -280,6 +313,34 @@
       </a>
     </div>
 
+    <!-- FITUR BAGIKAN / SHARE ARTIKEL -->
+    <div class="share-container">
+      <div class="share-title">Bagikan Artikel Ini:</div>
+      <div class="share-buttons">
+        
+        <!-- Facebook -->
+        <a id="shareFb" href="#" target="_blank" rel="noopener" class="share-btn btn-fb">
+          Facebook
+        </a>
+
+        <!-- X / Twitter -->
+        <a id="shareX" href="#" target="_blank" rel="noopener" class="share-btn btn-x">
+          X (Twitter)
+        </a>
+
+        <!-- Native Share (Sangat direkomendasikan untuk Instagram, TikTok, WA di HP) -->
+        <button onclick="shareViaNative()" class="share-btn btn-native">
+          Bagikan ke IG / TikTok / Lainnya
+        </button>
+
+        <!-- Copy Link -->
+        <button onclick="copyArticleLink()" class="share-btn btn-copy" id="btnCopyText">
+          Salin Link
+        </button>
+
+      </div>
+    </div>
+
   </article>
 
 </main>
@@ -287,6 +348,43 @@
 <footer>
   &copy; 2026 Lion Parcel Bandung POS101. All Rights Reserved.
 </footer>
+
+<script>
+  // Mengambil URL dan Judul Halaman Otomatis
+  const currentUrl = encodeURIComponent(window.location.href);
+  const currentTitle = encodeURIComponent(document.title);
+
+  // Link Facebook & X
+  document.getElementById('shareFb').href = `https://www.facebook.com/sharer/sharer.php?u=${currentUrl}`;
+  document.getElementById('shareX').href = `https://twitter.com/intent/tweet?url=${currentUrl}&text=${currentTitle}`;
+
+  // Fitur Native Share HP (Otomatis membuka menu bagikan bawaan HP ke Instagram, TikTok, WhatsApp, dll)
+  function shareViaNative() {
+    if (navigator.share) {
+      navigator.share({
+        title: document.title,
+        text: 'Info Ekspedisi Bandung ke australia - Lion Parcel Bandung',
+        url: window.location.href
+      }).catch((err) => console.log('Share dibatalkan:', err));
+    } else {
+      copyArticleLink();
+      alert('Browser Anda tidak mendukung menu bagikan langsung. Link telah disalin!');
+    }
+  }
+
+  // Fitur Salin Link
+  function copyArticleLink() {
+    navigator.clipboard.writeText(window.location.href).then(() => {
+      const btn = document.getElementById('btnCopyText');
+      btn.innerText = 'Link Tersalin! ✓';
+      setTimeout(() => {
+        btn.innerText = 'Salin Link';
+      }, 2000);
+    }).catch(err => {
+      console.error('Gagal menyalin link:', err);
+    });
+  }
+</script>
 
 <script src="data.js"></script>
 <script src="related.js"></script>
