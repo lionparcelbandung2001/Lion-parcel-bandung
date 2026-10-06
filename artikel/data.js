@@ -1,4 +1,11 @@
 const artikelData = [
+{
+     judul: "​أفضل خدمة شحن دولي من إندونيسيا إلى السعودية والإمارات - سريع وآمن",
+    deskripsi: "​أفضل خدمة شحن دولي من إندونيسيا إلى السعودية والإمارات - سريع وآمن",
+    tanggal: "06 oktober 2026",
+    gambar: "images/indonesia-saudiarabia.jpeg",
+    link: "indonesia-saudiarabia.html"
+      },
  {
      judul: "EKSPEDISI PENGIRIMAN PAKET DARI BANDUNG KE SINGAPURA",
     deskripsi: "LIONPARCEL MELAYANI PENGIRIMAN PAKET TUJUAN SINGAPURA.ONGKIR MURAH",
