@@ -1,5 +1,12 @@
 const artikelData = [
 {
+     judul: "インドネシア（バンドン）から日本への国際宅配便・格安＆スピーディー",
+    deskripsi: "インドネシアから日本へ荷物を送る方法・送料とおすすめ宅配便",
+    tanggal: "07 oktober 2026",
+    gambar: "images/indonesia-jepang.jpeg",
+    link: "indonesia-to-japan.html"
+      },
+     {
      judul: "​أفضل خدمة شحن دولي من إندونيسيا إلى السعودية والإمارات - سريع وآمن",
     deskripsi: "​أفضل خدمة شحن دولي من إندونيسيا إلى السعودية والإمارات - سريع وآمن",
     tanggal: "06 oktober 2026",
