@@ -1,5 +1,19 @@
 const artikelData = [
 {
+     judul: "​從印尼萬隆寄包裹到台灣 快速又便宜的國際快遞服務",
+    deskripsi: "如何從印尼寄東西回台灣？國際快遞運費與寄件全攻略",
+    tanggal: "08 oktober 2026",
+    gambar: "images/indonesia-taiwan.jpeg",
+    link: "indonesia-to-taiwan.html"
+      },
+     {
+     judul: "印尼寄中国快递多少钱？万隆到中国大陆运费查询",
+    deskripsi: "想知道从万隆寄到中国要多少钱？Lion Parcel提供万隆到中国大陆最低运费报价，按实际重量计费，免费上门收货，微信/WhatsApp随时咨询。",
+    tanggal: "08 oktober 2026",
+    gambar: "images/indonesia-china.jpeg",
+    link: "indonesia-to-china.html"
+      },
+     {
      judul: "インドネシア（バンドン）から日本への国際宅配便・格安＆スピーディー",
     deskripsi: "インドネシアから日本へ荷物を送る方法・送料とおすすめ宅配便",
     tanggal: "07 oktober 2026",
