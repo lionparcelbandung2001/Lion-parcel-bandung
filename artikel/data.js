@@ -1,5 +1,12 @@
 const artikelData = [
 {
+     judul: "인도네시아 반둥에서 한국으로 빠른 국제 택배 안내 | Lion Parcel",
+    deskripsi: "인도네시아에서 한국으로 택배 안전하게 보내는 방법 (비용 및 절차)",
+    tanggal: "09 oktober 2026",
+    gambar: "images/indonesia-southkorea.jpeg",
+    link: "indonesia-to-southkorea.html"
+      },
+     {
      judul: "​從印尼萬隆寄包裹到台灣 快速又便宜的國際快遞服務",
     deskripsi: "如何從印尼寄東西回台灣？國際快遞運費與寄件全攻略",
     tanggal: "08 oktober 2026",
