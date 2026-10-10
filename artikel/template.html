@@ -1,28 +1,48 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-
   <meta charset="UTF-8">
-
-  <!-- 🔴 GANTI: JUDUL ARTIKEL -->
-  <title>
-    <span class="ganti">🔴 GANTI JUDUL ARTIKEL — Lion Parcel Bandung</span>
-  </title>
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- 🔴 GANTI: DESKRIPSI ARTIKEL -->
-  <meta name="description"
-        content="🔴 GANTI DESKRIPSI ARTIKEL DI SINI">
+  <!-- =========================================================
+       1. SEO META TAGS (Ganti Judul, Deskripsi, & Kata Kunci)
+       ========================================================= -->
+  <title>[GANTI: Judul Artikel Utama] | Lion Parcel Bandung</title>
+  <meta name="description" content="[GANTI: Rangkuman singkat isi artikel 1-2 kalimat untuk Google]">
+  <meta name="keywords" content="[GANTI: kata kunci 1, kata kunci 2, kata kunci 3]">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Lion Parcel Bandung">
 
-  <!-- 🔴 GANTI: CANONICAL SESUAI NAMA FILE -->
-  <link rel="canonical"
-        href="https://lionparcel-bandung.com/artikel/🔴-GANTI-NAMA-FILE.html">
-
+  <!-- Canonical URL (Ganti nama file .html nya) -->
+  <link rel="canonical" href="https://lionparcel-bandung.com/artikel/[GANTI-NAMA-FILE].html">
   <link rel="icon" href="../foto.jpg">
 
-  <style>
+  <!-- Open Graph / Social Media SEO -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="[GANTI: Judul Artikel Utama] | Lion Parcel Bandung">
+  <meta property="og:description" content="[GANTI: Deskripsi singkat artikel]">
+  <meta property="og:url" content="https://lionparcel-bandung.com/artikel/[GANTI-NAMA-FILE].html">
+  <meta property="og:site_name" content="Lion Parcel Bandung">
+  <meta property="og:image" content="https://lionparcel-bandung.com/foto.jpg">
 
+  <!-- =========================================================
+       2. SCHEMA JSON-LD (Otomatis Di-update oleh auto-date.js)
+       ========================================================= -->
+  <script type="application/ld+json" id="article-schema">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "[GANTI: Judul Artikel Utama]",
+    "datePublished": "2026-10-10T08:00:00+07:00",
+    "dateModified": "2026-10-10T08:00:00+07:00",
+    "author": {
+      "@type": "Organization",
+      "name": "Lion Parcel Bandung POS101"
+    }
+  }
+  </script>
+
+  <style>
     * {
       box-sizing: border-box;
     }
@@ -32,24 +52,40 @@
       font-family: Arial, sans-serif;
       background: #f5f5f5;
       color: #222;
-      line-height: 1.7;
+      line-height: 1.8;
     }
 
     header {
       background: #d71920;
       color: white;
-      padding: 18px;
+      padding: 30px 20px;
       text-align: center;
     }
 
     header h1 {
       margin: 0;
-      font-size: 24px;
+      font-size: 28px;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    .back {
+      display: inline-block;
+      margin-bottom: 25px;
+      color: #d71920;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .back:hover {
+      text-decoration: underline;
     }
 
     .artikel {
-      max-width: 850px;
-      margin: 30px auto;
       background: white;
       padding: 30px;
       border-radius: 12px;
@@ -59,184 +95,163 @@
     .tanggal {
       color: #777;
       font-size: 14px;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
     }
 
     .artikel h2 {
-      margin-top: 0;
+      font-size: 22px;
       line-height: 1.4;
+      margin-top: 25px;
+      color: #d71920;
     }
 
     .artikel h3 {
-      margin-top: 28px;
+      margin-top: 20px;
+      font-size: 18px;
+      color: #333;
     }
 
     .artikel p {
-      margin-bottom: 18px;
+      margin: 15px 0;
+      font-size: 16px;
     }
 
-    /* 🔴 Penanda bagian yang harus diganti */
-    .ganti {
-      color: red;
-      font-weight: bold;
+    .artikel ul,
+    .artikel ol {
+      padding-left: 25px;
     }
 
-    .kembali {
-      display: inline-block;
-      margin-top: 25px;
-      text-decoration: none;
+    .artikel li {
+      margin-bottom: 8px;
+    }
+
+    .artikel a {
       color: #d71920;
       font-weight: bold;
     }
 
-    footer {
+    /* CSS Box Call-to-Action WhatsApp */
+    .cta-box {
+      background-color: #e8f5e9;
+      border: 2px dashed #2e7d32;
+      padding: 20px;
+      border-radius: 8px;
       text-align: center;
-      padding: 25px;
-      color: #777;
+      margin: 30px 0;
+    }
+
+    .cta-box h3 {
+      margin-top: 0;
+      color: #1b5e20;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background-color: #25d366;
+      color: #ffffff !important;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 50px;
+      margin-top: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #128c7e;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 25px 20px;
+      text-align: center;
+      background: #222;
+      color: white;
       font-size: 14px;
     }
 
     @media (max-width: 600px) {
+      .container {
+        padding: 20px 15px;
+      }
 
       .artikel {
-        margin: 15px;
         padding: 20px;
       }
 
       header h1 {
-        font-size: 20px;
+        font-size: 22px;
       }
-
     }
-
   </style>
-
 </head>
-
 
 <body>
 
-
 <header>
-
   <h1>Lion Parcel Bandung</h1>
-
 </header>
 
+<main class="container">
 
-<main class="artikel">
-
-
-  <!-- 🔴 GANTI: TANGGAL ARTIKEL -->
-
-  <div class="tanggal">
-    <span class="ganti">🔴 GANTI TANGGAL ARTIKEL</span>
-  </div>
-
-
-  <!-- 🔴 GANTI: JUDUL ARTIKEL -->
-
-  <h2>
-    <span class="ganti">
-      🔴 GANTI JUDUL ARTIKEL DI SINI
-    </span>
-  </h2>
-
-
-  <!-- ================================================= -->
-  <!-- 🔴 MULAI GANTI ISI ARTIKEL -->
-  <!-- ================================================= -->
-
-
-  <p>
-    <span class="ganti">
-      🔴 GANTI PARAGRAF PEMBUKA ARTIKEL DI SINI.
-    </span>
-  </p>
-
-
-  <h3>
-    <span class="ganti">
-      🔴 GANTI SUBJUDUL ARTIKEL
-    </span>
-  </h3>
-
-
-  <p>
-    <span class="ganti">
-      🔴 GANTI ISI PARAGRAF DI SINI.
-    </span>
-  </p>
-
-
-  <p>
-    <span class="ganti">
-      🔴 GANTI ISI PARAGRAF DI SINI.
-    </span>
-  </p>
-
-
-  <h3>
-    <span class="ganti">
-      🔴 GANTI SUBJUDUL ARTIKEL
-    </span>
-  </h3>
-
-
-  <p>
-    <span class="ganti">
-      🔴 GANTI ISI PARAGRAF DI SINI.
-    </span>
-  </p>
-
-
-  <p>
-    <span class="ganti">
-      🔴 GANTI ISI PARAGRAF DI SINI.
-    </span>
-  </p>
-
-
-  <h3>
-    <span class="ganti">
-      🔴 GANTI SUBJUDUL ARTIKEL
-    </span>
-  </h3>
-
-
-  <p>
-    <span class="ganti">
-      🔴 GANTI ISI PARAGRAF DI SINI.
-    </span>
-  </p>
-
-
-  <p>
-    <span class="ganti">
-      🔴 GANTI PARAGRAF PENUTUP ARTIKEL DI SINI.
-    </span>
-  </p>
-
-
-  <!-- ================================================= -->
-  <!-- 🔴 SELESAI GANTI ISI ARTIKEL -->
-  <!-- ================================================= -->
-
-
-  <a href="index.html" class="kembali">
-    ← Kembali ke Daftar Artikel
+  <a class="back" href="index.html">
+    ← Kembali ke Artikel
   </a>
 
+  <article class="artikel">
+
+    <!-- Tag Tanggal Semantik (Otomatis Di-update oleh auto-date.js) -->
+    <div class="tanggal">
+      Diperbarui: <time id="article-updated-date" datetime="2026-10-10">10 Oktober 2026</time>
+    </div>
+
+    <!-- Judul Artikel H2 Utama -->
+    <h2>[GANTI: Judul Artikel Utama Di Sini]</h2>
+
+    <!-- =========================================================
+         3. ISI ARTIKEL (Tulis Paragraf & Sub-heading di sini)
+         ========================================================= -->
+    <p>
+      [GANTI: Paragraf pembuka artikel Anda di sini...]
+    </p>
+
+    <!-- Box Kontak WhatsApp CTA -->
+    <div class="cta-box">
+      <h3>[GANTI: Judul Penawaran CTA, misal: Butuh Kirim Paket atau Jemput Gratis?]</h3>
+      <p>[GANTI: Pesan singkat, misal: Hubungi Agen Resmi Lion Parcel Nanjungmekar POS101 Rancaekek sekarang!]</p>
+      <a href="https://wa.me/6285183090486?text=Halo%20Lion%20Parcel,%20saya%20mau%20tanya%20kirim%20paket" class="cta-button" target="_blank" rel="noopener">
+        💬 Chat WhatsApp 0851-8309-0486
+      </a>
+    </div>
+
+    <h2>[GANTI: Sub-Judul Topik 1]</h2>
+    <p>
+      [GANTI: Penjelasan topik 1...]
+    </p>
+
+    <ul>
+      <li><strong>Poin 1:</strong> Penjelasan poin pertama.</li>
+      <li><strong>Poin 2:</strong> Penjelasan poin kedua.</li>
+    </ul>
+
+    <h2>[GANTI: Sub-Judul Topik 2]</h2>
+    <p>
+      [GANTI: Penjelasan topik 2...]
+    </p>
+
+  </article>
 
 </main>
 
-
 <footer>
-
-  © 2026 Lion Parcel Bandung POS101
-
+  &copy; <span class="current-year">2026</span> Lion Parcel Bandung POS101
 </footer>
 
-
+<script src="data.js"></script>
+<script src="related.js"></script>
+<!-- Master Script Auto Update Date -->
+<script src="auto-date.js"></script>
 </body>
 </html>
