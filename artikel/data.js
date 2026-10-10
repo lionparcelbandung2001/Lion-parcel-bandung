@@ -1,5 +1,19 @@
 const artikelData = [
 {
+     judul: "How to Send Packages from Indonesia to the australia Safely and Easily",
+    deskripsi: "The Ultimate Guide to Shipping UMKM & Personal Goods from Bandung,indonesia to australia",
+    tanggal: "10 oktober 2026",
+    gambar: "images/indonesia-australia.jpeg",
+    link: "indonesia-to-australia.html"
+      },
+     {
+     judul: "How to Send Packages from Indonesia to the singapore Safely and Easily",
+    deskripsi: "The Ultimate Guide to Shipping UMKM & Personal Goods from Bandung,indonesia to singapore",
+    tanggal: "10 oktober 2026",
+    gambar: "images/indonesia-singapore.jpeg",
+    link: "indonesia-to-singapore.html"
+      },
+     {
      judul: "인도네시아 반둥에서 한국으로 빠른 국제 택배 안내 | Lion Parcel",
     deskripsi: "인도네시아에서 한국으로 택배 안전하게 보내는 방법 (비용 및 절차)",
     tanggal: "09 oktober 2026",
