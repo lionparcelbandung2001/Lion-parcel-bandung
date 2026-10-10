@@ -1717,7 +1717,7 @@ footer li{
 
 <div class="copyright">
 
-    © 2026 By:LION PARCEL RAYA BARAT CICALENGKA-POS101.
+    © <span class="current-year">2026</span> By:LION PARCEL RAYA BARAT CICALENGKA-POS101.
     All Rights Reserved.
 
 </div>
@@ -1727,6 +1727,13 @@ footer li{
 
 </footer>
 
+<!-- Script Otomatis Tahun Footer -->
+<script>
+  const yearEl = document.querySelector('.current-year');
+  if (yearEl) {
+    yearEl.textContent = new Date().getFullYear();
+  }
+</script>
 
 </body>
 </html>
