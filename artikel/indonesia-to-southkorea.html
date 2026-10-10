@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- SEO Title & Description (Target Keyphrase: 반둥에서 한국으로 택배 / 국제 배송) -->
+  <!-- SEO Title & Description -->
   <title>반둥에서 한국으로 국제 택배·배송 서비스 | Lion Parcel Bandung</title>
   <meta name="description" content="인도네시아 반둥에서 한국으로 빠르고 안전한 국제 택배 서비스! 서류, 의류, UMKM 제품 배송. 반둥, 란차에케크 지역 무료 픽업 제공.">
+  <meta name="keywords" content="반둥에서 한국으로 택배, 인도네시아 한국 국제배송, Lion Parcel 한국 운임, 반둥 국제택배, 인도네시아에서 한국으로 배송">
   <meta name="robots" content="index, follow">
   <meta name="author" content="Lion Parcel Bandung">
 
@@ -23,28 +24,18 @@
   <meta property="og:site_name" content="Lion Parcel Bandung">
   <meta property="og:image" content="https://lionparcel-bandung.com/foto.jpg">
 
-  <!-- Schema.org JSON-LD (Structured Data untuk Google) -->
-  <script type="application/ld+json">
+  <!-- Schema.org JSON-LD for Google Bot (Auto-Update via JS) -->
+  <script type="application/ld+json" id="article-schema">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Lion Parcel Bandung POS101",
-    "image": "https://lionparcel-bandung.com/foto.jpg",
-    "telephone": "+6285183090486",
-    "url": "https://lionparcel-bandung.com/",
-    "priceRange": "$$",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Bandung",
-      "addressRegion": "Jawa Barat",
-      "addressCountry": "ID"
-    },
-    "areaServed": [
-      "Bandung",
-      "Rancaekek",
-      "Cicalengka"
-    ],
-    "description": "인도네시아 반둥에서 한국 및 전 세계로 발송하는 빠른 국제 택배 배송 서비스."
+    "@type": "BlogPosting",
+    "headline": "반둥에서 한국으로 국제 택배·배송 서비스",
+    "datePublished": "2026-10-09T08:00:00+07:00",
+    "dateModified": "2026-10-09T08:00:00+07:00",
+    "author": {
+      "@type": "Organization",
+      "name": "Lion Parcel Bandung POS101"
+    }
   }
   </script>
 
@@ -106,17 +97,17 @@
     }
 
     .artikel h2 {
-      font-size: 24px;
+      font-size: 22px;
       line-height: 1.4;
       margin-top: 30px;
-      color: #111;
+      color: #d71920;
       border-bottom: 2px solid #f0f0f0;
       padding-bottom: 8px;
     }
 
     .artikel h3 {
       margin-top: 25px;
-      font-size: 20px;
+      font-size: 18px;
       color: #333;
     }
 
@@ -137,11 +128,12 @@
 
     /* Styling CTA WhatsApp Button */
     .cta-container {
-      background: #fff3f3;
-      border-left: 5px solid #d71920;
+      background: #e8f5e9;
+      border-left: 5px solid #2e7d32;
       padding: 20px;
       margin: 25px 0;
-      border-radius: 6px;
+      border-radius: 8px;
+      text-align: center;
     }
 
     .btn-wa {
@@ -159,7 +151,7 @@
     }
 
     .btn-wa:hover {
-      background-color: #1ebc57;
+      background-color: #128c7e;
     }
 
     footer {
@@ -205,17 +197,19 @@
 
   <article class="artikel">
 
+    <!-- Dynamic Auto-Date Semantic Tag -->
     <div class="tanggal">
-      <time datetime="2026-10-09">2026년 10월 09일</time>
+      업데이트: <time id="article-updated-date" datetime="2026-10-09">2026년 10월 09일</time>
     </div>
 
     <p>인도네시아 반둥에서 한국으로 안전하고 빠르고 합리적인 비용으로 패키지를 보내셔야 하나요? <strong>Lion Parcel Bandung</strong>은 한국행 국제 배송을 위한 최적의 국제 택배 솔루션을 제공합니다.</p>
 
+    <!-- Box CTA WhatsApp -->
     <div class="cta-container">
       <strong>무료 패키지 픽업 서비스 (반둥, 란차에케크, 치찰렝카 지역):</strong><br>
       픽업 일정 및 배송 문의는 고객센터로 연락해 주세요:<br>
-      <a href="https://wa.me/6285183090486" class="btn-wa" target="_blank" rel="noopener">
-        WhatsApp 상담 (+62 851-8309-0486)
+      <a href="https://wa.me/6285183090486?text=Halo%20Lion%20Parcel,%20saya%20mau%20kirim/jemput%20paket%20ke%20Korea" class="btn-wa" target="_blank" rel="noopener">
+        💬 WhatsApp 상담 (+62 851-8309-0486)
       </a>
     </div>
 
@@ -248,7 +242,7 @@
     <p>반둥에서 한국으로 보내는 배송비(운임)는 다음 요소에 따라 달라집니다:</p>
 
     <ul>
-      <li><strong>실제 중량 또는 부피 중량(Volume Weight):</strong> 두 가지 중 더 높은 값을 기준으로 운임이 책정됩니다.</li>
+      <li><strong>실제 중량 또는 부피 중량(Volume Weight):</strong> 두 가지 중 더 높은 값을 기준으로 운임이 책정됩니다. 계산 공식: <code>(가로 x 세로 x 높이 cm) / 5000</code></li>
       <li><strong>출발지 및 도착지:</strong> 한국 내 수령 주소 (서울, 경기 및 기타 지방 도시).</li>
       <li><strong>배송 서비스 종류:</strong> 선택하신 배송 소요 시간 및 서비스 등급.</li>
       <li><strong>물품 종류:</strong> 일반 화물 또는 특수 취급이 필요한 화물.</li>
@@ -265,7 +259,7 @@
     <h2>발송 전 준비 사항</h2>
 
     <p>픽업 요청 또는 매장 방문 전 다음 정보를 미리 준비해 주세요:</p>
-    
+
     <ol>
       <li>한국 내 수령인의 성명 및 연락처.</li>
       <li>한국 내 정확한 도로명 주소 및 우편번호 (5자리).</li>
@@ -275,8 +269,8 @@
     <div class="cta-container">
       <h3>오늘 바로 한국으로 패키지를 보내시겠습니까?</h3>
       <p>반둥에서 한국으로의 배송 관련 문의는 Lion Parcel 담당자에게 직접 상담받으세요:</p>
-      <a href="https://wa.me/6285183090486" class="btn-wa" target="_blank" rel="noopener">
-        WhatsApp으로 Lion Parcel Bandung에 문의하기
+      <a href="https://wa.me/6285183090486?text=Halo%20Lion%20Parcel,%20saya%20mau%20konsultasi%20ongkir%20ke%20Korea" class="btn-wa" target="_blank" rel="noopener">
+        💬 WhatsApp으로 Lion Parcel Bandung에 문의하기
       </a>
     </div>
 
@@ -285,10 +279,12 @@
 </main>
 
 <footer>
-  &copy; 2026 Lion Parcel Bandung POS101. All Rights Reserved.
+  &copy; <span class="current-year">2026</span> Lion Parcel Bandung POS101. All Rights Reserved.
 </footer>
 
 <script src="data.js"></script>
 <script src="related.js"></script>
+<!-- Master Script Auto Update Date -->
+<script src="auto-date.js"></script>
 </body>
 </html>
