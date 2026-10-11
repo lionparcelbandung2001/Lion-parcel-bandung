@@ -1,5 +1,26 @@
 const artikelData = [
 {
+     judul: "Shipping package from Indonesia to Malaysia",
+    deskripsi: "Want to send package from Indonesia to Malaysia? lionparcel will do it",
+    tanggal: "11 oktober 2026",
+    gambar: "images/shipping-parcel-to-malaysia.jpeg",
+    link: "shipping-parcel-to-malaysia.html"
+      },
+     {
+     judul: "lionparcel terdekat di wilayah rancaekek dan cicalengka",
+    deskripsi: "lionparcel terdekat di cicalengka,lionparcel terdekat di rancaekek",
+    tanggal: "11 oktober 2026",
+    gambar: "images/lion-parcel-terdekat.jpeg",
+    link: "lion-parcel-terdekat.html"
+      },
+     {
+     judul: " Penghantaran Murah Indonesia ke Malaysia - Cepat & Selamat",
+    deskripsi: "Nak kirim barang dari Indonesia ke Malaysia?lionparcel je",
+    tanggal: "11 oktober 2026",
+    gambar: "images/penghantaran-paket-ke-malaysia.jpeg",
+    link: "penghantaran-paket-ke-malaysia.html"
+      },
+     {
      judul: "How to Send Packages from Indonesia to the australia Safely and Easily",
     deskripsi: "The Ultimate Guide to Shipping UMKM & Personal Goods from Bandung,indonesia to australia",
     tanggal: "10 oktober 2026",
