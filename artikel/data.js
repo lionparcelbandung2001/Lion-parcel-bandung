@@ -1,7 +1,7 @@
 const artikelData = [
 {
      judul: "Kirim paket ke taiwan",
-    deskripsi: "pengiriman paket dari rancaekek/cicalengka ke taiwan",
+    deskripsi: "pengiriman paket dari rancaekek,cicalengka ke taiwan",
     tanggal: "12 oktober 2026",
     gambar: "pengiriman-paket-cicalengka-ke-taiwan.jpeg",
     link: "pengiriman-paket-cicalengka-ke-taiwan.html"
