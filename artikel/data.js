@@ -3,14 +3,14 @@ const artikelData = [
      judul: "Kirim paket ke taiwan",
     deskripsi: "pengiriman paket dari rancaekek,cicalengka ke taiwan",
     tanggal: "12 oktober 2026",
-    gambar: "pengiriman-paket-cicalengka-ke-taiwan.jpeg",
+    gambar: "images/pengiriman-paket-cicalengka-ke-taiwan.jpeg",
     link: "pengiriman-paket-cicalengka-ke-taiwan.html"
       },
      {
      judul: "send package from indonesia to taiwan with lionparcel",
     deskripsi: "send package from indonesia to taiwan",
     tanggal: "12 oktober 2026",
-    gambar: "ship-parcel-from-indonesia-to-taiwan.jpeg",
+    gambar: "images/ship-parcel-from-indonesia-to-taiwan.jpeg",
     link: "ship-parcel-from-indonesia-to-taiwan.html"
       },
      {
