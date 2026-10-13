@@ -1,5 +1,12 @@
 const artikelData = [
 {
+     judul: "pengiriman dan pengambilan barang dari pabrik di bandung",
+    deskripsi: "Cari Mitra Ekspedisi untuk Bisnis? lionparcel melayani Pengiriman Paket dari Pabrik Area Bandung",
+    tanggal: "14 oktober 2026",
+    gambar: "images/pengiriman-paket-pabrik-bandung.jpeg",
+    link: "pengiriman-paket-pabrik-bandung.html"
+      },
+     {
      judul: "บริการส่งพัสดุจากอินโดนีเซียไปประเทศไทย กับ Lion Parcel | ส่งของระหว่างประเทศ ราคาคุ้มค่า",
     deskripsi: "บริการส่งพัสดุจากอินโดนีเซียไปประเทศไทย กับ Lion Parcel | ส่งของระหว่างประเทศ ราคาคุ้มค่า",
     tanggal: "14 oktober 2026",
