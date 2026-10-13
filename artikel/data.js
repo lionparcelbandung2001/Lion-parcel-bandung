@@ -1,5 +1,19 @@
 const artikelData = [
 {
+     judul: "lionparcel di rancaekek bandung",
+    deskripsi: "agen lionparcel di rancaekek bandung",
+    tanggal: "13 oktober 2026",
+    gambar: "images/lion-parcel-rancaekek-bandung.jpeg",
+    link: "lion-parcel-rancaekek-bandung.html"
+      },
+     {
+     judul: "lionparcel di cicalengka bandung",
+    deskripsi: "agen lionparcel di cicalengka bandung",
+    tanggal: "13 oktober 2026",
+    gambar: "images/lion-parcel-cicalengka.jpeg",
+    link: "lion-parcel-cicalengka.html"
+      },
+     {
      judul: "Kirim paket ke taiwan",
     deskripsi: "pengiriman paket dari rancaekek,cicalengka ke taiwan",
     tanggal: "12 oktober 2026",
