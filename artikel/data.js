@@ -1,5 +1,12 @@
 const artikelData = [
 {
+     judul: "บริการส่งพัสดุจากอินโดนีเซียไปประเทศไทย กับ Lion Parcel | ส่งของระหว่างประเทศ ราคาคุ้มค่า",
+    deskripsi: "บริการส่งพัสดุจากอินโดนีเซียไปประเทศไทย กับ Lion Parcel | ส่งของระหว่างประเทศ ราคาคุ้มค่า",
+    tanggal: "14 oktober 2026",
+    gambar: "images/kirim-paket-bandung-thailand.jpeg",
+    link: "kirim-paket-bandung-thailand.html"
+      },
+     {
      judul: "lionparcel di rancaekek bandung",
     deskripsi: "agen lionparcel di rancaekek bandung",
     tanggal: "13 oktober 2026",
