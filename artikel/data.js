@@ -1,5 +1,12 @@
 const artikelData = [
 {
+     judul: "Industrial Cargo Solutions: Reliable Factory Pickup and Bulk Shipping Services",
+    deskripsi: "B2B Freight Forwarding: Simplifying Direct Factory Pickups and Deliveries with LIONPARCEL",
+    tanggal: "15 oktober 2026",
+    gambar: "images/factory-business-shipping-bandung.jpeg",
+    link: "factory-business-shipping-bandung.html"
+      },
+     {
      judul: "pengiriman dan pengambilan barang dari pabrik di bandung",
     deskripsi: "Cari Mitra Ekspedisi untuk Bisnis? lionparcel melayani Pengiriman Paket dari Pabrik Area Bandung",
     tanggal: "14 oktober 2026",
