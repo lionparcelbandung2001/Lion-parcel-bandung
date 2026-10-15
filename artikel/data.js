@@ -1,5 +1,12 @@
 const artikelData = [
 {
+     judul: "alamat lengkap dan jam operasional lionparcel nanjungmekar rancaekek pos101 bandung",
+    deskripsi: "Alamat dan jam buka lionparcel nanjungmekar rancaekek",
+    tanggal: "15 oktober 2026",
+    gambar: "images/lion-parcel-nanjungmekar-rancaekek-jam-buka-alamat.jpeg",
+    link: "lion-parcel-nanjungmekar-rancaekek-jam-buka-alamat.html"
+      },
+     {
      judul: "alamat lengkap dan jam operasional lionparcel cicalengka pos101 bandung",
     deskripsi: "Alamat dan jam buka lionparcel cicalengka",
     tanggal: "15 oktober 2026",
