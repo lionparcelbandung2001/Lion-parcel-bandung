@@ -1,5 +1,12 @@
 const artikelData = [
 {
+     judul: "alamat lengkap dan jam operasional lionparcel cicalengka pos101 bandung",
+    deskripsi: "Alamat dan jam buka lionparcel cicalengka",
+    tanggal: "15 oktober 2026",
+    gambar: "images/lion-parcel-citarik-jam-buka-alamat.jpeg",
+    link: "lion-parcel-citarik-jam-buka-alamat.html"
+      },
+     {
      judul: "Industrial Cargo Solutions: Reliable Factory Pickup and Bulk Shipping Services",
     deskripsi: "B2B Freight Forwarding: Simplifying Direct Factory Pickups and Deliveries with LIONPARCEL",
     tanggal: "15 oktober 2026",
