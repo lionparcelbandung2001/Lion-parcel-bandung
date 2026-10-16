@@ -1,5 +1,12 @@
 const artikelData = [
 {
+     judul: "ekspedisi pengiriman barang bandung-surabaya",
+    deskripsi: "pengiriman barang dari bandung ke surabaya 1 hari sampai",
+    tanggal: "16 oktober 2026",
+    gambar: "images/ekspedisi-murah-bandung-surabaya.jpeg",
+    link: "ekspedisi-murah-bandung-surabaya.html"
+      },
+     {
      judul: "ekspedisi pengiriman barang bandung-jakarta",
     deskripsi: "pengiriman barang dari bandung ke jakarta 1 hari sampai",
     tanggal: "16 oktober 2026",
