@@ -1,5 +1,12 @@
 const artikelData = [
 {
+     judul: "ekspedisi jemput paket area bandung",
+    deskripsi: "lionparcel,gratis jemput paket area bandung",
+    tanggal: "17 oktober 2026",
+    gambar: "images/ekspedisi-jemput-paket-area-bandung.jpeg",
+    link: "ekspedisi-jemput-paket-area-bandung.html"
+      },
+     {
      judul: "ekspedisi pengiriman barang pabrik di rancaekek bandung",
     deskripsi: "lionparcel melayani pengiriman barang dari beberapa pabrik di rancaekek,bandung",
     tanggal: "17 oktober 2026",
