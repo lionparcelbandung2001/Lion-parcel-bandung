@@ -1,5 +1,12 @@
 const artikelData = [
 {
+     judul: "ekspedisi pengiriman barang bandung-jakarta",
+    deskripsi: "pengiriman barang dari bandung ke jakarta 1 hari sampai",
+    tanggal: "16 oktober 2026",
+    gambar: "images/pengiriman-express-bandung-jakarta.jpeg",
+    link: "pengiriman-express-bandung-jakarta.html"
+      },
+     {
      judul: "alamat lengkap dan jam operasional lionparcel nanjungmekar rancaekek pos101 bandung",
     deskripsi: "Alamat dan jam buka lionparcel nanjungmekar rancaekek",
     tanggal: "15 oktober 2026",
