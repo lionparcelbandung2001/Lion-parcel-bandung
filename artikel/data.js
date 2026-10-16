@@ -1,5 +1,12 @@
 const artikelData = [
 {
+     judul: "ekspedisi pengiriman barang pabrik di rancaekek bandung",
+    deskripsi: "lionparcel melayani pengiriman barang dari beberapa pabrik di rancaekek,bandung",
+    tanggal: "17 oktober 2026",
+    gambar: "images/jasa-ekspedisi-pabrik-rancaekek.jpeg",
+    link: "jasa-ekspedisi-pabrik-rancaekek.html"
+      },
+     {
      judul: "ekspedisi pengiriman barang bandung-surabaya",
     deskripsi: "pengiriman barang dari bandung ke surabaya 1 hari sampai",
     tanggal: "16 oktober 2026",
