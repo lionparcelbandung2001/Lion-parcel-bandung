@@ -1,5 +1,19 @@
 const artikelData = [
 {
+     judul: "ekspedisi ongkir murah di bandung",
+    deskripsi: "lion parcel mempunyai beberapa pilihan layanan dari yg termurah hingga yang express",
+    tanggal: "19 oktober 2026",
+    gambar: "images/ekspedisi-murah-di-bandung.jpeg",
+    link: "ekspedisi-murah-di-bandung.html"
+      },
+     {
+     judul: "lionparcel terdekat di rancaekek",
+    deskripsi: "salah satu agen lionparcel terdekat di wilayah rancaekek",
+    tanggal: "19 oktober 2026",
+    gambar: "images/lionparcel-terdekat-rancaekek.jpeg",
+    link: "lionparcel-terdekat-rancaekek.html"
+      },
+     {
      judul: "ekspedisi paket ke hongkong",
     deskripsi: "lion parcel melayani pengiriman paket dari indonesia ke hongkong",
     tanggal: "18 oktober 2026",
