@@ -102,7 +102,7 @@ const artikelData = [
     deskripsi: "send package from indonesia to taiwan",
     tanggal: "12 oktober 2026",
     gambar: "images/ship-parcel-from-indonesia-to-taiwan.jpeg",
-    link: "ship-parcel-from-indonesia-to-taiwan.html"
+    link: "package-indonesia-to-taiwan.html"
       },
      {
      judul: "Shipping package from Indonesia to Malaysia",
