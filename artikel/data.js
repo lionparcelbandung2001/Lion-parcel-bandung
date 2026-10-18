@@ -334,7 +334,7 @@ const artikelData = [
     deskripsi: "kami salah satu agen lionparcel terdekat DI cicalengka.",
     tanggal: "26 September 2026",
     gambar: "images/cicalengka.jpeg",
-    link: "cicalengka.html"
+    link: "lionparcel-cicalengka.html"
       },
  {
     judul: "AGEN LIONPARCEL TERDEKAT",
