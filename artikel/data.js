@@ -1,5 +1,19 @@
 const artikelData = [
 {
+     judul: "ekspedisi paket ke hongkong",
+    deskripsi: "lion parcel melayani pengiriman paket dari indonesia ke hongkong",
+    tanggal: "18 oktober 2026",
+    gambar: "images/pengiriman-paket-ke-hongkong.jpeg",
+    link: "pengiriman-paket-ke-hongkong.html"
+      },
+     {
+     judul: "ekspedisi bandung jakarta",
+    deskripsi: "pengiriman express bandung jakarta via lionparcel",
+    tanggal: "18 oktober 2026",
+    gambar: "images/ekspedisi-bandung-jakarta.jpeg",
+    link: "ekspedisi-bandung-jakarta.html"
+      },
+     {
      judul: "ekspedisi jemput paket area bandung",
     deskripsi: "lionparcel,gratis jemput paket area bandung",
     tanggal: "17 oktober 2026",
