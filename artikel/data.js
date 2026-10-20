@@ -1,7 +1,7 @@
 const artikelData = [
 {
-     judul: "kirim paket ke taiwan",
-    deskripsi: "lionparcel melayani penjemputan dan pengiriman paket ke taiwan",
+     judul: "印尼的包裹快遞",
+    deskripsi: "印尼的包裹快遞",
     tanggal: "21 oktober 2026",
     gambar: "images/send-package-to-taiwan.jpeg",
     link: "send-package-to-taiwan.html"
