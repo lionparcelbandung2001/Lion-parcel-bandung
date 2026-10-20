@@ -1,5 +1,19 @@
 const artikelData = [
 {
+     judul: "kirim paket ke taiwan",
+    deskripsi: "lionparcel melayani penjemputan dan pengiriman paket ke taiwan",
+    tanggal: "21 oktober 2026",
+    gambar: "images/send-package-to-taiwan.jpeg",
+    link: "send-package-to-taiwan.html"
+      },
+     {
+     judul: "lionparcel cicalengka",
+    deskripsi: "agen lion parcel di cicalengka",
+    tanggal: "21 oktober 2026",
+    gambar: "images/lionparcel-di-cicalengka.jpeg",
+    link: "lionparcel-di-cicalengka.html"
+      },
+     {
      judul: "ekspedisi gratis jemput paket area bandung",
     deskripsi: "lionparcel melayani penjemputan paket area bandung raya",
     tanggal: "20 oktober 2026",
