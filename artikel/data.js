@@ -1,5 +1,19 @@
 const artikelData = [
 {
+     judul: "ekspedisi gratis jemput paket area bandung",
+    deskripsi: "lionparcel melayani penjemputan paket area bandung raya",
+    tanggal: "20 oktober 2026",
+    gambar: "images/jemput-paket-bandung.jpeg",
+    link: "jemput-paket-bandung.html"
+      },
+     {
+     judul: "ekspedisi paket indonesia-taiwan",
+    deskripsi: "lion parcel melayani pengiriman dari indonesia ke negara taiwan",
+    tanggal: "20 oktober 2026",
+    gambar: "images/ekspedisi-indonesia-taiwan.jpeg",
+    link: "ekspedisi-indonesia-taiwan.html"
+      },
+     {
      judul: "ekspedisi ongkir murah di bandung",
     deskripsi: "lion parcel mempunyai beberapa pilihan layanan dari yg termurah hingga yang express",
     tanggal: "19 oktober 2026",
