@@ -1,5 +1,19 @@
 const artikelData = [
 {
+     judul: "kontak lionparcel cicalengka",
+    deskripsi: "alamat dan nomer wa lionparcel cicalengka",
+    tanggal: "22 oktober 2026",
+    gambar: "images/kontak-lion-parcel-cicalengka.jpeg",
+    link: "kontak-lion-parcel-cicalengka.html"
+      },
+     {
+     judul: "kontak lionparcel rancaekek",
+    deskripsi: "alamat dan nomer wa lionparcel nanjungmekar rancaekek",
+    tanggal: "22 oktober 2026",
+    gambar: "images/kontak-lion-parcel-rancaekek.jpeg",
+    link: "kontak-lion-parcel-rancaekek.html"
+      },
+     {
      judul: "印尼的包裹快遞",
     deskripsi: "印尼的包裹快遞",
     tanggal: "21 oktober 2026",
