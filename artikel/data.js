@@ -1,5 +1,12 @@
 const artikelData = [
 {
+     judul: "biaya tambahan kirim barang dg ke korea selatan",
+    deskripsi: "biaya tambahan yang di bebankan jika mengirim barang dg(hp,laptop,parfum,dll) ke korea selatan",
+    tanggal: "23 oktober 2026",
+    gambar: "images/kirim-paket-korea-selatan-dangerous-goods.jpeg",
+    link: "kirim-paket-korea-selatan-dangerous-goods.html"
+      },
+     {
      judul: "kontak lionparcel cicalengka",
     deskripsi: "alamat dan nomer wa lionparcel cicalengka",
     tanggal: "22 oktober 2026",
