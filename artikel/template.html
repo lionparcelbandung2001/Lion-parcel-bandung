@@ -4,20 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- =========================================================
-       1. SEO META TAGS (Ganti Judul, Deskripsi, & Kata Kunci)
-       ========================================================= -->
+  <!-- SEO META TAGS -->
   <title>[GANTI: Judul Artikel Utama] | Lion Parcel Bandung POS101 Rancaekek</title>
-  <meta name="description" content="[GANTI: Deskripsi singkat artikel 1-2 kalimat untuk Google] Temukan lokasi Agen Resmi Lion Parcel Bandung POS101 Nanjungmekar Rancaekek di Google Maps.">
-  <meta name="keywords" content="[GANTI: kata kunci 1, kata kunci 2], lion parcel bandung, lion parcel rancaekek, lion parcel nanjungmekar, agen lion parcel pos101, google maps lion parcel bandung">
+  <meta name="description" content="[GANTI: Deskripsi artikel 1-2 kalimat]. Temukan lokasi Agen Resmi Lion Parcel Bandung POS101 Nanjungmekar Rancaekek di Google Maps.">
+  <meta name="keywords" content="[GANTI: kata kunci utama, kata kunci pendukung], lion parcel bandung, lion parcel rancaekek, lion parcel nanjungmekar, agen lion parcel pos101, google maps lion parcel bandung">
   <meta name="robots" content="index, follow">
   <meta name="author" content="Lion Parcel Bandung POS101">
 
-  <!-- Canonical URL (Ganti nama file .html nya) -->
+  <!-- CANONICAL URL -->
   <link rel="canonical" href="https://lionparcel-bandung.com/artikel/[GANTI-NAMA-FILE].html">
   <link rel="icon" href="../foto.jpg">
 
-  <!-- Open Graph / Social Media SEO -->
+  <!-- OPEN GRAPH -->
   <meta property="og:type" content="article">
   <meta property="og:title" content="[GANTI: Judul Artikel Utama] | Lion Parcel Bandung POS101">
   <meta property="og:description" content="[GANTI: Deskripsi singkat artikel]">
@@ -25,16 +23,20 @@
   <meta property="og:site_name" content="Lion Parcel Bandung POS101">
   <meta property="og:image" content="https://lionparcel-bandung.com/images/[GANTI-NAMA-GAMBAR].jpeg">
 
-  <!-- =========================================================
-       2. SCHEMA JSON-LD (Otomatis Di-update oleh auto-date.js + Maps/Location)
-       ========================================================= -->
+  <!-- SCHEMA JSON-LD -->
   <script type="application/ld+json" id="article-schema">
   {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     "headline": "[GANTI: Judul Artikel Utama]",
+    "description": "[GANTI: Deskripsi artikel]",
+    "image": "https://lionparcel-bandung.com/images/[GANTI-NAMA-GAMBAR].jpeg",
     "datePublished": "2026-10-23T08:00:00+07:00",
     "dateModified": "2026-10-23T08:00:00+07:00",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://lionparcel-bandung.com/artikel/[GANTI-NAMA-FILE].html"
+    },
     "author": {
       "@type": "LocalBusiness",
       "name": "Lion Parcel Bandung POS101 Nanjungmekar",
@@ -47,6 +49,11 @@
         "addressRegion": "Jawa Barat",
         "addressCountry": "ID"
       }
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Lion Parcel Bandung POS101",
+      "url": "https://lionparcel-bandung.com"
     }
   }
   </script>
@@ -61,30 +68,30 @@
       font-family: Arial, sans-serif;
       background: #f5f5f5;
       color: #222;
-      line-height: 1.8;
+      line-height: 1.7;
     }
 
     header {
       background: #d71920;
       color: white;
-      padding: 30px 20px;
+      padding: 22px 15px;
       text-align: center;
     }
 
     header h1 {
       margin: 0;
-      font-size: 28px;
+      font-size: 25px;
     }
 
     .container {
       max-width: 850px;
       margin: auto;
-      padding: 30px 20px;
+      padding: 20px 15px;
     }
 
     .back {
       display: inline-block;
-      margin-bottom: 25px;
+      margin-bottom: 15px;
       color: #d71920;
       text-decoration: none;
       font-weight: bold;
@@ -96,42 +103,50 @@
 
     .artikel {
       background: white;
-      padding: 30px;
+      padding: 24px;
       border-radius: 12px;
-      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+      box-shadow: 0 3px 12px rgba(0,0,0,0.07);
+      overflow-wrap: break-word;
     }
 
     .tanggal {
       color: #777;
-      font-size: 14px;
-      margin-bottom: 20px;
+      font-size: 13px;
+      margin-bottom: 12px;
     }
 
     .artikel h2 {
-      font-size: 22px;
+      font-size: 21px;
       line-height: 1.4;
-      margin-top: 25px;
+      margin: 24px 0 12px;
       color: #d71920;
     }
 
+    .artikel h2:first-of-type {
+      margin-top: 8px;
+    }
+
     .artikel h3 {
-      margin-top: 20px;
-      font-size: 18px;
+      margin-top: 15px;
+      font-size: 17px;
+      line-height: 1.4;
       color: #333;
     }
 
     .artikel p {
-      margin: 15px 0;
-      font-size: 16px;
+      margin: 12px 0;
+      font-size: 15px;
     }
 
     .artikel ul,
     .artikel ol {
-      padding-left: 25px;
+      padding-left: 22px;
+      margin: 12px 0;
     }
 
     .artikel li {
-      margin-bottom: 8px;
+      margin-bottom: 6px;
+      font-size: 15px;
     }
 
     .artikel a {
@@ -139,24 +154,27 @@
       font-weight: bold;
     }
 
-    /* CSS Gambar Atas Artikel */
+    /* GAMBAR ARTIKEL: KECIL, TENGAH, RESPONSIF */
     .img-artikel {
-      width: 100%;
+      display: block;
+      width: auto;
       max-width: 100%;
+      max-height: 280px;
       height: auto;
+      object-fit: contain;
+      margin: 14px auto 18px;
       border-radius: 8px;
-      margin: 20px 0;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.10);
     }
 
-    /* CSS Box Call-to-Action WhatsApp */
+    /* KOTAK WHATSAPP */
     .cta-box {
       background-color: #e8f5e9;
-      border: 2px dashed #2e7d32;
-      padding: 20px;
+      border: 1px dashed #2e7d32;
+      padding: 16px;
       border-radius: 8px;
       text-align: center;
-      margin: 30px 0;
+      margin: 22px 0;
     }
 
     .cta-box h3 {
@@ -164,31 +182,34 @@
       color: #1b5e20;
     }
 
+    .cta-box p {
+      margin: 8px 0;
+    }
+
     .cta-button {
       display: inline-block;
       background-color: #25d366;
       color: #ffffff !important;
-      font-size: 16px;
+      font-size: 15px;
       font-weight: bold;
-      padding: 12px 25px;
+      padding: 10px 20px;
       text-decoration: none;
       border-radius: 50px;
-      margin-top: 10px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      transition: background-color 0.3s ease;
+      margin-top: 8px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.10);
     }
 
     .cta-button:hover {
       background-color: #128c7e;
     }
 
-    /* CSS Box Google Maps Section */
+    /* KOTAK GOOGLE MAPS */
     .maps-box {
       background-color: #f9f9f9;
       border: 1px solid #e0e0e0;
       border-radius: 8px;
-      padding: 20px;
-      margin: 30px 0;
+      padding: 16px;
+      margin: 24px 0;
       text-align: center;
     }
 
@@ -199,19 +220,18 @@
 
     .map-responsive {
       overflow: hidden;
-      padding-bottom: 56.25%;
       position: relative;
-      height: 0;
+      width: 100%;
+      aspect-ratio: 16 / 9;
       border-radius: 8px;
-      margin-top: 15px;
+      margin-top: 12px;
     }
 
     .map-responsive iframe {
-      left: 0;
-      top: 0;
-      height: 100%;
-      width: 100%;
       position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
       border: 0;
     }
 
@@ -221,11 +241,10 @@
       color: #ffffff !important;
       font-size: 14px;
       font-weight: bold;
-      padding: 10px 20px;
+      padding: 10px 18px;
       text-decoration: none;
       border-radius: 6px;
-      margin-top: 15px;
-      transition: background-color 0.3s ease;
+      margin-top: 12px;
     }
 
     .maps-btn:hover {
@@ -233,25 +252,59 @@
     }
 
     footer {
-      margin-top: 40px;
-      padding: 25px 20px;
+      margin-top: 25px;
+      padding: 20px 15px;
       text-align: center;
       background: #222;
       color: white;
-      font-size: 14px;
+      font-size: 13px;
     }
 
+    /* TAMPILAN HP */
     @media (max-width: 600px) {
-      .container {
-        padding: 20px 15px;
-      }
-
-      .artikel {
-        padding: 20px;
+      header {
+        padding: 18px 12px;
       }
 
       header h1 {
-        font-size: 22px;
+        font-size: 21px;
+      }
+
+      .container {
+        padding: 14px 10px;
+      }
+
+      .artikel {
+        padding: 16px;
+      }
+
+      .artikel h2 {
+        font-size: 19px;
+        margin-top: 20px;
+      }
+
+      .artikel p,
+      .artikel li {
+        font-size: 14px;
+        line-height: 1.7;
+      }
+
+      /* Gambar lebih pendek agar artikel tidak terlalu panjang */
+      .img-artikel {
+        max-width: 100%;
+        max-height: 210px;
+        margin: 10px auto 14px;
+      }
+
+      .cta-box,
+      .maps-box {
+        padding: 13px;
+        margin: 18px 0;
+      }
+
+      .cta-button {
+        max-width: 100%;
+        padding: 10px 15px;
       }
     }
   </style>
@@ -271,70 +324,117 @@
 
   <article class="artikel">
 
-    <!-- Tag Tanggal Semantik (Otomatis Di-update oleh auto-date.js) -->
+    <!-- TANGGAL ARTIKEL -->
     <div class="tanggal">
-      Diperbarui: <time id="article-updated-date" datetime="2026-10-23">23 Oktober 2026</time>
+      Diperbarui:
+      <time id="article-updated-date" datetime="2026-10-23">
+        23 Oktober 2026
+      </time>
     </div>
 
-    <!-- Judul Artikel H2 Utama -->
+    <!-- JUDUL UTAMA -->
     <h2>[GANTI: Judul Artikel Utama Di Sini]</h2>
 
-    <!-- =========================================================
-         GAMBAR UTAMA ARTIKEL (Ganti nama file gambar .jpeg Anda)
-         ========================================================= -->
-    <img src="images/[GANTI-NAMA-GAMBAR].jpeg" alt="[GANTI: Deskripsi Gambar Untuk SEO]" class="img-artikel">
+    <!--
+      LOKASI GAMBAR:
+      Jika artikel berada di /artikel/ dan gambar berada di /images/,
+      gunakan ../images/nama-gambar.jpeg
+    -->
+    <img
+      src="../images/[GANTI-NAMA-GAMBAR].jpeg"
+      alt="[GANTI: Deskripsi gambar sesuai isi artikel]"
+      class="img-artikel"
+      loading="eager"
+      decoding="async">
 
-    <!-- =========================================================
-         3. ISI ARTIKEL (Tulis Paragraf & Sub-heading di sini)
-         ========================================================= -->
+    <!-- ISI PEMBUKA ARTIKEL -->
     <p>
-      [GANTI: Paragraf pembuka artikel Anda di sini...]
+      [GANTI: Paragraf pembuka artikel. Jelaskan topik utama secara alami,
+      informatif, dan sesuai dengan kebutuhan calon pelanggan.]
     </p>
 
-    <!-- Box Kontak WhatsApp CTA -->
+    <p>
+      [GANTI: Paragraf pendukung yang menjelaskan manfaat informasi
+      bagi pembaca.]
+    </p>
+
+    <!-- WHATSAPP CTA -->
     <div class="cta-box">
-      <h3>[GANTI: Judul Penawaran CTA, misal: Butuh Kirim Paket atau Jemput Gratis?]</h3>
-      <p>[GANTI: Pesan singkat, misal: Hubungi Agen Resmi Lion Parcel Nanjungmekar POS101 Rancaekek sekarang!]</p>
-      <a href="https://wa.me/6285183090486?text=Halo%20Lion%20Parcel,%20saya%20mau%20tanya%20kirim%20paket" class="cta-button" target="_blank" rel="noopener">
+      <h3>[GANTI: Judul Penawaran WhatsApp]</h3>
+      <p>
+        [GANTI: Pesan singkat untuk mengajak pembaca menghubungi
+        Agen Resmi Lion Parcel Bandung POS101 Nanjungmekar Rancaekek.]
+      </p>
+      <a
+        href="https://wa.me/6285183090486?text=Halo%20Lion%20Parcel%2C%20saya%20mau%20tanya%20tentang%20pengiriman%20paket."
+        class="cta-button"
+        target="_blank"
+        rel="noopener">
         💬 Chat WhatsApp 0851-8309-0486
       </a>
     </div>
 
+    <!-- TOPIK 1 -->
     <h2>[GANTI: Sub-Judul Topik 1]</h2>
+
     <p>
-      [GANTI: Penjelasan topik 1...]
+      [GANTI: Penjelasan topik pertama. Gunakan informasi yang relevan
+      dan hindari pengulangan kata kunci secara berlebihan.]
     </p>
 
     <ul>
-      <li><strong>Poin 1:</strong> Penjelasan poin pertama.</li>
-      <li><strong>Poin 2:</strong> Penjelasan poin kedua.</li>
+      <li>
+        <strong>[Poin 1]:</strong>
+        [GANTI: Penjelasan poin pertama.]
+      </li>
+      <li>
+        <strong>[Poin 2]:</strong>
+        [GANTI: Penjelasan poin kedua.]
+      </li>
     </ul>
 
-    <!-- Box Lokasi Google Maps -->
+    <!-- GOOGLE MAPS -->
     <div class="maps-box">
       <h3>📍 Lokasi Agen Resmi Lion Parcel POS101 Nanjungmekar</h3>
-      <p>Kunjungi POS101 Nanjungmekar Rancaekek atau dapatkan rute pengiriman langsung ke agen kami melalui Google Maps:</p>
-      
+
+      <p>
+        Lihat lokasi agen dan petunjuk arah melalui Google Maps
+        sebelum berkunjung.
+      </p>
+
       <div class="map-responsive">
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.369874830386!2d107.7788!3d-6.9656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwNTcnNTYuMiJTIDEwN8KwNDYnNDMuNyJF!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" 
-          width="600" 
-          height="450" 
-          style="border:0;" 
-          allowfullscreen="" 
-          loading="lazy" 
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.369874830386!2d107.7788!3d-6.9656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwNTcnNTYuMiJTIDEwN8KwNDYnNDMuNyJF!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid"
+          title="Peta lokasi Lion Parcel Bandung POS101 Nanjungmekar Rancaekek"
+          allowfullscreen
+          loading="lazy"
           referrerpolicy="no-referrer-when-downgrade">
         </iframe>
       </div>
 
-      <a href="https://maps.app.goo.gl/UAWfz6R3yJk6UMXH7" class="maps-btn" target="_blank" rel="noopener">
+      <a
+        href="https://maps.app.goo.gl/UAWfz6R3yJk6UMXH7"
+        class="maps-btn"
+        target="_blank"
+        rel="noopener">
         🗺️ Buka Lokasi di Google Maps
       </a>
     </div>
 
+    <!-- TOPIK 2 -->
     <h2>[GANTI: Sub-Judul Topik 2]</h2>
+
     <p>
-      [GANTI: Penjelasan topik 2...]
+      [GANTI: Penjelasan topik kedua. Tambahkan informasi yang membantu
+      pembaca memahami topik dan mengambil langkah selanjutnya.]
+    </p>
+
+    <!-- PENUTUP -->
+    <h2>Kesimpulan</h2>
+
+    <p>
+      [GANTI: Ringkasan singkat artikel dan ajakan yang relevan
+      untuk menghubungi agen jika pembaca membutuhkan informasi lebih lanjut.]
     </p>
 
   </article>
@@ -342,12 +442,13 @@
 </main>
 
 <footer>
-  &copy; <span class="current-year">2026</span> Lion Parcel Bandung POS101
+  &copy; <span class="current-year">2026</span>
+  Lion Parcel Bandung POS101
 </footer>
 
 <script src="data.js"></script>
 <script src="related.js"></script>
-<!-- Master Script Auto Update Date -->
 <script src="auto-date.js"></script>
+
 </body>
 </html>
