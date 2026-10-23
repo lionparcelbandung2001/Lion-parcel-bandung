@@ -1,5 +1,19 @@
 const artikelData = [
 {
+     judul: "kontak lionparcel bandung -pos101",
+    deskripsi: "kirim paket dari wilayah bandung,bisa hubungi kami ya",
+    tanggal: "23 oktober 2026",
+    gambar: "images/kontak-lion-parcel-bandung.jpeg",
+    link: "kontak-lion-parcel-bandung.html"
+      },
+     {
+     judul: "kirim paket ke singapura",
+    deskripsi: "ingin kirim paket ke singapura?hubungi kami",
+    tanggal: "23 oktober 2026",
+    gambar: "images/kirim-paket-indonesia-singapura.jpeg",
+    link: "kirim-paket-indonesia-singapura.html"
+      },
+     {
      judul: "biaya tambahan kirim barang dg ke korea selatan",
     deskripsi: "biaya tambahan yang di bebankan jika mengirim barang dg(hp,laptop,parfum,dll) ke korea selatan",
     tanggal: "23 oktober 2026",
