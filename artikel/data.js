@@ -1,5 +1,26 @@
 const artikelData = [
 {
+     judul: "印尼到中国快递运费便宜 - Lion Parcel INTERPACK | Lion Parcel Bandung POS101 Rancaekek",
+    deskripsi: "从印尼寄包裹到中国运费便宜，用Lion Parcel INTERPACK。安全快速，可寄食品服装文件到中国大陆、香港、台湾。",
+    tanggal: "25 oktober 2026",
+    gambar: "images/印度尼西亚到中国的物流.jpeg",
+    link: "印度尼西亚到中国的物流.html"
+      },
+     {
+     judul: "interpack lionparcel",
+    deskripsi: "kirim ke luar negeri pakai interpack lionparcel yaa",
+    tanggal: "25 oktober 2026",
+    gambar: "images/ongkir-murah-luar-negeri-interpack.jpeg",
+    link: "ongkir-murah-luar-negeri-interpack.html"
+      },
+     {
+     judul: "lionparcel rancaekek -pos101",
+    deskripsi: "salah satu agen lionparcel rancaekek",
+    tanggal: "25 oktober 2026",
+    gambar: "images/lionparcel-terdekat-di-rancaekek.jpeg",
+    link: "lionparcel-terdekat-di-rancaekek.html"
+      },
+     {
      judul: "send package from indonesia to singapore",
     deskripsi: "how to shipping package from indonesia to singapore",
     tanggal: "24 oktober 2026",
