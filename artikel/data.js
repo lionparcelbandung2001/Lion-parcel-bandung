@@ -1,5 +1,26 @@
 const artikelData = [
 {
+     judul: "send package from indonesia to singapore",
+    deskripsi: "how to shipping package from indonesia to singapore",
+    tanggal: "24 oktober 2026",
+    gambar: "images/shipping-indonesia-to-singapore.jpeg",
+    link: "shipping-indonesia-to-singapore.html"
+      },
+     {
+     judul: "jam buka lionparcel cicalengka -pos101",
+    deskripsi: "jam operasional lionparcel cicalengka",
+    tanggal: "24 oktober 2026",
+    gambar: "images/jam-buka-lionparcel-cicalengka.jpeg",
+    link: "jam-buka-lionparcel-cicalengka.html"
+      },
+     {
+     judul: "jam buka lionparcel rancaekek,nanjungmekar -pos101",
+    deskripsi: "jam operasional lionparcel rancaekek,nanjungmekar",
+    tanggal: "24 oktober 2026",
+    gambar: "images/jam-buka-lionparcel-rancaekek.jpeg",
+    link: "jam-buka-lionparcel-rancaekek.html"
+      },
+     {
      judul: "kontak lionparcel bandung -pos101",
     deskripsi: "kirim paket dari wilayah bandung,bisa hubungi kami ya",
     tanggal: "23 oktober 2026",
