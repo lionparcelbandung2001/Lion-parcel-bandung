@@ -1,5 +1,26 @@
 const artikelData = [
 {
+     judul: "kirim paket ke malaysia dari bandung",
+    deskripsi: "mau kirim paket dari bandung ke malaysia?hubungi kami",
+    tanggal: "26 oktober 2026",
+    gambar: "images/expedisi-paket-ke-malaysia.jpeg",
+    link: "expedisi-paket-ke-malaysia.html"
+      },
+     {
+     judul: "nomor wa lionparcel bandung-pos101",
+    deskripsi: "nomor wa lionparcel bandung yang aktif",
+    tanggal: "26 oktober 2026",
+    gambar: "images/nomor-wa-lion-parcel-bandung.jpeg",
+    link: "nomor-wa-lion-parcel-bandung.html"
+      },
+     {
+     judul: "Expedisi bandung jakarta satu hari sampai",
+    deskripsi: "EXPRESS BANDUNG JAKARTA",
+    tanggal: "26 oktober 2026",
+    gambar: "images/expedisi-bandung-jakarta.jpeg",
+    link: "expedisi-bandung-jakarta.html"
+      },
+     {
      judul: "印尼到中国快递运费便宜 - Lion Parcel INTERPACK | Lion Parcel Bandung POS101 Rancaekek",
     deskripsi: "从印尼寄包裹到中国运费便宜，用Lion Parcel INTERPACK。安全快速，可寄食品服装文件到中国大陆、香港、台湾。",
     tanggal: "25 oktober 2026",
