@@ -1,5 +1,19 @@
 const artikelData = [
 {
+     judul: "cek resi lionparcel",
+    deskripsi: "tata cara cek resi lion parcel",
+    tanggal: "27 oktober 2026",
+    gambar: "images/cara-cek-resi-lacak-paket-lion-parcel.jpeg",
+    link: "cara-cek-resi-lacak-paket-lion-parcel.html"
+      },
+     {
+     judul: "cara packing makanan dan elektronik",
+    deskripsi: "cara kirim makanan dan barang elektronik agar aman sampai ke penerima",
+    tanggal: "27 oktober 2026",
+    gambar: "images/cara-kirim-paket-aman-makanan-elektronik.jpeg",
+    link: "cara-kirim-paket-aman-makanan-elektronik.html"
+      },
+     {
      judul: "klaim kehilangan paket di lionparcel",
     deskripsi: "kesulitan cara pengajuan klaim kehilangan paket lionparcel,hubungi kami ya",
     tanggal: "26 oktober 2026",
