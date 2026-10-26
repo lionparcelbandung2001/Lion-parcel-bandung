@@ -1,5 +1,12 @@
 const artikelData = [
 {
+     judul: "klaim kehilangan paket di lionparcel",
+    deskripsi: "kesulitan cara pengajuan klaim kehilangan paket lionparcel,hubungi kami ya",
+    tanggal: "26 oktober 2026",
+    gambar: "images/cara-klaim-paket-hilang-ekspedisi-bandung.jpeg",
+    link: "cara-klaim-paket-hilang-ekspedisi-bandung.html"
+      },
+     {
      judul: "kirim paket ke malaysia dari bandung",
     deskripsi: "mau kirim paket dari bandung ke malaysia?hubungi kami",
     tanggal: "26 oktober 2026",
