@@ -1,5 +1,12 @@
 const artikelData = [
 {
+     judul: "sejarah sumpah pemuda",
+    deskripsi: "asal usul sumpah pemuda",
+    tanggal: "28 oktober 2026",
+    gambar: "images/sejarah-sumpah-pemuda.jpeg",
+    link: "sejarah-sumpah-pemuda.html"
+      },
+     {
      judul: "kirim paket ongkir hemat,ya lionparcel",
     deskripsi: "ongkir murah via lionparcel aja",
     tanggal: "28 oktober 2026",
