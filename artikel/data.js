@@ -1,5 +1,19 @@
 const artikelData = [
 {
+     judul: "kirim paket ongkir hemat,ya lionparcel",
+    deskripsi: "ongkir murah via lionparcel aja",
+    tanggal: "28 oktober 2026",
+    gambar: "images/ekspedisi-bandung-murah.jpeg",
+    link: "ekspedisi-bandung-murah.html"
+      },
+     {
+     judul: "ekspedisi paket indonesia-brunei darussalam",
+    deskripsi: "kirim paket ke brunei,pakai lionparcel aja",
+    tanggal: "28 oktober 2026",
+    gambar: "images/ekspedisi-indonesia-ke-brunei-darussalam.jpeg",
+    link: "ekspedisi-indonesia-ke-brunei-darussalam.html"
+      },
+     {
      judul: "cek resi lionparcel",
     deskripsi: "tata cara cek resi lion parcel",
     tanggal: "27 oktober 2026",
