@@ -1,5 +1,19 @@
 const artikelData = [
 {
+     judul: "jenis barang DG yang tidak bisa di kirim via udara",
+    deskripsi: "barang yang tidak bisa di kirim via udara",
+    tanggal: "29 oktober 2026",
+    gambar: "images/barang-terlarang-ekspedisi-udara.jpeg",
+    link: "barang-terlarang-ekspedisi-udara.html"
+      },
+     {
+     judul: "kirim barang ke amerika serikat?pakai lionparcel",
+    deskripsi: "ekspedisi yang melayani pengiriman barang dari indonesia ke amerika serikat",
+    tanggal: "29 oktober 2026",
+    gambar: "images/ekspedisi-indonesia-amerika.jpeg",
+    link: "ekspedisi-indonesia-amerika.html"
+      },
+     {
      judul: "sejarah sumpah pemuda",
     deskripsi: "asal usul sumpah pemuda",
     tanggal: "28 oktober 2026",
