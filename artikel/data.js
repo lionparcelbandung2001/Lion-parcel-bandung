@@ -1,5 +1,19 @@
 const artikelData = [
 {
+     judul: "​印尼寄香港快遞服務 | 廉價運費與快速空運 | Lion Parcel Bandung POS101",
+    deskripsi: "​提供專業印尼至香港包裹寄遞服務。包含清關支援、實時追蹤及優惠運費，讓您的印尼貨物安全快速送達香港。",
+    tanggal: "30 oktober 2026",
+    gambar: "images/indonesia-to-hongkong-express.jpeg",
+    link: "indonesia-to-hongkong-express.html"
+      },
+     {
+     judul: "jemput paket?wa kami,gratis jemput paket",
+    deskripsi: "lion parcel gratis jemput paket area bandung",
+    tanggal: "30 oktober 2026",
+    gambar: "images/lionparcel-bandung-gratis-jemput-paket.jpeg",
+    link: "lionparcel-bandung-gratis-jemput-paket.html"
+      },
+     {
      judul: "jenis barang DG yang tidak bisa di kirim via udara",
     deskripsi: "barang yang tidak bisa di kirim via udara",
     tanggal: "29 oktober 2026",
