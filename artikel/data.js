@@ -1,5 +1,19 @@
 const artikelData = [
 {
+     judul: "​paket nggak gerak saat tracking online?",
+    deskripsi: "berikut hal yang perlu di lakukan jika paket anda tidak bergerak saat cek tracking",
+    tanggal: "31 oktober 2026",
+    gambar: "images/kenapa-paket-nggak-gerak.jpeg",
+    link: "kenapa-paket-nggak-gerak.html"
+      },
+     {
+     judul: "​paket hilang?",
+    deskripsi: "​apa yang harus di laukan jika paket hilang/missing",
+    tanggal: "31 oktober 2026",
+    gambar: "images/paket-hilang-harus-ngapain.jpeg",
+    link: "paket-hilang-harus-ngapain.html"
+      },
+     {
      judul: "​印尼寄香港快遞服務 | 廉價運費與快速空運 | Lion Parcel Bandung POS101",
     deskripsi: "​提供專業印尼至香港包裹寄遞服務。包含清關支援、實時追蹤及優惠運費，讓您的印尼貨物安全快速送達香港。",
     tanggal: "30 oktober 2026",
