@@ -1,5 +1,26 @@
 const artikelData = [
 {
+     judul: "​looking for an international courier service that delivers from Indonesia to Singapore?",
+    deskripsi: "with lionparcel bandung,send package from indonesia savely to singapore",
+    tanggal: "01 november 2026",
+    gambar: "images/indonesia-singapore-shipping.jpeg",
+    link: "indonesia-singapore-shipping.html"
+      },
+     {
+     judul: "pengiriman paket bandung jakarta 1 hari sampai",
+    deskripsi: "paket hari ini besok sampai di jakarta",
+    tanggal: "01 november 2026",
+    gambar: "images/kirim-paket-bandung-jakarta-1-hari-sampai.jpeg",
+    link: "kirim-paket-bandung-jakarta-1-hari-sampai.html"
+      },
+     {
+     judul: "lionparcel rancaekek",
+    deskripsi: "agen lionparcel terdekat di wilayah rancaekek,bandung",
+    tanggal: "01 november 2026",
+    gambar: "images/lion-parcel-terdekat-rancaekek.jpeg",
+    link: "lion-parcel-terdekat-rancaekek.html"
+      },
+     {
      judul: "​paket nggak gerak saat tracking online?",
     deskripsi: "berikut hal yang perlu di lakukan jika paket anda tidak bergerak saat cek tracking",
     tanggal: "31 oktober 2026",
