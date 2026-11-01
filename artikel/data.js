@@ -1,5 +1,19 @@
 const artikelData = [
 {
+     judul: "​lionparcel terdekat di cicalengka?",
+    deskripsi: "kirim paket wilayah cicalengka,hubungi kami ya,gratis jemput paket",
+    tanggal: "02 november 2026",
+    gambar: "images/lion-parcel-terdekat-di-cicalengka.jpeg",
+    link: "lion-parcel-terdekat-di-cicalengka.html"
+      },
+     {
+     judul: "​ongkir paket termurah ke malaysia?",
+    deskripsi: "ongkir paket termurah ke malaysia,taa lionparcel dong",
+    tanggal: "02 november 2026",
+    gambar: "images/ongkir-paket-termurah-ke-malaysia.jpeg",
+    link: "ongkir-paket-termurah-ke-malaysia.html"
+      },
+     {
      judul: "​looking for an international courier service that delivers from Indonesia to Singapore?",
     deskripsi: "with lionparcel bandung,send package from indonesia savely to singapore",
     tanggal: "01 november 2026",
