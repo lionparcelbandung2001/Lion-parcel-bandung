@@ -1,5 +1,19 @@
 const artikelData = [
 {
+     judul: "biaya tambahan pengiriman paket DG ke korea selatan,malaysia,taiwan,dan singapura",
+    deskripsi: "biaya handling tambahan untuk komoditi dg ke negara lain",
+    tanggal: "03 november 2026",
+    gambar: "images/biaya-tambahan-komoditi-dg.jpeg",
+    link: "biaya-tambahan-komoditi-dg.html"
+      },
+     {
+     judul: "​jemput paket area bandung?",
+    deskripsi: "jemput paket area bandung,hubungi kami yaaaa",
+    tanggal: "03 november 2026",
+    gambar: "images/jemput-paket-gratis-bandung.jpeg",
+    link: "jemput-paket-gratis-bandung.html"
+      },
+     {
      judul: "​lionparcel terdekat di cicalengka?",
     deskripsi: "kirim paket wilayah cicalengka,hubungi kami ya,gratis jemput paket",
     tanggal: "02 november 2026",
