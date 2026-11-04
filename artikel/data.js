@@ -1,5 +1,19 @@
 const artikelData = [
 {
+     judul: "印尼寄包裹到中国：国际快递流程、费用及注意事项",
+    deskripsi: "想从印度尼西亚寄包裹到中国？了解国际快递流程、包装要求、运费及清关注意事项，联系 Lion Parcel Bandung POS101 咨询。",
+    tanggal: "04 november 2026",
+    gambar: "images/pengiriman-paket-indonesia-china.jpeg",
+    link: "pengiriman-paket-indonesia-china.html"
+      },
+     {
+     judul: "paking kayu lionparcel",
+    deskripsi: "bingung paking kayu,pakai lionparcel aja tanpa ribet",
+    tanggal: "04 november 2026",
+    gambar: "images/cara-packing-kayu.jpeg",
+    link: "cara-packing-kayu.html"
+      },
+     {
      judul: "biaya tambahan pengiriman paket DG ke korea selatan,malaysia,taiwan,dan singapura",
     deskripsi: "biaya handling tambahan untuk komoditi dg ke negara lain",
     tanggal: "03 november 2026",
