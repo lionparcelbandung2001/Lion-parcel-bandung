@@ -1,5 +1,19 @@
 const artikelData = [
 {
+     judul: "sejarah dan asal usul singkat kecamatan rancaekek",
+    deskripsi: "sejarah singkat seputar kecamatan rancaekek",
+    tanggal: "05 november 2026",
+    gambar: "images/sejarah-rancaekek.jpeg",
+    link: "sejarah-rancaekek.html"
+      },
+     {
+     judul: "إرسال الطرود من إندونيسيا إلى المملكة العربية السعودية: الشروط والتكاليف وطريقة الشحن",
+    deskripsi: "تعرف على كيفية إرسال الطرود من إندونيسيا إلى السعودية، ومتطلبات الشحن الدولي والتغليف والجمارك والوثائق المهمة.",
+    tanggal: "06 november 2026",
+    gambar: "images/shipping-indonesia-saudi.jpeg",
+    link: "shipping-indonesia-saudi.html"
+      },
+     {
      judul: "ekpedisi bandung-tangerang 1 hari sampai",
     deskripsi: "mau kirim barang dari bandung ke tangerang 1 hari sampai, hubungi kami ya",
     tanggal: "05 november 2026",
