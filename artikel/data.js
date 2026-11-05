@@ -1,5 +1,19 @@
 const artikelData = [
 {
+     judul: "ekpedisi bandung-tangerang 1 hari sampai",
+    deskripsi: "mau kirim barang dari bandung ke tangerang 1 hari sampai, hubungi kami ya",
+    tanggal: "05 november 2026",
+    gambar: "images/ekspedisi-bandung-tangerang.jpeg",
+    link: "ekspedisi-bandung-tangerang.html"
+      },
+     {
+     judul: "send package from indoneia to singapora",
+    deskripsi: "nak kirim paket from indoneia,lionparcel je",
+    tanggal: "05 november 2026",
+    gambar: "images/paket-indonesia-to-singapura.jpeg",
+    link: "paket-indonesia-to-singapura.html"
+      },
+     {
      judul: "印尼寄包裹到中国：国际快递流程、费用及注意事项",
     deskripsi: "想从印度尼西亚寄包裹到中国？了解国际快递流程、包装要求、运费及清关注意事项，联系 Lion Parcel Bandung POS101 咨询。",
     tanggal: "04 november 2026",
