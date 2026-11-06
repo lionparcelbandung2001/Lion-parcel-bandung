@@ -1,8 +1,22 @@
 const artikelData = [
 {
+     judul: "Layanan Pengiriman Barang Express Bandung-Depok 1 Hari Sampai | Lion Parcel Bandung POS101",
+    deskripsi: "Butuh kirim paket express Bandung ke Depok 1 hari sampai? Gunakan layanan terpercaya Lion Parcel POS101",
+    tanggal: "07 november 2026",
+    gambar: "images/pengiriman-bandung-depok.jpeg",
+    link: "pengiriman-barang-bandung-depok-1-hari.html"
+      },
+     {
+     judul: "Sejarah Kecamatan Cicalengka Bandung: Dari Era Kerajaan Hingga Jalur Kereta Api | Lion Parcel Bandung POS101 ",
+    deskripsi: "Simak sejarah Kecamatan Cicalengka Bandung, asal-usul nama dari pohon calengka, peran penting di era kolonial Belanda, hingga menjadi pusat perkeretaapian",
+    tanggal: "07 november 2026",
+    gambar: "images/sejarah-cicalengka.jpeg",
+    link: "sejarah-kecamatan-cicalengka-bandung.html"
+      },
+     {
      judul: "sejarah dan asal usul singkat kecamatan rancaekek",
     deskripsi: "sejarah singkat seputar kecamatan rancaekek",
-    tanggal: "05 november 2026",
+    tanggal: "06 november 2026",
     gambar: "images/sejarah-rancaekek.jpeg",
     link: "sejarah-rancaekek.html"
       },
