@@ -1,5 +1,19 @@
 const artikelData = [
 {
+     judul: "Sejarah Masjid Agung Cicalengka: Masjid Bersejarah di Bandung",
+    deskripsi: "Mengenal sejarah Masjid Agung Cicalengka, masjid bersejarah di Alun-Alun Cicalengka, arsitektur, renovasi, dan kisah masa DI/TII.",
+    tanggal: "08 november 2026",
+    gambar: "images/masjid-agung-cicalengka.jpeg",
+    link: "masjid-agung-cicalengka-sejarah.html"
+      },
+     {
+     judul: "Pengiriman Barang Bandung Bekasi Express 1 Hari Sampai | Lion Parcel Bandung POS101",
+    deskripsi: "Butuh pengiriman barang Bandung Bekasi express? Cek pilihan layanan cepat Lion Parcel",
+    tanggal: "08 november 2026",
+    gambar: "images/pengiriman-bandung-bekasi-express.jpeg",
+    link: "pengiriman-bandung-bekasi-express-1-hari.html"
+      },
+     {
      judul: "Layanan Pengiriman Barang Express Bandung-Depok 1 Hari Sampai | Lion Parcel Bandung POS101",
     deskripsi: "Butuh kirim paket express Bandung ke Depok 1 hari sampai? Gunakan layanan terpercaya Lion Parcel POS101",
     tanggal: "07 november 2026",
