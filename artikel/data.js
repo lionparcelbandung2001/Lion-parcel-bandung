@@ -1,5 +1,19 @@
 const artikelData = [
 {
+     judul: "Ekspedisi Bandung Bogor Express 1 Hari Sampai Murah & Cepat | Lion Parcel POS101",
+    deskripsi: "Layanan ekspedisi Bandung ke Bogor express 1 hari sampai",
+    tanggal: "09 november 2026",
+    gambar: "images/ekspedisi-bandung-bogor.jpeg",
+    link: "ekspedisi-bandung-bogor-express-1-hari-sampai.html"
+      },
+     {
+     judul: "7 Tempat Wisata Cicalengka Terbaru 2026 yang Hits dan Wajib Dikunjungi ",
+    deskripsi: "Rekomendasi tempat wisata Cicalengka terbaru dan paling populer 2026. Mulai dari Cicalengka Dreamland, Curug Cinulang, hingga tempat camping hits",
+    tanggal: "09 november 2026",
+    gambar: "images/wisata-cicalengka.jpeg",
+    link: "tempat-wisata-cicalengka-terbaru.html"
+      },
+     {
      judul: "Sejarah Masjid Agung Cicalengka: Masjid Bersejarah di Bandung",
     deskripsi: "Mengenal sejarah Masjid Agung Cicalengka, masjid bersejarah di Alun-Alun Cicalengka, arsitektur, renovasi, dan kisah masa DI/TII.",
     tanggal: "08 november 2026",
