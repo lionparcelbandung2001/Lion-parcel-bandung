@@ -1,5 +1,19 @@
 const artikelData = [
 {
+     judul: "PEJUANG CICALENGKA",
+    deskripsi: "Mengenang Hari Pahlawan 10 November melalui jejak Raden Dewi Sartika, Ir. Djuanda, dan sejarah perjuangan yang terkait dengan Cicalengka",
+    tanggal: "10 november 2026",
+    gambar: "images/hari-pahlawan-cicalengka.jpeg",
+    link: "hari-pahlawan-10-november-semangat-pejuang-cicalengka.html"
+      },
+     {
+     judul: "PEJUANG RANCAEKEK",
+    deskripsi: "Selamat Hari Pahlawan 10 November: Mengenang Semangat Pejuang Rancaekek | Lion Parcel Bandung POS101",
+    tanggal: "10 november 2026",
+    gambar: "images/hari-pahlawan-rancaekek.jpeg",
+    link: "hari-pahlawan-10-november-semangat-pejuang-rancaekek.html"
+      },
+     {
      judul: "Wisata Kuliner dan UMKM Cicalengka: Tempat Makan dan Destinasi Lokal",
     deskripsi: "Jelajahi wisata Cicalengka, kuliner lokal, sentra UMKM, Curug Cinulang, Bukit Keroncong, dan rekomendasi tempat makan di Bandung Timur",
     tanggal: "10 november 2026",
