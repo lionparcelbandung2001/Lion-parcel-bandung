@@ -1,5 +1,19 @@
 const artikelData = [
 {
+     judul: "Wisata Kuliner dan UMKM Cicalengka: Tempat Makan dan Destinasi Lokal",
+    deskripsi: "Jelajahi wisata Cicalengka, kuliner lokal, sentra UMKM, Curug Cinulang, Bukit Keroncong, dan rekomendasi tempat makan di Bandung Timur",
+    tanggal: "10 november 2026",
+    gambar: "images/wisata-kuliner-umkm-cicalengka.jpeg",
+    link: "wisata-kuliner-umkm-cicalengka.html"
+      },
+     {
+     judul: "Ekspedisi Bandung Cikarang 1 Hari Sampai: Layanan Pengiriman Cepat | Lion Parcel Bandung POS101 Rancaekek",
+    deskripsi: "Cari ekspedisi Bandung Cikarang 1 hari sampai? Kenali layanan prioritas Lion Parcel, estimasi pengiriman, dan cara kirim paket cepat.",
+    tanggal: "10 november 2026",
+    gambar: "images/ekspedisi-bandung-cikarang-1-hari-sampai.jpeg",
+    link: "ekspedisi-bandung-cikarang-1-hari-sampai.html"
+      },
+     {
      judul: "Ekspedisi Bandung Bogor Express 1 Hari Sampai Murah & Cepat | Lion Parcel POS101",
     deskripsi: "Layanan ekspedisi Bandung ke Bogor express 1 hari sampai",
     tanggal: "09 november 2026",
