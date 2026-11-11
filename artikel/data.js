@@ -1,5 +1,19 @@
 const artikelData = [
 {
+     judul: "Konveksi di Rancaekek Bandung: Daftar Usaha Garmen dan Industri Pakaian | Lion Parcel POS101",
+    deskripsi: "Cari konveksi di Rancaekek Bandung? Simak daftar usaha konveksi, produsen pakaian, industri tekstil dan potensi pengiriman barang",
+    tanggal: "11 november 2026",
+    gambar: "images/konveksi-rancaekek-bandung.jpeg",
+    link: "konveksi-rancaekek-bandung.html"
+      },
+     {
+     judul: "Kontak Lion Parcel Bandung: Alamat, WA & Jam Operasional | POS101 Rancaekek",
+    deskripsi: "Hubungi Lion Parcel Bandung POS101 Rancaekek. Cek alamat agen, WhatsApp 0851-8309-0486, jam operasional dan lokasi Google Maps",
+    tanggal: "11 november 2026",
+    gambar: "images/kontak-lionparcel-bandung.jpeg",
+    link: "kontak-lionparcel-bandung.html"
+      },
+     {
      judul: "PEJUANG CICALENGKA",
     deskripsi: "Mengenang Hari Pahlawan 10 November melalui jejak Raden Dewi Sartika, Ir. Djuanda, dan sejarah perjuangan yang terkait dengan Cicalengka",
     tanggal: "10 november 2026",
