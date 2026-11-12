@@ -1,5 +1,19 @@
 const artikelData = [
 {
+     judul: "Syarat Kirim Paket ke Taiwan Lewat Interpack: Wajib Lampirkan Foto ARC | Lion Parcel Bandung POS101",
+    deskripsi: "Panduan kirim paket Interpack tujuan Taiwan via Lion Parcel POS101 Rancaekek. Wajib lampirkan foto ARC (Alien Resident Certificate) depan dan belakang penerima!",
+    tanggal: "12 november 2026",
+    gambar: "images/interpack-taiwan-arc.jpeg",
+    link: "syarat-kirim-interpack-taiwan-arc.html"
+      },
+     {
+     judul: "Aturan Kirim Interpack Luar Negeri: Parfum & Elektronik Wajib Pisah Packing | Lion Parcel Bandung POS101 Rancaekek",
+    deskripsi: "Panduan aturan pengiriman Interpack Lion Parcel ke Malaysia Barat, Singapura, Korea Selatan, dan Taiwan. Ketahui ketentuan pemisahan parfum dan elektronik sebelum kirim paket",
+    tanggal: "12 november 2026",
+    gambar: "images/interpack-pisahnya-packing.jpeg",
+    link: "aturan-kirim-interpack-parfum-elektronik.html"
+      },
+     {
      judul: "Konveksi di Rancaekek Bandung: Daftar Usaha Garmen dan Industri Pakaian | Lion Parcel POS101",
     deskripsi: "Cari konveksi di Rancaekek Bandung? Simak daftar usaha konveksi, produsen pakaian, industri tekstil dan potensi pengiriman barang",
     tanggal: "11 november 2026",
