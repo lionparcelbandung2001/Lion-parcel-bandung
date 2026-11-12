@@ -1,5 +1,19 @@
 const artikelData = [
 {
+     judul: "Kirim HP, Powerbank & Laptop ke Taiwan? Ini Update DG Lion Parcel | POS101",
+    deskripsi: "Update pengiriman ke Taiwan via Lion Parcel! HP, powerbank, laptop, kamera, parfum dan ikan asin memiliki ketentuan khusus. Cek batas kuota dan surcharge DG di POS101 Rancaekek",
+    tanggal: "13 november 2026",
+    gambar: "images/kirim-dg-ke-taiwan.jpeg",
+    link: "kirim-hp-powerbank-komoditi-dg-ke-taiwan.html"
+      },
+     {
+     judul: "Cara Kirim Paket Interpack ke Hong Kong & China Titip ke Toko | Lion Parcel Bandung POS101",
+    deskripsi: "Panduan kirim paket Interpack ke Hong Kong dan China menggunakan alamat toko atau sistem titip paket. Simak persiapan alamat, nomor penerima, dan ketentuannya di Lion Parcel Bandung POS101 Rancaekek",
+    tanggal: "13 november 2026",
+    gambar: "images/kirim-interpack-hongkong-china.jpeg",
+    link: "cara-kirim-interpack-hongkong-china-titip-toko.html"
+      },
+     {
      judul: "Syarat Kirim Paket ke Taiwan Lewat Interpack: Wajib Lampirkan Foto ARC | Lion Parcel Bandung POS101",
     deskripsi: "Panduan kirim paket Interpack tujuan Taiwan via Lion Parcel POS101 Rancaekek. Wajib lampirkan foto ARC (Alien Resident Certificate) depan dan belakang penerima!",
     tanggal: "12 november 2026",
