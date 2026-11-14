@@ -1,5 +1,19 @@
 const artikelData = [
 {
+     judul: "Ekspedisi Express Bandung Cirebon Tarif Murah, Kirim Paket Lebih Praktis | Lion Parcel POS101",
+    deskripsi: "Cari ekspedisi express Bandung Cirebon dengan tarif terjangkau? Simak tips ongkir, layanan pengiriman, cara packing, dan konsultasi Lion Parcel POS101",
+    tanggal: "14 november 2026",
+    gambar: "images/ekspedisi-express-bandung-cirebon.jpeg",
+    link: "ekspedisi-express-bandung-cirebon.html"
+      },
+     {
+     judul: "Kenapa Pengusaha Perlu Memilih Rancaekek untuk Bangun Pabrik dan Toko? | Lion Parcel Bandung POS101",
+    deskripsi: "Kenali alasan Rancaekek menjadi lokasi potensial untuk membangun pabrik, toko, gudang, dan usaha. Simak peluang pasar, industri, dan akses transportasinya.",
+    tanggal: "14 november 2026",
+    gambar: "images/peluang-usaha-rancaekek.jpeg",
+    link: "kenapa-pengusaha-memilih-rancaekek.html"
+      },
+     {
      judul: "Kirim HP, Powerbank & Laptop ke Taiwan? Ini Update DG Lion Parcel | POS101",
     deskripsi: "Update pengiriman ke Taiwan via Lion Parcel! HP, powerbank, laptop, kamera, parfum dan ikan asin memiliki ketentuan khusus. Cek batas kuota dan surcharge DG di POS101 Rancaekek",
     tanggal: "13 november 2026",
