@@ -1,5 +1,19 @@
 const artikelData = [
 {
+    judul: "Ketentuan Pengiriman Paket ke 7-Eleven Taiwan via Lion Parcel | Lion Parcel Bandung POS101",
+    deskripsi: "mau kirim paket ke taiwan bisa ke 7-eleven taiwan yaa,jadi penerima di taiwan bisa ambil di 7-eleven terdekat.",
+    tanggal: "14 november 2026",
+    gambar: "images/ketentuan-kirim-paket-7-11-taiwan.jpeg",
+    link: "ketentuan-pengiriman-paket-ke-7-11-taiwan.html"
+},
+    {
+    judul: "Kirim Dangerous Goods ke Korea Selatan via Lion Parcel | Lion Parcel Bandung POS101",
+    deskripsi: "Informasi pengiriman Dangerous Goods (DG) ke Korea Selatan via Lion Parcel POS101 Rancaekek. Simak daftar komoditi, batas jumlah, surcharge DG, dan ketentuannya.",
+    tanggal: "15 november 2026",
+    gambar: "images/kirim-dangerous-good-korea-selatan.jpeg",
+    link: "ketentuan-kirim-dangerous-good-ke-korea-selatan.html"
+},
+    {
     judul: "Ekspedisi Express Bandung Cirebon Tarif Murah, Kirim Paket Lebih Praktis | Lion Parcel POS101",
     deskripsi: "Butuh ekspedisi express dari Bandung ke Cirebon? Kenali pilihan layanan pengiriman Lion Parcel, informasi tarif, persiapan paket, dan konsultasi pengiriman melalui Lion Parcel POS101.",
     tanggal: "14 november 2026",
