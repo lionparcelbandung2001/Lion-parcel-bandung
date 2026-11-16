@@ -1,8 +1,22 @@
 const artikelData = [
 {
+    judul: "Sharp Item Lion Parcel: Ketentuan Pengiriman Benda Tajam ke Malaysia Timur | POS101",
+    deskripsi: "pengiriman sharp item atau benda tajam seperti pisau, keris, gunting, dan senjata tajam. Lion Parcel tidak menerima sharp items untuk tujuan Malaysia Timur ",
+    tanggal: "16 november 2026",
+    gambar: "images/sharp-item-lion-parcel.jpeg",
+    link: "ketentuan-pengiriman-sharp-item-benda-tajam.html"
+},
+    {
+    judul: "Kirim Elektronik ke Taiwan: Powerbank, Laptop & Drone | Lion Parcel POS101",
+    deskripsi: "Update pengiriman elektronik ke Taiwan via Lion Parcel. Powerbank, laptop, drone, kamera dan elektronik berbaterai dengan ketentuan Surcharge DG .",
+    tanggal: "16 november 2026",
+    gambar: "images/kirim-elektronik-ke-taiwan.jpeg",
+    link: "update-pengiriman-elektronik-ke-taiwan.html"
+},
+    {
     judul: "Ketentuan Pengiriman Paket ke 7-Eleven Taiwan via Lion Parcel | Lion Parcel Bandung POS101",
     deskripsi: "mau kirim paket ke taiwan bisa ke 7-eleven taiwan yaa,jadi penerima di taiwan bisa ambil di 7-eleven terdekat.",
-    tanggal: "14 november 2026",
+    tanggal: "15 november 2026",
     gambar: "images/ketentuan-kirim-paket-7-11-taiwan.jpeg",
     link: "ketentuan-pengiriman-paket-ke-7-11-taiwan.html"
 },
