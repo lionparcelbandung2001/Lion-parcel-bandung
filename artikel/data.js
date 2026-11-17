@@ -1,5 +1,47 @@
 const artikelData = [
 {
+    judul: "Lion Parcel Terdekat di Cileunyi Bandung",
+    deskripsi: "Cari Lion Parcel terdekat di Cileunyi Bandung?gratis jemput paket area cileunyi ",
+    tanggal: "17 november 2026",
+    gambar: "images/kontak-lionparcel-cileunyi.jpeg",
+    link: "lionparcel-terdekat-di-cileunyi-bandung.html"
+},
+    {
+    judul: "Lion Parcel Terdekat di Jatinangor Sumedang ",
+    deskripsi: "Cari Lion Parcel terdekat di Jatinangor Sumedang? gratis jemput paket area jatinangor",
+    tanggal: "17 november 2026",
+    gambar: "images/kontak-lionparcel-jatinangor.jpeg",
+    link: "lionparcel-terdekat-di-jatinangor-sumedang.html"
+},
+    {
+    judul: "Lion Parcel Terdekat di Cimanggung Sumedang",
+    deskripsi: "Cari Lion Parcel terdekat di Cimanggung Sumedang?gratis jemput paket",
+    tanggal: "17 november 2026",
+    gambar: "images/kontak-lionparcel-cimanggung.jpeg",
+    link: "lionparcel-terdekat-di-cimanggung-sumedang.html"
+},
+    {
+    judul: "Kontak Lion Parcel Rancaekek, Bandung - WA, Alamat & Jam Buka POS101 | Lion Parcel Bandung POS101 Rancaekek",
+    deskripsi: "Kontak Lion Parcel Rancaekek Bandung",
+    tanggal: "17 november 2026",
+    gambar: "images/kontak-lion-parcel-rancaekek-bandung.jpeg",
+    link: "kontak-lion-parcel-rancaekek-bandung.html"
+},
+    {
+    judul: "Kontak Lion Parcel Cicalengka Bandung - WA, Alamat & Jam Buka POS101 | Lion Parcel Bandung POS101",
+    deskripsi: "Kontak Lion Parcel Cicalengka Bandung",
+    tanggal: "17 november 2026",
+    gambar: "images/kontak-lion-parcel-cicalengka-bandung.jpeg",
+    link: "kontak-lion-parcel-cicalengka-bandung.html"
+},
+    {
+    judul: "Send Package from Indonesia to Australia: Cheap, Fast & Safe | Lion Parcel Bandung POS101 Rancaekek",
+    deskripsi: "How to send package from Indonesia to Australia",
+    tanggal: "17 november 2026",
+    gambar: "images/send-package-indonesia-to-australia.jpeg",
+    link: "send-package-indonesia-to-australia.html"
+},
+    {
     judul: "Sharp Item Lion Parcel: Ketentuan Pengiriman Benda Tajam ke Malaysia Timur | POS101",
     deskripsi: "pengiriman sharp item atau benda tajam seperti pisau, keris, gunting, dan senjata tajam. Lion Parcel tidak menerima sharp items untuk tujuan Malaysia Timur ",
     tanggal: "16 november 2026",
