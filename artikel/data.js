@@ -1,5 +1,26 @@
 const artikelData = [
 {
+    judul: "Syarat Wajib Pengambilan Barang di Pabrik / PT, Pemilik Ekspedisi Wajib Tau",
+    deskripsi: "Syarat wajib pengambilan barang di pabrik / PT ",
+    tanggal: "18 november 2026",
+    gambar: "images/syarat-pengambilan-barang-pabrik.jpeg",
+    link: "syarat-wajib-pengambilan-barang-di-pabrik-pt.html"
+},
+    {
+    judul: "Pickup Barang ke PT Tanpa Memo Pengeluaran? Waspada Penipuan Ekspedisi",
+    deskripsi: "Diminta pickup barang ke pabrik atau PT tanpa memo pengeluaran? Kenali risiko penipuan dan cara verifikasi sebelum mengambil barang",
+    tanggal: "18 november 2026",
+    gambar: "images/pickup-barang-pt-tanpa-memo.jpeg",
+    link: "waspada-pickup-barang-pt-tanpa-memo.html"
+},
+    {
+    judul: "8 Modus Penipuan Pickup Barang Pabrik yang Wajib Diwaspadai pemilik Ekspedisi",
+    deskripsi: "Kenali 8 modus penipuan saat pickup barang di pabrik dan perorangan.",
+    tanggal: "18 november 2026",
+    gambar: "images/waspada-penipuan-pickup-barang-pabrik.jpeg",
+    link: "waspada-penipuan-pickup-barang-pabrik.html"
+},
+    {
     judul: "Lion Parcel Terdekat di Cileunyi Bandung",
     deskripsi: "Cari Lion Parcel terdekat di Cileunyi Bandung?gratis jemput paket area cileunyi ",
     tanggal: "17 november 2026",
