@@ -1,5 +1,12 @@
 const artikelData = [
 {
+    judul: "Syarat Kirim Kosmetik ke Hong Kong & China Terbaru | Lion Parcel Bandung",
+    deskripsi: "Ingin kirim kosmetik ke Hong Kong atau China? Simak syarat INTERPACK Lion Parcel ",
+    tanggal: "19 november 2026",
+    gambar: "images/syarat-kirim-kosmetik-hong-kong-china.jpeg",
+    link: "syarat-kirim-kosmetik-ke-hong-kong-china.html"
+},
+    {
     judul: "Syarat Wajib Pengambilan Barang di Pabrik / PT, Pemilik Ekspedisi Wajib Tau",
     deskripsi: "Syarat wajib pengambilan barang di pabrik / PT ",
     tanggal: "18 november 2026",
