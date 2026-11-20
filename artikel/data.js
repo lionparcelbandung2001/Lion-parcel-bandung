@@ -1,5 +1,12 @@
 const artikelData = [
 {
+    judul: "curug cinulang,cicalengka",
+    deskripsi: "mengenal lebih dekat tentang curug cinulang di cicalengma ",
+    tanggal: "20 november 2026",
+    gambar: "images/.jpeg",
+    link: "curug-cinulang-cicalengka.html"
+},
+    {
     judul: "Syarat Kirim Kosmetik ke Hong Kong & China Terbaru | Lion Parcel Bandung",
     deskripsi: "Ingin kirim kosmetik ke Hong Kong atau China? Simak syarat INTERPACK Lion Parcel ",
     tanggal: "19 november 2026",
