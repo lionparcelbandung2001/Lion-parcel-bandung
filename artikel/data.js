@@ -1,9 +1,16 @@
 const artikelData = [
 {
+    judul: "Cara Packing Paket yang Benar agar Barang Aman Selama Pengiriman",
+    deskripsi: "Panduan cara packing paket yang benar  ",
+    tanggal: "21 november 2026",
+    gambar: "images/cara-packing-paket.jpeg",
+    link: "cara-packing-paket-yang-benar.html"
+},
+    {
     judul: "curug cinulang,cicalengka",
-    deskripsi: "mengenal lebih dekat tentang curug cinulang di cicalengma ",
+    deskripsi: "mengenal lebih dekat tentang curug cinulang di cicalengka ",
     tanggal: "20 november 2026",
-    gambar: "images/.jpeg",
+    gambar: "images/curug-cinulang.jpeg",
     link: "curug-cinulang-cicalengka.html"
 },
     {
