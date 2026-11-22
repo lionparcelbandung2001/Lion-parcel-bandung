@@ -1,5 +1,12 @@
 const artikelData = [
 {
+    judul: "7 Jenis Barang yang Harus di Packing Kayu | Lion Parcel Bandung",
+    deskripsi: "Jangan sampai pecah! Ini 7 jenis barang yang wajib packing kayu",
+    tanggal: "22 november 2026",
+    gambar: "images/packing-kayu-lion-parcel.jpeg",
+    link: "jenis-barang-harus-packing-kayu.html"
+},
+    {
     judul: "Cara Packing Paket yang Benar agar Barang Aman Selama Pengiriman",
     deskripsi: "Panduan cara packing paket yang benar  ",
     tanggal: "21 november 2026",
