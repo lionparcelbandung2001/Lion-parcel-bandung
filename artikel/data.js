@@ -1,5 +1,12 @@
 const artikelData = [
 {
+    judul: "Barang Bekas & Personal Effect Dilarang ke Thailand via Interpack | Lion Parcel Bandung",
+    deskripsi: "Informasi larangan kirim barang bekas, pakaian bekas, personal effect dan barang pindahan ke Thailand melalui layanan Interpack Lion Parcel",
+    tanggal: "23 november 2026",
+    gambar: "images/thailand-barang-bekas-interpack.jpeg",
+    link: "barang-bekas-personal-effect-thailand-interpack.html"
+},
+    {
     judul: "7 Jenis Barang yang Harus di Packing Kayu | Lion Parcel Bandung",
     deskripsi: "Jangan sampai pecah! Ini 7 jenis barang yang wajib packing kayu",
     tanggal: "22 november 2026",
