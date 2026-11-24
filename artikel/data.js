@@ -1,5 +1,12 @@
 const artikelData = [
 {
+    judul: "Panduan Lengkap Akses dan Transportasi ke Cicalengka Bandung",
+    deskripsi: "Panduan lengkap cara menuju Cicalengka, Kabupaten Bandung",
+    tanggal: "24 november 2026",
+    gambar: "images/akses-transportasi-cicalengka.jpeg",
+    link: "panduan-akses-transportasi-ke-cicalengka.html"
+},
+    {
     judul: "Barang Bekas & Personal Effect Dilarang ke Thailand via Interpack | Lion Parcel Bandung",
     deskripsi: "Informasi larangan kirim barang bekas, pakaian bekas, personal effect dan barang pindahan ke Thailand melalui layanan Interpack Lion Parcel",
     tanggal: "23 november 2026",
