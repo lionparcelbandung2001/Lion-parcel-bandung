@@ -1,5 +1,12 @@
 const artikelData = [
 {
+    judul: "Update Biaya Surcharge Lion Parcel ke USA: Regulasi Terbaru | Lion Parcel Bandung",
+    deskripsi: "Update biaya surcharge Interpack Lion Parcel ke USA. Simak perubahan surcharge berat, dimensi, handling, penggantian alamat dan sticker fragile terbaru",
+    tanggal: "25 november 2026",
+    gambar: "images/surcharge-interpack-usa-november-2026.jpeg",
+    link: "perubahan-surcharge-interpack-usa-november-2026.html"
+},
+    {
     judul: "Panduan Lengkap Akses dan Transportasi ke Cicalengka Bandung",
     deskripsi: "Panduan lengkap cara menuju Cicalengka, Kabupaten Bandung",
     tanggal: "24 november 2026",
