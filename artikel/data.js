@@ -1,5 +1,19 @@
 const artikelData = [
 {
+    judul: "Hal yang Harus Dilakukan Jika Menjadi Korban Penipuan Belanja Online | Lion Parcel Bandung",
+    deskripsi: "Menjadi korban penipuan belanja online? Simak langkah mengatasinya",
+    tanggal: "26 november 2026",
+    gambar: "images/korban-penipuan-belanja-online.jpeg",
+    link: "hal-yang-harus-dilakukan-korban-penipuan-belanja-online.html"
+},
+    {
+    judul: "Mengenali Penipuan COD dan Ongkir Paket: Tips Aman bagi Penerima | Lion Parcel Bandung",
+    deskripsi: "Kenali ciri penipuan COD, paket tak dikenal, ongkir palsu, dan cara aman memeriksa kiriman agar tidak tertipu saat menerima paket.",
+    tanggal: "26 november 2026",
+    gambar: "images/penipuan-cod-paket.jpeg",
+    link: "mengenali-penipuan-cod-ongkir-paket.html"
+},
+    {
     judul: "Update Biaya Surcharge Lion Parcel ke USA: Regulasi Terbaru | Lion Parcel Bandung",
     deskripsi: "Update biaya surcharge Interpack Lion Parcel ke USA. Simak perubahan surcharge berat, dimensi, handling, penggantian alamat dan sticker fragile terbaru",
     tanggal: "25 november 2026",
