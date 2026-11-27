@@ -1,5 +1,12 @@
 const artikelData = [
 {
+    judul: "Modus Penipuan COD Ongkir! Penerima Wajib Tau, Jangan Sampai Kena Tipu | Lion Parcel Bandung",
+    deskripsi: "Modus penipuan COD ongkir terbaru! Penerima wajib tau",
+    tanggal: "27 november 2026",
+    gambar: "images/modus-penipuan-cod-ongkir.jpeg",
+    link: "modus-penipuan-cod-ongkir-penerima-wajib-tau.html"
+},
+    {
     judul: "Hal yang Harus Dilakukan Jika Menjadi Korban Penipuan Belanja Online | Lion Parcel Bandung",
     deskripsi: "Menjadi korban penipuan belanja online? Simak langkah mengatasinya",
     tanggal: "26 november 2026",
